@@ -4,18 +4,27 @@ import { motion } from 'framer-motion';
 import './Highlight.css';
 
 interface HighlightProps {
-  text: string;
+  text?: string;
+  content?: string;
+  title?: string;
   author?: string;
   image?: string;
+  icon?: React.ReactNode;
   variant?: 'primary' | 'secondary' | 'gradient';
 }
 
 const Highlight: React.FC<HighlightProps> = ({ 
   text, 
+  content,
+  title,
   author, 
   image,
+  icon,
   variant = 'primary' 
 }) => {
+  // Use content if provided, otherwise use text
+  const displayText = content || text || '';
+
   return (
     <motion.div 
       className={`highlight highlight-${variant}`}
@@ -25,11 +34,17 @@ const Highlight: React.FC<HighlightProps> = ({
     >
       {image && (
         <div className="highlight-image-container">
-          <img src={image} alt={author || 'Citação'} className="highlight-image" />
+          <img src={image} alt={author || title || 'Citação'} className="highlight-image" />
+        </div>
+      )}
+      {icon && (
+        <div className="highlight-icon-container">
+          {icon}
         </div>
       )}
       <div className="highlight-content">
-        <p className="highlight-text">{text}</p>
+        {title && <h3 className="highlight-title">{title}</h3>}
+        <p className="highlight-text">{displayText}</p>
         {author && <p className="highlight-author">— {author}</p>}
       </div>
     </motion.div>

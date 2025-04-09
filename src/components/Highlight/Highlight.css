@@ -1,12 +1,13 @@
 
 .highlight {
-  padding: 30px;
-  border-radius: 8px;
-  margin: 30px 0;
   position: relative;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   display: flex;
-  align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
+  overflow: hidden;
 }
 
 .highlight-primary {
@@ -15,60 +16,36 @@
 }
 
 .highlight-secondary {
-  background-color: #fdf4ff;
-  border-left: 5px solid #d946ef;
+  background-color: #f0fdf4;
+  border-left: 5px solid #22c55e;
 }
 
 .highlight-gradient {
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-  color: white;
-}
-
-.highlight-content {
-  flex: 1;
-}
-
-.highlight-text {
-  font-size: 18px;
-  line-height: 1.6;
-  font-style: italic;
-  margin: 0 0 10px 0;
-  position: relative;
-}
-
-.highlight-primary .highlight-text::before,
-.highlight-secondary .highlight-text::before {
-  content: """;
-  font-size: 72px;
-  color: rgba(59, 130, 246, 0.1);
-  position: absolute;
-  top: -30px;
-  left: -15px;
-  font-family: serif;
-}
-
-.highlight-gradient .highlight-text::before {
-  content: """;
-  font-size: 72px;
-  color: rgba(255, 255, 255, 0.2);
-  position: absolute;
-  top: -30px;
-  left: -15px;
-  font-family: serif;
-}
-
-.highlight-author {
-  font-weight: 600;
-  margin: 0;
-  text-align: right;
+  background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
+  border-left: 5px solid #60a5fa;
 }
 
 .highlight-image-container {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
   border-radius: 50%;
   overflow: hidden;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #3b82f6;
 }
 
 .highlight-image {
@@ -77,17 +54,41 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+.highlight-content {
+  flex: 1;
+}
+
+.highlight-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+  color: #1f2937;
+}
+
+.highlight-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #374151;
+}
+
+.highlight-author {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0.75rem 0 0;
+  text-align: right;
+  color: #6b7280;
+}
+
+@media (max-width: 640px) {
   .highlight {
     flex-direction: column;
-    padding: 20px;
+    padding: 1.25rem;
+    gap: 1rem;
   }
   
-  .highlight-text {
-    font-size: 16px;
-  }
-  
+  .highlight-icon-container,
   .highlight-image-container {
-    margin-bottom: 15px;
+    align-self: flex-start;
   }
 }

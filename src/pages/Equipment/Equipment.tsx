@@ -23,12 +23,12 @@ const Equipment: React.FC = () => {
           <h2 className="section-title">Processo de Solicitação</h2>
           
           <div className="process-steps">
-            {equipmentData.process.map((step, index) => (
+            {equipmentData.request_process.steps.map((step, index) => (
               <div key={index} className="process-step">
                 <div className="step-number">{index + 1}</div>
                 <div className="step-content">
-                  <h3 className="step-title">{step.title}</h3>
-                  <p className="step-description">{step.description}</p>
+                  <h3 className="step-title">Passo {index + 1}</h3>
+                  <p className="step-description">{step}</p>
                 </div>
               </div>
             ))}
@@ -46,10 +46,10 @@ const Equipment: React.FC = () => {
           <h2 className="section-title">Equipamentos Disponíveis</h2>
           
           <div className="equipment-grid">
-            {equipmentData.categories.map((category, index) => (
+            {equipmentData.equipment_types.map((category, index) => (
               <Card 
                 key={index}
-                title={category.title}
+                title={category.type}
                 description={category.description}
                 icon={<ShoppingCart size={20} />}
                 className="equipment-card"
@@ -58,16 +58,7 @@ const Equipment: React.FC = () => {
                   {category.items.map((item, itemIndex) => (
                     <div key={itemIndex} className="equipment-item">
                       <span className="item-name">{item.name}</span>
-                      {item.available ? (
-                        <span className="item-available">
-                          <CheckSquare size={16} />
-                          Disponível
-                        </span>
-                      ) : (
-                        <span className="item-unavailable">
-                          Indisponível
-                        </span>
-                      )}
+                      <span className="item-specs">{item.specs}</span>
                     </div>
                   ))}
                 </div>
@@ -79,17 +70,24 @@ const Equipment: React.FC = () => {
         <div className="delivery-info">
           <h2 className="section-title">Prazos de Entrega</h2>
           <div className="delivery-grid">
-            {equipmentData.deliveryTimeframes.map((timeframe, index) => (
-              <div key={index} className="delivery-item">
-                <div className="delivery-icon">
-                  <Truck size={24} />
-                </div>
-                <div className="delivery-content">
-                  <h3 className="delivery-title">{timeframe.type}</h3>
-                  <p className="delivery-description">{timeframe.timeframe}</p>
-                </div>
+            <div className="delivery-item">
+              <div className="delivery-icon">
+                <Truck size={24} />
               </div>
-            ))}
+              <div className="delivery-content">
+                <h3 className="delivery-title">Escritório</h3>
+                <p className="delivery-description">Até 5 dias úteis após aprovação</p>
+              </div>
+            </div>
+            <div className="delivery-item">
+              <div className="delivery-icon">
+                <Truck size={24} />
+              </div>
+              <div className="delivery-content">
+                <h3 className="delivery-title">Home Office</h3>
+                <p className="delivery-description">Até 10 dias úteis após aprovação</p>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -97,7 +95,7 @@ const Equipment: React.FC = () => {
           <h2 className="section-title">Perguntas Frequentes</h2>
           
           <Accordion>
-            {equipmentData.faq.map((item, index) => (
+            {equipmentData.faqs.map((item, index) => (
               <AccordionItem 
                 key={index}
                 title={item.question}
@@ -112,14 +110,17 @@ const Equipment: React.FC = () => {
           <h2 className="section-title">Suporte</h2>
           
           <div className="support-contacts">
-            {equipmentData.support.contacts.map((contact, index) => (
+            {equipmentData.support.channels.map((contact, index) => (
               <div key={index} className="support-contact">
-                <h3 className="contact-name">{contact.department}</h3>
+                <h3 className="contact-name">{contact.name}</h3>
                 <div className="contact-detail">
-                  <strong>Email:</strong> {contact.email}
+                  <strong>Descrição:</strong> {contact.description}
                 </div>
                 <div className="contact-detail">
-                  <strong>Telefone:</strong> {contact.phone}
+                  <strong>Contato:</strong> {contact.url}
+                </div>
+                <div className="contact-detail">
+                  <strong>Tempo de resposta:</strong> {contact.response_time}
                 </div>
               </div>
             ))}
@@ -127,7 +128,7 @@ const Equipment: React.FC = () => {
           
           <InfoBlock
             title="Horário de atendimento"
-            content={equipmentData.support.hours}
+            content={equipmentData.support.business_hours}
             variant="info"
             icon={<HelpCircle size={24} />}
           />

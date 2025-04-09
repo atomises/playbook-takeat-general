@@ -13,7 +13,7 @@ export const getIconByName = (iconName: string, size = 24): React.ReactNode => {
     return null;
   }
   
-  // Get the icon component safely with proper typings
+  // Get the icon component safely with type assertion
   const IconComponent = LucideIcons[iconName as IconName];
   
   // Verify it's a valid component function
@@ -22,6 +22,6 @@ export const getIconByName = (iconName: string, size = 24): React.ReactNode => {
     return null;
   }
   
-  // Create the element with the icon component and return it
-  return React.createElement(IconComponent, { size });
+  // Return the icon as a JSX element instead of using React.createElement
+  return React.createElement(IconComponent as React.ComponentType<{size?: number}>, { size });
 };

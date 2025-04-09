@@ -100,7 +100,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
                     >
                       {item.icon && (
                         <div className="search-result-icon">
-                          {React.createElement(getIconByName(item.icon), { size: 16 })}
+                          {getIconByName(item.icon, 16)}
                         </div>
                       )}
                       <div className="search-result-content">

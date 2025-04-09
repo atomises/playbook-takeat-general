@@ -6,7 +6,7 @@ import React from 'react';
 export type IconName = keyof typeof LucideIcons;
 
 // Safely get an icon component by name
-export const getIconByName = (iconName: string, size = 24): React.ReactNode => {
+export const getIconByName = (iconName: string, size = 24): React.ReactElement | null => {
   // Check if icon exists in LucideIcons
   if (!Object.prototype.hasOwnProperty.call(LucideIcons, iconName)) {
     console.warn(`Icon "${iconName}" not found in Lucide icons`);
@@ -14,7 +14,7 @@ export const getIconByName = (iconName: string, size = 24): React.ReactNode => {
   }
   
   // Get the icon component safely with type assertion
-  const IconComponent = LucideIcons[iconName as IconName];
+  const IconComponent = LucideIcons[iconName as IconName] as React.ComponentType<{size?: number}>;
   
   // Verify it's a valid component function
   if (typeof IconComponent !== 'function') {
@@ -22,6 +22,6 @@ export const getIconByName = (iconName: string, size = 24): React.ReactNode => {
     return null;
   }
   
-  // Return the icon as a JSX element instead of using React.createElement
-  return React.createElement(IconComponent as React.ComponentType<{size?: number}>, { size });
+  // Return the icon as a React element
+  return React.createElement(IconComponent, { size });
 };

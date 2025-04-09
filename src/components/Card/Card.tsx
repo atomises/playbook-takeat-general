@@ -9,6 +9,7 @@ interface CardProps {
   icon?: React.ReactNode;
   onClick?: () => void;
   className?: string;
+  children?: React.ReactNode;
 }
 
 const Card: React.FC<CardProps> = ({ 
@@ -16,7 +17,8 @@ const Card: React.FC<CardProps> = ({
   description, 
   icon, 
   onClick, 
-  className = '' 
+  className = '',
+  children
 }) => {
   return (
     <motion.div 
@@ -32,6 +34,7 @@ const Card: React.FC<CardProps> = ({
       <div className="card-content">
         <h3 className="card-title">{title}</h3>
         <p className="card-description">{description}</p>
+        {children}
       </div>
     </motion.div>
   );

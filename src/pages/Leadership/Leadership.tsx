@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Award, Users, Briefcase, Target, TrendingUp, BookOpen, FileText, Check } from 'lucide-react';
 import PageWrapper from '../../components/PageWrapper/PageWrapper';

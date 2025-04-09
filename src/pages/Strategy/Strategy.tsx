@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Target, TrendingUp, Award, BarChart, Compass, Flag } from 'lucide-react';
 import PageWrapper from '../../components/PageWrapper/PageWrapper';

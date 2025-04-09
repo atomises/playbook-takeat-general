@@ -16,15 +16,19 @@ const Home: React.FC = () => {
   // Fixed getIcon function with proper typing
   const getIcon = (iconName: string) => {
     // Check if the icon exists in LucideIcons
-    const iconExists = Object.prototype.hasOwnProperty.call(LucideIcons, iconName);
-    if (!iconExists) return null;
+    if (!Object.prototype.hasOwnProperty.call(LucideIcons, iconName)) {
+      return null;
+    }
     
     // Use dynamic access with type assertion
     const IconComponent = LucideIcons[iconName as IconName];
-    // Check if the icon is a valid component
-    if (typeof IconComponent !== 'function') return null;
+    // Check if the icon is a valid component function
+    if (typeof IconComponent !== 'function') {
+      return null;
+    }
     
-    return React.createElement(IconComponent, { size: 24 });
+    // Use JSX to render the icon instead of React.createElement
+    return <IconComponent size={24} />;
   };
 
   return (

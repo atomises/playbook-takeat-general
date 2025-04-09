@@ -1,246 +1,137 @@
 
-import React, { useState } from 'react';
-import { Monitor, Laptop, Smartphone, Mouse, Box, HelpCircle, Clock, AlertCircle, CheckCircle, Download, ArrowRight } from 'lucide-react';
+import React from 'react';
+import { ShoppingBag, Truck, InfoIcon, CheckSquare, HelpCircle, ShoppingCart } from 'lucide-react';
 import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import Card from '../../components/Card/Card';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
+import Accordion, { AccordionItem } from '../../components/Accordion/Accordion';
 import './Equipment.css';
 import equipmentData from './equipment.data.json';
 
 const Equipment: React.FC = () => {
-  const [selectedType, setSelectedType] = useState<string>(equipmentData.equipment_types[0].type);
-  const [selectedFaq, setSelectedFaq] = useState<number | null>(null);
-  
-  // Filtrar o tipo de equipamento selecionado
-  const selectedEquipmentType = equipmentData.equipment_types.find(type => type.type === selectedType);
-  
-  // Mapear ícones para tipos de equipamento
-  const getTypeIcon = (type: string) => {
-    switch(type) {
-      case 'Computadores':
-        return <Laptop size={24} />;
-      case 'Monitores':
-        return <Monitor size={24} />;
-      case 'Acessórios':
-        return <Mouse size={24} />;
-      case 'Smartphones':
-        return <Smartphone size={24} />;
-      default:
-        return <Box size={24} />;
-    }
-  };
-  
-  // Alternar exibição de FAQ
-  const toggleFaq = (index: number) => {
-    if (selectedFaq === index) {
-      setSelectedFaq(null);
-    } else {
-      setSelectedFaq(index);
-    }
-  };
-  
   return (
     <PageWrapper>
       <SectionHeader
         title={equipmentData.title}
         description={equipmentData.description}
-        icon={<Laptop size={28} />}
+        icon={<ShoppingBag size={28} />}
       />
       
       <div className="equipment-page">
-        <section className="equipment-catalog-section">
-          <h2 className="section-title">Catálogo de Equipamentos</h2>
+        <div className="equipment-process-overview">
+          <h2 className="section-title">Processo de Solicitação</h2>
           
-          <div className="equipment-tabs">
-            {equipmentData.equipment_types.map((type) => (
-              <button
-                key={type.type}
-                className={`equipment-tab ${selectedType === type.type ? 'active' : ''}`}
-                onClick={() => setSelectedType(type.type)}
-              >
-                {getTypeIcon(type.type)}
-                <span>{type.type}</span>
-              </button>
-            ))}
-          </div>
-          
-          {selectedEquipmentType && (
-            <div className="equipment-type-details">
-              <p className="type-description">{selectedEquipmentType.description}</p>
-              
-              <div className="equipment-items-grid">
-                {selectedEquipmentType.items.map((item, index) => (
-                  <Card
-                    key={index}
-                    title={item.name}
-                    description={item.specs}
-                    className="equipment-card"
-                  >
-                    <div className="equipment-details">
-                      <div className="equipment-detail">
-                        <strong>Elegível para:</strong>
-                        <span>{item.eligible_for}</span>
-                      </div>
-                      <div className="equipment-detail">
-                        <strong>Ciclo de substituição:</strong>
-                        <span>{item.replacement_cycle}</span>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          )}
-        </section>
-        
-        <section className="request-process-section">
-          <div className="request-container">
-            <h2 className="section-title">{equipmentData.request_process.title}</h2>
-            
-            <div className="request-steps">
-              <ol className="steps-list">
-                {equipmentData.request_process.steps.map((step, index) => (
-                  <li key={index} className="step-item">
-                    <div className="step-number">{index + 1}</div>
-                    <div className="step-content">{step}</div>
-                  </li>
-                ))}
-              </ol>
-            </div>
-            
-            <InfoBlock
-              title="Novos Colaboradores"
-              content={equipmentData.request_process.new_hire}
-              variant="info"
-              icon={<HelpCircle size={24} />}
-            />
-          </div>
-        </section>
-        
-        <section className="support-section">
-          <h2 className="section-title">{equipmentData.support.title}</h2>
-          
-          <div className="support-channels-grid">
-            {equipmentData.support.channels.map((channel, index) => (
-              <div key={index} className="support-channel-card">
-                <h3 className="channel-name">{channel.name}</h3>
-                <p className="channel-description">{channel.description}</p>
-                
-                <div className="channel-details">
-                  <div className="channel-contact">
-                    <strong>Contato:</strong>
-                    <span>{channel.url}</span>
-                  </div>
-                  <div className="channel-response">
-                    <Clock size={16} />
-                    <span>{channel.response_time}</span>
-                  </div>
+          <div className="process-steps">
+            {equipmentData.process.map((step, index) => (
+              <div key={index} className="process-step">
+                <div className="step-number">{index + 1}</div>
+                <div className="step-content">
+                  <h3 className="step-title">{step.title}</h3>
+                  <p className="step-description">{step.description}</p>
                 </div>
               </div>
             ))}
           </div>
-          
-          <div className="support-hours">
-            <div className="hours-info">
-              <Clock size={20} />
-              <span><strong>Horário de Atendimento:</strong> {equipmentData.support.business_hours}</span>
-            </div>
-            
-            <div className="emergency-info">
-              <AlertCircle size={20} />
-              <span><strong>Emergências:</strong> {equipmentData.support.emergency}</span>
-            </div>
-          </div>
-        </section>
-        
-        <div className="two-columns">
-          <section className="maintenance-section">
-            <h2 className="section-title">{equipmentData.maintenance.title}</h2>
-            
-            <div className="maintenance-content">
-              <div className="maintenance-schedule">
-                <h3>Cronograma</h3>
-                <ul className="schedule-list">
-                  {equipmentData.maintenance.schedule.map((item, index) => (
-                    <li key={index} className="schedule-item">{item}</li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="maintenance-tips">
-                <h3>Dicas</h3>
-                <ul className="tips-list">
-                  {equipmentData.maintenance.tips.map((tip, index) => (
-                    <li key={index} className="tip-item">{tip}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-          
-          <section className="return-section">
-            <h2 className="section-title">{equipmentData.return.title}</h2>
-            
-            <div className="return-content">
-              <div className="return-when">
-                <h3>Quando Devolver</h3>
-                <ul className="when-list">
-                  {equipmentData.return.when.map((item, index) => (
-                    <li key={index} className="when-item">{item}</li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="return-process">
-                <h3>Processo</h3>
-                <ol className="process-list">
-                  {equipmentData.return.process.map((step, index) => (
-                    <li key={index} className="process-item">{step}</li>
-                  ))}
-                </ol>
-              </div>
-              
-              <div className="return-remote">
-                <h3>Devolução Remota</h3>
-                <p>{equipmentData.return.remote_return}</p>
-              </div>
-            </div>
-          </section>
         </div>
         
-        <section className="faqs-section">
-          <h2 className="section-title">Perguntas Frequentes</h2>
+        <InfoBlock
+          title="Importante"
+          content="Todas as solicitações devem ser aprovadas pelo seu gestor antes de serem processadas pelo departamento de TI."
+          variant="info"
+          icon={<InfoIcon size={24} />}
+        />
+        
+        <div className="equipment-categories">
+          <h2 className="section-title">Equipamentos Disponíveis</h2>
           
-          <div className="faqs-list">
-            {equipmentData.faqs.map((faq, index) => (
-              <div 
-                key={index} 
-                className={`faq-item ${selectedFaq === index ? 'active' : ''}`}
+          <div className="equipment-grid">
+            {equipmentData.categories.map((category, index) => (
+              <Card 
+                key={index}
+                title={category.title}
+                description={category.description}
+                icon={<ShoppingCart size={20} />}
+                className="equipment-card"
               >
-                <div 
-                  className="faq-question"
-                  onClick={() => toggleFaq(index)}
-                >
-                  <h3>{faq.question}</h3>
-                  <div className="faq-toggle">
-                    {selectedFaq === index ? (
-                      <ArrowRight size={16} className="rotated" />
-                    ) : (
-                      <ArrowRight size={16} />
-                    )}
-                  </div>
+                <div className="equipment-items">
+                  {category.items.map((item, itemIndex) => (
+                    <div key={itemIndex} className="equipment-item">
+                      <span className="item-name">{item.name}</span>
+                      {item.available ? (
+                        <span className="item-available">
+                          <CheckSquare size={16} />
+                          Disponível
+                        </span>
+                      ) : (
+                        <span className="item-unavailable">
+                          Indisponível
+                        </span>
+                      )}
+                    </div>
+                  ))}
                 </div>
-                
-                {selectedFaq === index && (
-                  <div className="faq-answer">
-                    <p>{faq.answer}</p>
-                  </div>
-                )}
+              </Card>
+            ))}
+          </div>
+        </div>
+        
+        <div className="delivery-info">
+          <h2 className="section-title">Prazos de Entrega</h2>
+          <div className="delivery-grid">
+            {equipmentData.deliveryTimeframes.map((timeframe, index) => (
+              <div key={index} className="delivery-item">
+                <div className="delivery-icon">
+                  <Truck size={24} />
+                </div>
+                <div className="delivery-content">
+                  <h3 className="delivery-title">{timeframe.type}</h3>
+                  <p className="delivery-description">{timeframe.timeframe}</p>
+                </div>
               </div>
             ))}
           </div>
-        </section>
+        </div>
+        
+        <div className="equipment-faq">
+          <h2 className="section-title">Perguntas Frequentes</h2>
+          
+          <Accordion>
+            {equipmentData.faq.map((item, index) => (
+              <AccordionItem 
+                key={index}
+                title={item.question}
+              >
+                <p>{item.answer}</p>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+        
+        <div className="equipment-support">
+          <h2 className="section-title">Suporte</h2>
+          
+          <div className="support-contacts">
+            {equipmentData.support.contacts.map((contact, index) => (
+              <div key={index} className="support-contact">
+                <h3 className="contact-name">{contact.department}</h3>
+                <div className="contact-detail">
+                  <strong>Email:</strong> {contact.email}
+                </div>
+                <div className="contact-detail">
+                  <strong>Telefone:</strong> {contact.phone}
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <InfoBlock
+            title="Horário de atendimento"
+            content={equipmentData.support.hours}
+            variant="info"
+            icon={<HelpCircle size={24} />}
+          />
+        </div>
       </div>
     </PageWrapper>
   );

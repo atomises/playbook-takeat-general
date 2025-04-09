@@ -1,0 +1,29 @@
+
+{
+  "examples": [
+    {
+      "title": "Informação Importante",
+      "content": "Este é um exemplo de bloco de informação importante que pode ser usado em várias partes do sistema.",
+      "variant": "default",
+      "icon": "Info"
+    },
+    {
+      "title": "Dica útil",
+      "content": "As dicas podem ajudar os usuários a encontrar recursos e entender melhor como usar o sistema.",
+      "variant": "highlighted",
+      "icon": "HelpCircle"
+    },
+    {
+      "title": "Atenção",
+      "content": "Use este estilo para avisos importantes que precisam de atenção especial do usuário.",
+      "variant": "warning",
+      "icon": "AlertTriangle"
+    },
+    {
+      "title": "Sucesso",
+      "content": "Para destacar realizações ou confirmar que uma operação foi concluída com sucesso.",
+      "variant": "success",
+      "icon": "CheckCircle"
+    }
+  ]
+}

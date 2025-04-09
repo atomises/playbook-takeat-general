@@ -1,31 +1,34 @@
 
 import React from 'react';
-import { Github } from 'lucide-react';
+import { GitHub } from 'lucide-react';
 import './Footer.css';
 
 interface FooterProps {
-  githubLink?: string;
   className?: string;
+  githubLink?: string;
 }
 
 const Footer: React.FC<FooterProps> = ({ 
-  githubLink = 'https://github.com/yourcompany/yourrepo',
-  className = '' 
+  className = '', 
+  githubLink = 'https://github.com/your-company/your-repo' 
 }) => {
   const currentYear = new Date().getFullYear();
   
   return (
     <footer className={`app-footer ${className}`}>
       <div className="footer-content">
-        <p className="copyright">© {currentYear} MyCompany. All rights reserved.</p>
+        <p className="copyright">
+          &copy; {currentYear} Empresa. Todos os direitos reservados.
+        </p>
+        
         <a 
-          href={githubLink} 
-          target="_blank" 
+          href={githubLink}
+          target="_blank"
           rel="noopener noreferrer"
           className="github-link"
-          aria-label="GitHub Repository"
+          title="Visite nosso GitHub"
         >
-          <Github size={20} />
+          <GitHub size={20} />
         </a>
       </div>
     </footer>

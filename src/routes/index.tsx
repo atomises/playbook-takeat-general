@@ -5,6 +5,8 @@ import MainLayout from '../layout/MainLayout/MainLayout';
 import Home from '../pages/Home/Home';
 import Cultura from '../pages/Cultura/Cultura';
 import NotFound from '../pages/NotFound';
+import InternalRules from '../pages/InternalRules/InternalRules';
+import Benefits from '../pages/Benefits/Benefits';
 import PlaceholderPage from '../pages/PlaceholderPage/PlaceholderPage';
 
 const AppRoutes: React.FC = () => {
@@ -25,7 +27,7 @@ const AppRoutes: React.FC = () => {
         path="/internal-rules" 
         element={
           <MainLayout>
-            <PlaceholderPage title="Regras Internas" />
+            <InternalRules />
           </MainLayout>
         } 
       />
@@ -33,7 +35,7 @@ const AppRoutes: React.FC = () => {
         path="/benefits" 
         element={
           <MainLayout>
-            <PlaceholderPage title="Benefícios" />
+            <Benefits />
           </MainLayout>
         } 
       />

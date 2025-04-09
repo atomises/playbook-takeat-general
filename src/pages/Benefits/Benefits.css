@@ -1,0 +1,159 @@
+
+.benefits-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 30px;
+}
+
+.benefits-main {
+  width: 100%;
+}
+
+.benefits-sidebar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.benefits-categories {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.benefit-category-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: #1e293b;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+.benefit-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.benefit-card {
+  height: 100%;
+}
+
+.benefits-section-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: #1e293b;
+}
+
+.benefits-faq-section {
+  margin-top: 40px;
+}
+
+.benefits-highlight-section {
+  margin-top: 40px;
+}
+
+.benefits-contacts {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.benefits-contacts-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: #1e293b;
+}
+
+.benefits-contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.benefits-contact:last-child {
+  margin-bottom: 0;
+}
+
+.benefits-contact-icon {
+  color: #3b82f6;
+}
+
+.benefits-contact-info {
+  flex: 1;
+}
+
+.benefits-contact-title {
+  font-weight: 500;
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.benefits-contact-value {
+  margin: 0;
+  font-size: 15px;
+  color: #334155;
+}
+
+.benefits-important-dates {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.benefits-dates-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: #1e293b;
+}
+
+.benefits-dates-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-date-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits-date-item:last-child {
+  border-bottom: none;
+}
+
+.benefits-date {
+  font-weight: 600;
+  color: #3b82f6;
+  font-size: 14px;
+}
+
+.benefits-date-description {
+  color: #334155;
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .benefits-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefits-sidebar {
+    grid-row: 1;
+    margin-bottom: 24px;
+  }
+}

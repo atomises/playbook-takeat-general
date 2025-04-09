@@ -1,0 +1,55 @@
+
+.rules-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.rule-category-card {
+  height: 100%;
+}
+
+.rules-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.rules-section-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: #1e293b;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+.rules-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.rule-card {
+  height: 100%;
+}
+
+.conduct-list {
+  padding-left: 20px;
+  margin: 10px 0 0 0;
+}
+
+.conduct-list li {
+  margin-bottom: 8px;
+  color: #475569;
+}
+
+.rules-highlight-section {
+  margin-top: 40px;
+}
+
+.page-search-container {
+  margin-bottom: 32px;
+}

@@ -1,0 +1,30 @@
+
+{
+  "quotes": [
+    {
+      "text": "A inovação distingue um líder de um seguidor.",
+      "author": "Steve Jobs",
+      "variant": "primary"
+    },
+    {
+      "text": "A melhor maneira de prever o futuro é criá-lo.",
+      "author": "Peter Drucker",
+      "variant": "secondary"
+    },
+    {
+      "text": "Tente uma vez, não deu certo, tente de novo. Falhe de novo, falhe melhor.",
+      "author": "Samuel Beckett",
+      "variant": "gradient"
+    },
+    {
+      "text": "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+      "author": "Robert Collier",
+      "variant": "primary"
+    },
+    {
+      "text": "A simplicidade é o último grau de sofisticação.",
+      "author": "Leonardo da Vinci",
+      "variant": "gradient"
+    }
+  ]
+}

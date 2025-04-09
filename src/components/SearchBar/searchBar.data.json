@@ -1,0 +1,109 @@
+
+{
+  "searchItems": [
+    {
+      "id": "internal-rules",
+      "title": "Regras Internas",
+      "path": "/internal-rules",
+      "description": "Políticas e normas que regem o funcionamento interno da empresa",
+      "icon": "Book",
+      "category": "Playbook"
+    },
+    {
+      "id": "benefits",
+      "title": "Benefícios",
+      "path": "/benefits",
+      "description": "Informações sobre todos os benefícios oferecidos aos funcionários",
+      "icon": "Gift",
+      "category": "Playbook"
+    },
+    {
+      "id": "members",
+      "title": "Membros",
+      "path": "/members",
+      "description": "Lista de todos os colaboradores e suas funções",
+      "icon": "Users",
+      "category": "Playbook"
+    },
+    {
+      "id": "policies",
+      "title": "Políticas e Regulamentos",
+      "path": "/policies",
+      "description": "Documentação oficial sobre políticas corporativas",
+      "icon": "FileText",
+      "category": "Playbook"
+    },
+    {
+      "id": "paths",
+      "title": "Trilhas",
+      "path": "/paths",
+      "description": "Caminhos de desenvolvimento e carreira disponíveis",
+      "icon": "GitBranch",
+      "category": "Pra Seu Trabalho"
+    },
+    {
+      "id": "voice",
+      "title": "Tom de Voz",
+      "path": "/voice",
+      "description": "Diretrizes para comunicação e identidade da marca",
+      "icon": "MessageSquare",
+      "category": "Pra Seu Trabalho"
+    },
+    {
+      "id": "purchases",
+      "title": "Compras",
+      "path": "/purchases",
+      "description": "Protocolos para solicitação e aprovação de compras",
+      "icon": "ShoppingCart",
+      "category": "Pra Seu Trabalho"
+    },
+    {
+      "id": "rooms",
+      "title": "Salas",
+      "path": "/rooms",
+      "description": "Informações sobre salas de reuniões e espaços compartilhados",
+      "icon": "Home",
+      "category": "Pra Seu Trabalho"
+    },
+    {
+      "id": "office",
+      "title": "Escritório e Regras",
+      "path": "/office",
+      "description": "Normas para uso do espaço físico e convivência",
+      "icon": "Briefcase",
+      "category": "Pra Seu Trabalho"
+    },
+    {
+      "id": "calendar",
+      "title": "Calendário e Eventos",
+      "path": "/calendar",
+      "description": "Agenda de eventos corporativos e datas importantes",
+      "icon": "Calendar",
+      "category": "Pra Seu Trabalho"
+    },
+    {
+      "id": "product",
+      "title": "Nosso Produto",
+      "path": "/product",
+      "description": "Detalhes sobre os produtos e serviços oferecidos",
+      "icon": "Package",
+      "category": "Sobre"
+    },
+    {
+      "id": "history",
+      "title": "Nossa História",
+      "path": "/history",
+      "description": "A história e trajetória da empresa desde sua fundação",
+      "icon": "Clock",
+      "category": "Sobre"
+    },
+    {
+      "id": "culture",
+      "title": "Nossa Cultura",
+      "path": "/culture",
+      "description": "Valores, missão e visão que definem nossa cultura",
+      "icon": "Heart",
+      "category": "Sobre"
+    }
+  ]
+}

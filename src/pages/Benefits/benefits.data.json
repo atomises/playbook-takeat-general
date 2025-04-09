@@ -1,0 +1,178 @@
+
+{
+  "title": "Benefícios",
+  "description": "Nossa empresa oferece um pacote completo de benefícios para promover o bem-estar, desenvolvimento e qualidade de vida dos colaboradores. Conheça todos os benefícios disponíveis.",
+  "eligibility": "Todos os colaboradores com contrato CLT têm direito ao pacote completo de benefícios desde o primeiro dia. Colaboradores temporários e estagiários têm acesso a um conjunto específico de benefícios, detalhados em seus contratos.",
+  "categories": [
+    {
+      "id": "health",
+      "title": "Saúde e Bem-estar",
+      "benefits": [
+        {
+          "id": "healthplan",
+          "title": "Plano de Saúde",
+          "description": "Plano de saúde empresarial com cobertura nacional, incluindo dependentes diretos. São oferecidas três opções de planos com diferentes níveis de cobertura."
+        },
+        {
+          "id": "dentalplan",
+          "title": "Plano Odontológico",
+          "description": "Cobertura odontológica completa para colaboradores e dependentes, incluindo tratamentos preventivos e ortodônticos."
+        },
+        {
+          "id": "gympass",
+          "title": "Gympass",
+          "description": "Acesso a uma rede de academias e estúdios com valores subsidiados, incentivando a prática de atividades físicas."
+        },
+        {
+          "id": "mentalhealth",
+          "title": "Apoio Psicológico",
+          "description": "Programa de apoio com suporte psicológico online e presencial, com sessões gratuitas mensais para colaboradores."
+        }
+      ]
+    },
+    {
+      "id": "financial",
+      "title": "Benefícios Financeiros",
+      "benefits": [
+        {
+          "id": "mealallowance",
+          "title": "Vale Refeição",
+          "description": "Cartão de vale refeição com valor diário de R$ 40,00, recarga mensal feita no primeiro dia útil do mês."
+        },
+        {
+          "id": "foodallowance",
+          "title": "Vale Alimentação",
+          "description": "Cartão de vale alimentação com valor mensal de R$ 600,00, para compras em supermercados e estabelecimentos alimentícios."
+        },
+        {
+          "id": "profitsharing",
+          "title": "Participação nos Lucros",
+          "description": "Programa semestral de participação nos lucros baseado em metas individuais e coletivas, podendo chegar a até 3 salários por ano."
+        },
+        {
+          "id": "stockoptions",
+          "title": "Stock Options",
+          "description": "Programa de opção de compra de ações da empresa para colaboradores com mais de 1 ano, incentivando o compromisso de longo prazo."
+        }
+      ]
+    },
+    {
+      "id": "worklife",
+      "title": "Equilíbrio Vida-Trabalho",
+      "benefits": [
+        {
+          "id": "flexiblehours",
+          "title": "Horário Flexível",
+          "description": "Possibilidade de ajustar o horário de trabalho dentro de determinadas faixas, facilitando a conciliação com compromissos pessoais."
+        },
+        {
+          "id": "remotework",
+          "title": "Trabalho Remoto",
+          "description": "Política de trabalho híbrido que permite até 3 dias de trabalho remoto por semana, com equipamentos fornecidos pela empresa."
+        },
+        {
+          "id": "dayoff",
+          "title": "Dia de Folga no Aniversário",
+          "description": "Folga remunerada no dia do aniversário ou em data próxima, a ser combinada com o gestor."
+        },
+        {
+          "id": "sabbatical",
+          "title": "Licença Sabática",
+          "description": "Após 5 anos de empresa, possibilidade de tirar 1 mês de licença remunerada para desenvolvimento pessoal ou profissional."
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "title": "Desenvolvimento Profissional",
+      "benefits": [
+        {
+          "id": "educationalassistance",
+          "title": "Auxílio Educação",
+          "description": "Reembolso de até 70% para cursos, pós-graduações e certificações relacionadas à função ou carreira desejada."
+        },
+        {
+          "id": "languagecourses",
+          "title": "Cursos de Idiomas",
+          "description": "Parceria com escolas de idiomas oferecendo descontos especiais e subsídio parcial para colaboradores."
+        },
+        {
+          "id": "mentorship",
+          "title": "Programa de Mentoria",
+          "description": "Oportunidade de mentoria com líderes experientes da empresa ou do mercado, com encontros regulares e plano de desenvolvimento."
+        },
+        {
+          "id": "conferences",
+          "title": "Participação em Eventos",
+          "description": "Suporte para participação em conferências e eventos relevantes, incluindo custeio de ingressos e despesas relacionadas."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "id": "faq1",
+      "question": "Quando posso começar a usar o plano de saúde?",
+      "answer": "O plano de saúde é ativado no primeiro dia útil após a admissão. Você receberá um e-mail com orientações para cadastro no portal da operadora e solicitação de carteirinhas para dependentes, se aplicável."
+    },
+    {
+      "id": "faq2",
+      "question": "Como posso incluir dependentes nos planos de saúde e odontológico?",
+      "answer": "Para incluir dependentes, envie a documentação necessária (certidão de nascimento para filhos, certidão de casamento ou declaração de união estável para cônjuges) para o RH através do portal de benefícios. A inclusão é processada em até 5 dias úteis."
+    },
+    {
+      "id": "faq3",
+      "question": "O que preciso fazer para solicitar o auxílio educação?",
+      "answer": "Para solicitar o auxílio educação, preencha o formulário no Portal RH, anexando a proposta do curso e uma justificativa de como este contribuirá para sua carreira. Após aprovação do gestor e RH, o reembolso será processado mediante apresentação de comprovantes de pagamento."
+    },
+    {
+      "id": "faq4",
+      "question": "Como funciona o programa de stock options?",
+      "answer": "O programa de stock options é oferecido a colaboradores após completarem 1 ano de empresa. Você receberá uma oferta com o número de ações e preço de exercício, com um período de vesting de 4 anos. A cada aniversário de empresa, 25% das opções se tornarão disponíveis para exercício."
+    },
+    {
+      "id": "faq5",
+      "question": "Posso acumular os vales refeição e alimentação?",
+      "answer": "Sim, os valores depositados nos cartões de vale refeição e alimentação são cumulativos. Não há expiração para o saldo, então você pode acumular para usar quando precisar."
+    },
+    {
+      "id": "faq6",
+      "question": "Como solicitar a licença sabática?",
+      "answer": "Para solicitar a licença sabática, você deve ter no mínimo 5 anos de empresa e apresentar um plano de como utilizará esse tempo, seja para desenvolvimento pessoal ou profissional. A solicitação deve ser feita com 3 meses de antecedência e passará por aprovação do gestor e diretoria."
+    }
+  ],
+  "highlight": {
+    "text": "Acreditamos que benefícios de qualidade são um investimento no bem-estar e na produtividade dos nossos colaboradores, não um custo.",
+    "author": "Carlos Mendes, Diretor de Pessoas"
+  },
+  "contacts": [
+    {
+      "type": "email",
+      "title": "Dúvidas sobre Benefícios",
+      "value": "beneficios@empresa.com"
+    },
+    {
+      "type": "document",
+      "title": "Política Completa de Benefícios",
+      "value": "Disponível na intranet > Documentos > RH"
+    }
+  ],
+  "importantDates": [
+    {
+      "date": "Até o dia 15 de cada mês",
+      "description": "Prazo para solicitar reembolsos e enviar notas fiscais"
+    },
+    {
+      "date": "Até 31 de março",
+      "description": "Período de adesão ao Programa de Participação nos Lucros"
+    },
+    {
+      "date": "Abril e Outubro",
+      "description": "Meses de pagamento da Participação nos Lucros"
+    },
+    {
+      "date": "Janeiro e Julho",
+      "description": "Reajuste dos valores de vale refeição e alimentação"
+    }
+  ]
+}

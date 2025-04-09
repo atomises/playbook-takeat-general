@@ -1,0 +1,127 @@
+
+{
+  "title": "Regras Internas",
+  "description": "Conjunto de normas e princípios que guiam nosso trabalho e convivência no ambiente corporativo. Elas foram criadas para garantir um ambiente produtivo, respeitoso e colaborativo para todos.",
+  "categories": [
+    {
+      "id": "worktime",
+      "title": "Horário de Trabalho",
+      "description": "Diretrizes sobre horários flexíveis, registro de ponto e trabalho remoto"
+    },
+    {
+      "id": "conduct",
+      "title": "Código de Conduta",
+      "description": "Princípios éticos e comportamentos esperados de todos os colaboradores"
+    },
+    {
+      "id": "commonspaces",
+      "title": "Espaços Comuns",
+      "description": "Regras para uso e conservação das áreas compartilhadas da empresa"
+    },
+    {
+      "id": "communication",
+      "title": "Comunicação",
+      "description": "Diretrizes para comunicação interna e externa, incluindo uso de redes sociais"
+    }
+  ],
+  "workHours": {
+    "flexibleHours": "Adotamos uma política de horário flexível que permite aos colaboradores iniciarem seu dia de trabalho entre 8h e 10h da manhã, desde que cumpram a carga horária diária e estejam disponíveis durante o horário principal (10h às 16h).",
+    "rules": [
+      {
+        "id": "checkin",
+        "title": "Registro de Ponto",
+        "description": "Todos devem registrar o início e fim da jornada no sistema, mesmo em trabalho remoto."
+      },
+      {
+        "id": "remotework",
+        "title": "Trabalho Remoto",
+        "description": "Colaboradores podem trabalhar até 3 dias por semana remotamente, com autorização prévia do gestor."
+      },
+      {
+        "id": "meetings",
+        "title": "Horário de Reuniões",
+        "description": "Reuniões devem ser agendadas preferencialmente entre 10h e 16h e não podem ultrapassar 18h."
+      },
+      {
+        "id": "lunch",
+        "title": "Horário de Almoço",
+        "description": "O período de almoço deve ter no mínimo 30 minutos e no máximo 2 horas."
+      }
+    ]
+  },
+  "conductCode": [
+    {
+      "id": "respect",
+      "title": "Respeito e Inclusão",
+      "description": "Todos os colaboradores devem tratar colegas, parceiros e clientes com respeito, dignidade e profissionalismo.",
+      "subItems": [
+        "Não será tolerado qualquer tipo de discriminação ou assédio.",
+        "Valorize a diversidade de ideias, experiências e perspectivas.",
+        "Escute ativamente e considere diferentes pontos de vista.",
+        "Use linguagem inclusiva e respeitosa em todas as comunicações."
+      ]
+    },
+    {
+      "id": "confidentiality",
+      "title": "Confidencialidade",
+      "description": "Informações confidenciais da empresa, clientes e parceiros devem ser protegidas e não podem ser compartilhadas sem autorização apropriada.",
+      "subItems": [
+        "Não compartilhe informações confidenciais em redes sociais ou com pessoas não autorizadas.",
+        "Proteja documentos sensíveis, tanto físicos quanto digitais.",
+        "Quando necessário compartilhar informações, verifique se o destinatário está autorizado a recebê-las.",
+        "Mesmo após deixar a empresa, a obrigação de confidencialidade permanece."
+      ]
+    },
+    {
+      "id": "conflicts",
+      "title": "Conflitos de Interesse",
+      "description": "Colaboradores devem evitar situações onde interesses pessoais possam comprometer sua capacidade de agir no melhor interesse da empresa.",
+      "subItems": [
+        "Declare qualquer relacionamento pessoal ou financeiro que possa criar um conflito de interesse.",
+        "Não aceite presentes ou favores que possam influenciar decisões de negócios.",
+        "Evite usar recursos da empresa para benefício pessoal.",
+        "Consulte seu gestor ou o departamento de compliance em caso de dúvidas."
+      ]
+    },
+    {
+      "id": "resources",
+      "title": "Uso de Recursos da Empresa",
+      "description": "Os recursos da empresa, incluindo equipamentos, software e tempo, devem ser utilizados de forma responsável e para fins relacionados ao trabalho.",
+      "subItems": [
+        "Use equipamentos e materiais da empresa apenas para atividades profissionais.",
+        "Economize energia desligando equipamentos quando não estiverem em uso.",
+        "Respeite as licenças de software e direitos autorais.",
+        "Relate imediatamente qualquer dano ou perda de equipamento da empresa."
+      ]
+    }
+  ],
+  "commonAreas": {
+    "care": "Nossos espaços compartilhados são extensões de nossa cultura colaborativa. Todos são responsáveis por manter esses ambientes limpos, organizados e acolhedores para o uso coletivo.",
+    "areas": [
+      {
+        "id": "kitchen",
+        "name": "Cozinha e Copa",
+        "rules": "Limpe o que usar, não deixe pratos na pia, etiquete seus alimentos na geladeira e descarte o que não for mais consumir. A geladeira é limpa toda sexta-feira."
+      },
+      {
+        "id": "meetingrooms",
+        "name": "Salas de Reunião",
+        "rules": "Reserve com antecedência pelo sistema, cancele se não for usar, deixe a sala organizada após o uso e respeite os horários reservados."
+      },
+      {
+        "id": "restrooms",
+        "name": "Banheiros",
+        "rules": "Mantenha a limpeza, comunique qualquer problema ao facilities e economize água e papel."
+      },
+      {
+        "id": "recreational",
+        "name": "Área de Descompressão",
+        "rules": "Respeite o limite de ruído, organize os jogos e equipamentos após o uso e limite o tempo de utilização em horários de pico."
+      }
+    ]
+  },
+  "highlight": {
+    "text": "As regras existem não para limitar, mas para criar um ambiente onde todos possam prosperar com respeito mútuo e clareza.",
+    "author": "Marina Torres, CEO"
+  }
+}

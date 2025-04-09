@@ -1,0 +1,47 @@
+
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Ana Silva",
+      "role": "Desenvolvedora Full Stack",
+      "department": "Tecnologia",
+      "image": "/placeholder.svg",
+      "achievement": "Liderou a migração da plataforma para microserviços, reduzindo 40% do tempo de carregamento.",
+      "quote": "O melhor sobre trabalhar aqui é a liberdade para experimentar novas tecnologias e aprender constantemente.",
+      "stats": {
+        "projectsCompleted": 12,
+        "yearsAtCompany": 3,
+        "recommendations": 18
+      }
+    },
+    {
+      "id": "2",
+      "name": "Carlos Mendes",
+      "role": "Designer de Produto",
+      "department": "Design",
+      "image": "/placeholder.svg",
+      "achievement": "Redesenhou a experiência do usuário do nosso app principal, aumentando a retenção em 25%.",
+      "quote": "Design não é só sobre estética, é sobre resolver problemas reais dos usuários.",
+      "stats": {
+        "projectsCompleted": 8,
+        "yearsAtCompany": 2,
+        "recommendations": 14
+      }
+    },
+    {
+      "id": "3",
+      "name": "Juliana Costa",
+      "role": "Gerente de Contas",
+      "department": "Comercial",
+      "image": "/placeholder.svg",
+      "achievement": "Superou a meta de vendas em 150% no último trimestre, trazendo 5 novos clientes enterprise.",
+      "quote": "O segredo é entender profundamente as necessidades do cliente antes de oferecer soluções.",
+      "stats": {
+        "projectsCompleted": 20,
+        "yearsAtCompany": 4,
+        "recommendations": 22
+      }
+    }
+  ]
+}

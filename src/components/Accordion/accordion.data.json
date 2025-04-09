@@ -1,0 +1,21 @@
+
+{
+  "faqs": [
+    {
+      "title": "Como solicitar férias?",
+      "content": "Para solicitar férias, acesse o portal do RH, clique em 'Solicitações' e selecione 'Nova Solicitação de Férias'. Preencha o formulário com as datas desejadas e envie para aprovação do seu gestor."
+    },
+    {
+      "title": "Qual é a política de home office?",
+      "content": "Nossa política de home office permite até 3 dias por semana de trabalho remoto, com acordo prévio com o gestor. Os dias presenciais são definidos por cada equipe para garantir que as reuniões importantes possam acontecer presencialmente."
+    },
+    {
+      "title": "Como funciona o reembolso de despesas?",
+      "content": "Para solicitar reembolso de despesas, guarde todos os recibos, preencha o formulário de reembolso disponível no portal financeiro, anexe os comprovantes digitalizados e envie até o dia 25 de cada mês. O pagamento será processado na folha do mês seguinte."
+    },
+    {
+      "title": "Onde encontro os materiais de treinamento?",
+      "content": "Todos os materiais de treinamento estão disponíveis na plataforma de aprendizado corporativo, acessível pelo menu 'Trilhas' na barra lateral. Lá você encontrará cursos obrigatórios e opcionais para seu desenvolvimento."
+    }
+  ]
+}

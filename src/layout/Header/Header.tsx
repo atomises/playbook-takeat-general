@@ -1,7 +1,9 @@
 
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import { Menu } from 'lucide-react';
 import './Header.css';
+import searchData from '../../components/SearchBar/searchBar.data.json';
 
 interface HeaderProps {
   className?: string;
@@ -10,19 +12,17 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   const location = useLocation();
   
-  // Function to get page title based on current route
-  const getPageTitle = (): string => {
-    const path = location.pathname;
+  // Get the current page title from the search data
+  const getPageTitle = () => {
+    if (location.pathname === '/') return 'Home';
     
-    // Remove leading slash and split by additional slashes
-    const segments = path.substring(1).split('/');
-    if (segments[0] === '') return 'Home';
+    const currentPage = searchData.searchItems.find(
+      item => item.path === location.pathname
+    );
     
-    // Capitalize first letter and replace hyphens with spaces
-    return segments[0].charAt(0).toUpperCase() + 
-           segments[0].slice(1).replace(/-/g, ' ');
+    return currentPage ? currentPage.title : 'Página não encontrada';
   };
-
+  
   return (
     <header className={`app-header ${className}`}>
       <div className="header-content">

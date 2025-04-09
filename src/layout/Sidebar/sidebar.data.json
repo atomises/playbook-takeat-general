@@ -1,0 +1,95 @@
+
+{
+  "categories": [
+    {
+      "id": "main",
+      "title": "Principal",
+      "items": [
+        {
+          "id": "home",
+          "title": "Início",
+          "icon": "Home",
+          "path": "/"
+        },
+        {
+          "id": "search",
+          "title": "Busca",
+          "icon": "Search",
+          "path": "/search"
+        }
+      ]
+    },
+    {
+      "id": "company",
+      "title": "A Empresa",
+      "items": [
+        {
+          "id": "about",
+          "title": "Sobre Nós",
+          "icon": "Info",
+          "path": "/about"
+        },
+        {
+          "id": "mission",
+          "title": "Missão e Valores",
+          "icon": "Target",
+          "path": "/mission"
+        },
+        {
+          "id": "team",
+          "title": "Equipe",
+          "icon": "Users",
+          "path": "/team"
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Cultura",
+      "items": [
+        {
+          "id": "values",
+          "title": "Nossos Valores",
+          "icon": "Heart",
+          "path": "/culture"
+        },
+        {
+          "id": "practices",
+          "title": "Práticas",
+          "icon": "BookOpen",
+          "path": "/practices"
+        },
+        {
+          "id": "code",
+          "title": "Código de Conduta",
+          "icon": "FileText",
+          "path": "/code-of-conduct"
+        }
+      ]
+    },
+    {
+      "id": "processes",
+      "title": "Processos",
+      "items": [
+        {
+          "id": "workflow",
+          "title": "Fluxo de Trabalho",
+          "icon": "GitBranch",
+          "path": "/workflow"
+        },
+        {
+          "id": "meetings",
+          "title": "Reuniões",
+          "icon": "Calendar",
+          "path": "/meetings"
+        },
+        {
+          "id": "tools",
+          "title": "Ferramentas",
+          "icon": "Tool",
+          "path": "/tools"
+        }
+      ]
+    }
+  ]
+}

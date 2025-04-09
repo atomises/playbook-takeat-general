@@ -1,0 +1,63 @@
+
+{
+  "valores": [
+    {
+      "id": "transparencia",
+      "title": "Transparência",
+      "description": "Somos honestos e claros em tudo o que fazemos. Compartilhamos informações, conquistas e desafios abertamente, criando confiança entre todos os membros da equipe.",
+      "icon": "Eye"
+    },
+    {
+      "id": "colaboracao",
+      "title": "Colaboração",
+      "description": "Acreditamos que os melhores resultados vêm do trabalho em equipe. Valorizamos diferentes perspectivas e incentivamos a colaboração em todos os níveis.",
+      "icon": "Users"
+    },
+    {
+      "id": "inovacao",
+      "title": "Inovação",
+      "description": "Buscamos constantemente novas ideias e soluções criativas. Não temos medo de experimentar e aprender com erros para continuarmos evoluindo.",
+      "icon": "Lightbulb"
+    },
+    {
+      "id": "excelencia",
+      "title": "Excelência",
+      "description": "Comprometemo-nos com a qualidade em tudo o que fazemos. Buscamos sempre superar expectativas e entregar o melhor resultado possível.",
+      "icon": "Award"
+    },
+    {
+      "id": "respeito",
+      "title": "Respeito",
+      "description": "Tratamos todos com dignidade e consideração. Valorizamos a diversidade de ideias, experiências e perspectivas.",
+      "icon": "Heart"
+    },
+    {
+      "id": "responsabilidade",
+      "title": "Responsabilidade",
+      "description": "Assumimos a responsabilidade por nossas ações e decisões. Comprometemo-nos com resultados sustentáveis para nossos clientes, equipe e sociedade.",
+      "icon": "Shield"
+    }
+  ],
+  "principios": [
+    {
+      "title": "Cliente em Primeiro Lugar",
+      "description": "Todas as nossas decisões são tomadas pensando no benefício e satisfação dos nossos clientes. Eles são a razão da nossa existência."
+    },
+    {
+      "title": "Aprendizado Contínuo",
+      "description": "Incentivamos todos a buscar constantemente conhecimento e desenvolvimento. Acreditamos que o crescimento pessoal e profissional é uma jornada sem fim."
+    },
+    {
+      "title": "Comunicação Aberta",
+      "description": "Promovemos um ambiente onde todos se sintam à vontade para expressar suas ideias, preocupações e feedback. A comunicação honesta e respeitosa é essencial."
+    },
+    {
+      "title": "Bem-estar e Equilíbrio",
+      "description": "Valorizamos o bem-estar físico e mental da nossa equipe. Acreditamos que o equilíbrio entre vida pessoal e profissional é fundamental para o sucesso."
+    },
+    {
+      "title": "Impacto Positivo",
+      "description": "Buscamos gerar um impacto positivo não apenas nos negócios, mas também na sociedade e no meio ambiente. Queremos deixar o mundo melhor do que encontramos."
+    }
+  ]
+}

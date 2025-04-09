@@ -1,0 +1,41 @@
+
+{
+  "cards": [
+    {
+      "id": "mission",
+      "title": "Nossa Missão",
+      "description": "Entenda a missão e visão da nossa empresa, e como estamos trabalhando para alcançar nossos objetivos.",
+      "icon": "Target"
+    },
+    {
+      "id": "culture",
+      "title": "Cultura",
+      "description": "Descubra os valores que moldam nossa cultura e o que esperamos de cada membro da equipe.",
+      "icon": "Heart"
+    },
+    {
+      "id": "team",
+      "title": "Equipe",
+      "description": "Conheça as pessoas incríveis que fazem parte da nossa organização e como estamos estruturados.",
+      "icon": "Users"
+    },
+    {
+      "id": "processes",
+      "title": "Processos",
+      "description": "Aprenda sobre nossos processos internos e como trabalhamos no dia a dia.",
+      "icon": "ClipboardList"
+    },
+    {
+      "id": "tools",
+      "title": "Ferramentas",
+      "description": "Guia completo das ferramentas que utilizamos e como configurá-las corretamente.",
+      "icon": "Tool"
+    },
+    {
+      "id": "faq",
+      "title": "Perguntas Frequentes",
+      "description": "Respostas para as perguntas mais comuns que novos colaboradores geralmente têm.",
+      "icon": "HelpCircle"
+    }
+  ]
+}

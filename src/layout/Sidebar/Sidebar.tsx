@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import * as LucideIcons from 'lucide-react';
 import './Sidebar.css';
 import sidebarData from './sidebar.data.json';
 import logo from '../../assets/logo.svg';
@@ -24,10 +25,9 @@ const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
     collapsed: { width: '72px' }
   };
 
-  // Dynamically import icons from lucide-react
+  // Use imported LucideIcons to get icons dynamically
   const getIcon = (iconName: string) => {
-    const lucideIcons = require('lucide-react');
-    const Icon = lucideIcons[iconName];
+    const Icon = LucideIcons[iconName as keyof typeof LucideIcons];
     return Icon ? <Icon size={20} /> : null;
   };
 

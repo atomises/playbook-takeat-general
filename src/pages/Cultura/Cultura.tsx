@@ -1,9 +1,12 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, Award, Star } from 'lucide-react';
+import * as LucideIcons from 'lucide-react';
 import './Cultura.css';
 import data from './cultura.data.json';
+
+// Type assertion for dynamic icon lookup
+type IconComponentType = keyof typeof LucideIcons;
 
 const Cultura: React.FC = () => {
   const containerVariants = {
@@ -25,11 +28,13 @@ const Cultura: React.FC = () => {
     }
   };
 
-  // Dynamically import icons from lucide-react
+  // Fixed getIcon function with proper typing
   const getIcon = (iconName: string, size = 24) => {
-    const lucideIcons = require('lucide-react');
-    const Icon = lucideIcons[iconName];
-    return Icon ? <Icon size={size} /> : null;
+    if (iconName in LucideIcons) {
+      const Icon = LucideIcons[iconName as IconComponentType];
+      return <Icon size={size} />;
+    }
+    return null;
   };
 
   return (

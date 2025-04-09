@@ -12,6 +12,9 @@ interface SidebarProps {
   className?: string;
 }
 
+// Type assertion for dynamic icon lookup
+type IconComponentType = keyof typeof LucideIcons;
+
 const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
   const [collapsed, setCollapsed] = useState(false);
   const location = useLocation();
@@ -25,10 +28,13 @@ const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
     collapsed: { width: '72px' }
   };
 
-  // Use imported LucideIcons to get icons dynamically
+  // Fixed getIcon function with proper typing
   const getIcon = (iconName: string) => {
-    const IconComponent = LucideIcons[iconName as keyof typeof LucideIcons];
-    return IconComponent ? <IconComponent size={20} /> : null;
+    if (iconName in LucideIcons) {
+      const Icon = LucideIcons[iconName as IconComponentType];
+      return <Icon size={20} />;
+    }
+    return null;
   };
 
   return (

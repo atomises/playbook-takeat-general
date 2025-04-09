@@ -2,92 +2,140 @@
 {
   "categories": [
     {
-      "id": "main",
-      "title": "Principal",
+      "id": "playbook",
+      "title": "Playbook",
       "items": [
         {
-          "id": "home",
-          "title": "Início",
-          "icon": "Home",
-          "path": "/"
+          "id": "internal-rules",
+          "title": "Regras Internas",
+          "icon": "Book",
+          "path": "/internal-rules"
         },
         {
-          "id": "search",
-          "title": "Busca",
-          "icon": "Search",
-          "path": "/search"
-        }
-      ]
-    },
-    {
-      "id": "company",
-      "title": "A Empresa",
-      "items": [
-        {
-          "id": "about",
-          "title": "Sobre Nós",
-          "icon": "Info",
-          "path": "/about"
+          "id": "benefits",
+          "title": "Benefícios",
+          "icon": "Gift",
+          "path": "/benefits"
         },
         {
-          "id": "mission",
-          "title": "Missão e Valores",
-          "icon": "Target",
-          "path": "/mission"
-        },
-        {
-          "id": "team",
-          "title": "Equipe",
+          "id": "members",
+          "title": "Membros",
           "icon": "Users",
-          "path": "/team"
+          "path": "/members"
+        },
+        {
+          "id": "policies",
+          "title": "Políticas e Regulamentos",
+          "icon": "FileText",
+          "path": "/policies"
         }
       ]
     },
     {
-      "id": "culture",
-      "title": "Cultura",
+      "id": "work",
+      "title": "Pra Seu Trabalho",
       "items": [
         {
-          "id": "values",
-          "title": "Nossos Valores",
+          "id": "paths",
+          "title": "Trilhas",
+          "icon": "GitBranch",
+          "path": "/paths"
+        },
+        {
+          "id": "voice",
+          "title": "Tom de Voz",
+          "icon": "MessageSquare",
+          "path": "/voice"
+        },
+        {
+          "id": "purchases",
+          "title": "Compras",
+          "icon": "ShoppingCart",
+          "path": "/purchases"
+        },
+        {
+          "id": "rooms",
+          "title": "Salas",
+          "icon": "Home",
+          "path": "/rooms"
+        },
+        {
+          "id": "office",
+          "title": "Escritório e Regras",
+          "icon": "Briefcase",
+          "path": "/office"
+        },
+        {
+          "id": "calendar",
+          "title": "Calendário e Eventos",
+          "icon": "Calendar",
+          "path": "/calendar"
+        },
+        {
+          "id": "work-policies",
+          "title": "Políticas",
+          "icon": "ClipboardList",
+          "path": "/work-policies"
+        },
+        {
+          "id": "equipment",
+          "title": "Suporte de Equipamentos",
+          "icon": "Monitor",
+          "path": "/equipment"
+        },
+        {
+          "id": "leadership",
+          "title": "Portal de Líderes",
+          "icon": "Award",
+          "path": "/leadership"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "Sobre",
+      "items": [
+        {
+          "id": "product",
+          "title": "Nosso Produto",
+          "icon": "Package",
+          "path": "/product"
+        },
+        {
+          "id": "history",
+          "title": "Nossa História",
+          "icon": "Clock",
+          "path": "/history"
+        },
+        {
+          "id": "culture",
+          "title": "Nossa Cultura",
           "icon": "Heart",
           "path": "/culture"
         },
         {
-          "id": "practices",
-          "title": "Práticas",
+          "id": "partners",
+          "title": "Parceiros",
+          "icon": "Handshake",
+          "path": "/partners"
+        },
+        {
+          "id": "dictionary",
+          "title": "Dicionário da Empresa",
           "icon": "BookOpen",
-          "path": "/practices"
+          "path": "/dictionary"
         },
         {
-          "id": "code",
-          "title": "Código de Conduta",
-          "icon": "FileText",
-          "path": "/code-of-conduct"
-        }
-      ]
-    },
-    {
-      "id": "processes",
-      "title": "Processos",
-      "items": [
-        {
-          "id": "workflow",
-          "title": "Fluxo de Trabalho",
-          "icon": "GitBranch",
-          "path": "/workflow"
+          "id": "strategy",
+          "title": "Estratégia 2025",
+          "icon": "Target",
+          "path": "/strategy"
         },
         {
-          "id": "meetings",
-          "title": "Reuniões",
-          "icon": "Calendar",
-          "path": "/meetings"
-        },
-        {
-          "id": "tools",
-          "title": "Ferramentas",
-          "icon": "Tool",
-          "path": "/tools"
+          "id": "organization",
+          "title": "Quadro de Organização",
+          "icon": "Users",
+          "path": "/organization"
         }
       ]
     }

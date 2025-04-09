@@ -133,7 +133,7 @@
     transition: transform 0.3s ease;
   }
   
-  .sidebar.expanded {
+  .sidebar.mobile-open {
     transform: translateX(0);
   }
 }

@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -10,15 +10,30 @@ import { getIconByName } from '../../utils/iconUtils';
 
 interface SidebarProps {
   className?: string;
+  onCollapsedChange?: (collapsed: boolean) => void;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
+const Sidebar: React.FC<SidebarProps> = ({ 
+  className = '', 
+  onCollapsedChange 
+}) => {
   const [collapsed, setCollapsed] = useState(false);
   const location = useLocation();
 
   const toggleSidebar = () => {
-    setCollapsed(!collapsed);
+    const newCollapsedState = !collapsed;
+    setCollapsed(newCollapsedState);
+    if (onCollapsedChange) {
+      onCollapsedChange(newCollapsedState);
+    }
   };
+
+  // Notify parent component of initial collapsed state
+  useEffect(() => {
+    if (onCollapsedChange) {
+      onCollapsedChange(collapsed);
+    }
+  }, []);
 
   const sidebarVariants = {
     expanded: { width: '280px' },

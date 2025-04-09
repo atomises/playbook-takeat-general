@@ -5,15 +5,143 @@ import MainLayout from '../layout/MainLayout/MainLayout';
 import Home from '../pages/Home/Home';
 import Cultura from '../pages/Cultura/Cultura';
 import NotFound from '../pages/NotFound';
+import PlaceholderPage from '../pages/PlaceholderPage/PlaceholderPage';
 
 const AppRoutes: React.FC = () => {
   return (
     <Routes>
+      {/* Home page */}
       <Route 
         path="/" 
         element={
           <MainLayout>
             <Home />
+          </MainLayout>
+        } 
+      />
+      
+      {/* Playbook section */}
+      <Route 
+        path="/internal-rules" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Regras Internas" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/benefits" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Benefícios" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/members" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Membros" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/policies" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Políticas e Regulamentos" />
+          </MainLayout>
+        } 
+      />
+      
+      {/* Work section */}
+      <Route 
+        path="/paths" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Trilhas" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/voice" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Tom de Voz" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/purchases" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Compras" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/rooms" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Salas" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/office" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Escritório e Regras" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/calendar" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Calendário e Eventos" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/work-policies" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Políticas" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/equipment" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Suporte de Equipamentos" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/leadership" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Portal de Líderes" />
+          </MainLayout>
+        } 
+      />
+      
+      {/* About section */}
+      <Route 
+        path="/product" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Nosso Produto" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/history" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Nossa História" />
           </MainLayout>
         } 
       />
@@ -25,6 +153,40 @@ const AppRoutes: React.FC = () => {
           </MainLayout>
         } 
       />
+      <Route 
+        path="/partners" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Parceiros" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/dictionary" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Dicionário da Empresa" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/strategy" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Estratégia 2025" />
+          </MainLayout>
+        } 
+      />
+      <Route 
+        path="/organization" 
+        element={
+          <MainLayout>
+            <PlaceholderPage title="Quadro de Organização" />
+          </MainLayout>
+        } 
+      />
+      
+      {/* 404 page */}
       <Route 
         path="*" 
         element={

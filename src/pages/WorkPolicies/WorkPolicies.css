@@ -2,8 +2,130 @@
 .work-policies-page {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
   padding-bottom: 2rem;
+}
+
+.policy-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.policy-category {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.policy-category.expanded {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.category-header:hover {
+  background-color: #f9f9f9;
+}
+
+.category-icon-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.category-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f7ff;
+  border-radius: 50%;
+  color: #3b82f6;
+}
+
+.category-title {
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.toggle-icon {
+  color: #666;
+}
+
+.policy-content {
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.policy-summary {
+  background-color: #f0f7ff;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.policy-summary p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.policy-section {
+  margin-bottom: 1.5rem;
+}
+
+.policy-section h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #3b82f6;
+}
+
+.policy-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.policy-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.channel-card {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.channel-name {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.channel-purpose,
+.channel-expectations {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .section-title {
@@ -11,268 +133,60 @@
   font-weight: 600;
   margin-bottom: 1.5rem;
   color: #333;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
 }
 
-/* Grid de políticas */
-.policies-grid {
+.contacts-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
-.policy-card {
-  background-color: #f8f9fa;
+.contact-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  transition: transform 0.2s, box-shadow 0.2s;
-  border: 1px solid #e9ecef;
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.policy-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.policy-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  background-color: rgba(66, 99, 235, 0.1);
-  border-radius: 8px;
-  color: #4263eb;
-  margin-bottom: 1rem;
-}
-
-.policy-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #212529;
-}
-
-.policy-description {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: #495057;
-  margin-bottom: 1rem;
-}
-
-.policy-highlights {
-  margin-top: auto;
-  margin-bottom: 1.5rem;
-}
-
-.policy-highlights h4 {
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  color: #343a40;
-}
-
-.policy-highlights ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.policy-highlights li {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.85rem;
-  color: #495057;
-  line-height: 1.4;
-}
-
-.policy-highlights li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #4263eb;
-  font-weight: bold;
-}
-
-.policy-details-btn {
-  padding: 0.75rem;
-  background-color: #f1f3f5;
-  color: #495057;
-  border: none;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  margin-top: auto;
-}
-
-.policy-details-btn:hover {
-  background-color: #e9ecef;
-}
-
-/* Avisos importantes */
-.notices-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.notice-card {
-  display: flex;
-  gap: 1rem;
-  background-color: #fff3bf;
-  border-left: 4px solid #fcc419;
-  border-radius: 0 8px 8px 0;
-  padding: 1.5rem;
-}
-
-.notice-icon {
-  color: #f59f00;
-  flex-shrink: 0;
-}
-
-.notice-content {
-  flex: 1;
-}
-
-.notice-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.notice-title {
+.department-name {
   font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0;
-  color: #343a40;
-}
-
-.notice-date {
-  font-size: 0.85rem;
-  color: #6c757d;
-  font-weight: 500;
-}
-
-.notice-description {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: #495057;
-  margin: 0;
-}
-
-/* Trabalho remoto */
-.remote-work-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 2rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.remote-work-image {
-  height: 100%;
-}
-
-.remote-work-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.remote-work-content {
-  padding: 2rem;
-}
-
-.remote-work-content h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
+  margin-top: 0;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
 }
 
-.remote-work-content > p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #495057;
-  margin-bottom: 1.5rem;
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: #3b82f6;
 }
 
-.remote-work-guidelines {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.5rem;
-}
-
-.guideline h4 {
-  font-size: 1rem;
-  font-weight: 600;
+.contact-topics h4 {
+  font-size: 0.95rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
-  color: #343a40;
 }
 
-.guideline p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: #495057;
+.contact-topics ul {
   margin: 0;
+  padding-left: 1.25rem;
 }
 
-/* FAQ */
-.more-questions {
-  margin-top: 2rem;
-  text-align: center;
-  padding: 1.5rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-}
-
-.more-questions p {
-  margin-bottom: 0.5rem;
-  color: #495057;
-}
-
-.contact-link {
-  color: #4263eb;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.contact-link:hover {
-  text-decoration: underline;
-}
-
-/* Responsivo */
-@media (max-width: 992px) {
-  .remote-work-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .remote-work-image {
-    height: 300px;
-  }
+.contact-topics li {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
 }
 
 @media (max-width: 768px) {
-  .policies-grid {
+  .channels-grid,
+  .contacts-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .remote-work-guidelines {
-    grid-template-columns: 1fr;
-  }
-  
-  .notice-header {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }

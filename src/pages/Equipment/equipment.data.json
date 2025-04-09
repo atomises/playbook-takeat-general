@@ -1,0 +1,204 @@
+
+{
+  "title": "Suporte de Equipamentos",
+  "description": "Informações sobre solicitação, manutenção e suporte para equipamentos de trabalho.",
+  "equipment_types": [
+    {
+      "type": "Computadores",
+      "description": "Notebooks, desktops e acessórios para uso no escritório ou home office.",
+      "items": [
+        {
+          "name": "MacBook Pro 14\"",
+          "specs": "Apple M1 Pro, 16GB RAM, 512GB SSD",
+          "eligible_for": "Desenvolvedores, Designers, Gerentes de Produto",
+          "replacement_cycle": "3 anos"
+        },
+        {
+          "name": "MacBook Air 13\"",
+          "specs": "Apple M1, 8GB RAM, 256GB SSD",
+          "eligible_for": "Marketing, Vendas, Recursos Humanos, Administrativo",
+          "replacement_cycle": "3 anos"
+        },
+        {
+          "name": "Dell XPS 13",
+          "specs": "Intel Core i7, 16GB RAM, 512GB SSD, Windows 11 Pro",
+          "eligible_for": "Finanças, Operações, Preferem Windows",
+          "replacement_cycle": "3 anos"
+        },
+        {
+          "name": "Desktop ThinkCentre",
+          "specs": "Intel Core i7, 32GB RAM, 1TB SSD, Windows 11 Pro",
+          "eligible_for": "Apenas para uso no escritório, estações fixas",
+          "replacement_cycle": "4 anos"
+        }
+      ]
+    },
+    {
+      "type": "Monitores",
+      "description": "Monitores para uso no escritório ou em casa, oferecendo maior produtividade.",
+      "items": [
+        {
+          "name": "Monitor Dell 27\" 4K",
+          "specs": "3840x2160, 60Hz, IPS",
+          "eligible_for": "Desenvolvedores, Designers, Gerentes de Produto",
+          "replacement_cycle": "5 anos"
+        },
+        {
+          "name": "Monitor Dell 24\" Full HD",
+          "specs": "1920x1080, 60Hz, IPS",
+          "eligible_for": "Todos os colaboradores",
+          "replacement_cycle": "5 anos"
+        },
+        {
+          "name": "Monitor LG UltraWide 34\"",
+          "specs": "3440x1440, 75Hz, IPS",
+          "eligible_for": "Designers, Desenvolvedores (mediante aprovação)",
+          "replacement_cycle": "5 anos"
+        }
+      ]
+    },
+    {
+      "type": "Acessórios",
+      "description": "Periféricos e acessórios para complementar seu equipamento principal.",
+      "items": [
+        {
+          "name": "Teclado e Mouse sem fio Logitech",
+          "specs": "MX Keys e MX Master 3",
+          "eligible_for": "Todos os colaboradores",
+          "replacement_cycle": "3 anos ou quando necessário"
+        },
+        {
+          "name": "Headset Jabra",
+          "specs": "Conexão USB, cancelamento de ruído",
+          "eligible_for": "Todos os colaboradores",
+          "replacement_cycle": "2 anos ou quando necessário"
+        },
+        {
+          "name": "Dock Station",
+          "specs": "USB-C, suporte a múltiplos monitores, ethernet",
+          "eligible_for": "Colaboradores em home office frequente",
+          "replacement_cycle": "3 anos"
+        },
+        {
+          "name": "Webcam Logitech",
+          "specs": "1080p, microfone integrado",
+          "eligible_for": "Colaboradores em home office frequente",
+          "replacement_cycle": "3 anos"
+        }
+      ]
+    },
+    {
+      "type": "Smartphones",
+      "description": "Dispositivos móveis para colaboradores que necessitam mobilidade e comunicação constante.",
+      "items": [
+        {
+          "name": "iPhone 13",
+          "specs": "128GB",
+          "eligible_for": "Diretores, Gerentes, Equipe de Vendas Externa",
+          "replacement_cycle": "2 anos"
+        },
+        {
+          "name": "Samsung Galaxy S21",
+          "specs": "128GB",
+          "eligible_for": "Diretores, Gerentes, Equipe de Vendas Externa (preferem Android)",
+          "replacement_cycle": "2 anos"
+        }
+      ]
+    }
+  ],
+  "request_process": {
+    "title": "Como Solicitar Equipamentos",
+    "steps": [
+      "Acesse o Portal de TI através da intranet",
+      "Selecione a opção 'Solicitar Equipamento' no menu",
+      "Escolha a categoria e o tipo de equipamento desejado",
+      "Justifique a necessidade do equipamento",
+      "Aguarde a aprovação do seu gestor e do departamento de TI",
+      "Após aprovado, o equipamento será preparado e entregue em até 5 dias úteis (escritório) ou enviado por transportadora (home office)"
+    ],
+    "new_hire": "Para novos colaboradores, o gestor deve solicitar os equipamentos com pelo menos 7 dias de antecedência à data de início, informando o cargo e necessidades específicas."
+  },
+  "support": {
+    "title": "Suporte Técnico",
+    "channels": [
+      {
+        "name": "Portal de Suporte",
+        "description": "Abra chamados para qualquer problema relacionado a equipamentos ou software",
+        "url": "https://suporte.empresa.com.br",
+        "response_time": "Até 4 horas em dias úteis"
+      },
+      {
+        "name": "Chat de Suporte",
+        "description": "Atendimento em tempo real para questões simples e orientações",
+        "url": "https://chat.empresa.com.br/suporte",
+        "response_time": "Imediato (horário comercial)"
+      },
+      {
+        "name": "Email",
+        "description": "Para questões não urgentes ou fora do horário comercial",
+        "url": "suporte@empresa.com",
+        "response_time": "Até 24 horas em dias úteis"
+      },
+      {
+        "name": "Telefone",
+        "description": "Suporte por telefone para problemas urgentes",
+        "url": "Ramal 5700 ou +55 11 3333-7000",
+        "response_time": "Imediato (horário comercial)"
+      }
+    ],
+    "business_hours": "Segunda a Sexta, das 8h às 18h",
+    "emergency": "Para emergências fora do horário comercial, contate o número de plantão: +55 11 98765-4321"
+  },
+  "maintenance": {
+    "title": "Manutenção Preventiva",
+    "schedule": [
+      "Notebooks e Desktops: Verificação trimestral de performance, atualização de softwares e limpeza de arquivos temporários",
+      "Monitores e Acessórios: Verificação semestral de funcionamento e limpeza física",
+      "Smartphones: Atualização bimestral de sistemas operacionais e aplicativos corporativos"
+    ],
+    "tips": [
+      "Mantenha seu equipamento atualizado instalando as atualizações recomendadas pelo time de TI",
+      "Não instale softwares não homologados pela empresa",
+      "Evite acumular arquivos no dispositivo, utilize os serviços de nuvem corporativos",
+      "Desligue completamente os dispositivos pelo menos uma vez por semana"
+    ]
+  },
+  "return": {
+    "title": "Devolução de Equipamentos",
+    "when": [
+      "Ao término do vínculo empregatício",
+      "Quando solicitar upgrade ou troca de equipamento",
+      "Em caso de afastamento prolongado (licenças acima de 60 dias)"
+    ],
+    "process": [
+      "Faça backup de seus arquivos pessoais (se houver)",
+      "Remova quaisquer acessórios pessoais (protetor de tela, case, etc.)",
+      "Agende a devolução com o time de TI via Portal de Suporte",
+      "Entregue todos os itens (equipamento principal e acessórios) na data agendada",
+      "Receba o termo de devolução assinado pelo responsável de TI"
+    ],
+    "remote_return": "Para colaboradores remotos, a empresa enviará um kit de devolução com embalagem adequada e etiqueta de envio pré-paga."
+  },
+  "faqs": [
+    {
+      "question": "Posso utilizar meu próprio equipamento para trabalhar?",
+      "answer": "Não recomendamos o uso de equipamentos pessoais para trabalho por questões de segurança e padronização. A empresa fornece os equipamentos necessários para todas as funções."
+    },
+    {
+      "question": "O que fazer se meu equipamento for roubado ou extraviado?",
+      "answer": "Comunique imediatamente ao departamento de TI e registre um boletim de ocorrência. Para dispositivos móveis, o departamento de TI pode realizar o bloqueio remoto para proteger os dados da empresa."
+    },
+    {
+      "question": "Posso solicitar acessórios adicionais que não estão na lista padrão?",
+      "answer": "Sim, mediante justificativa e aprovação do seu gestor. Abra um chamado no Portal de Suporte especificando o item desejado e a razão da solicitação."
+    },
+    {
+      "question": "Como proceder se precisar de software específico para minha função?",
+      "answer": "Abra um chamado no Portal de Suporte solicitando a instalação do software. A equipe de TI avaliará a compatibilidade, segurança e licenciamento antes da aprovação."
+    },
+    {
+      "question": "O que acontece se eu danificar o equipamento acidentalmente?",
+      "answer": "Informe ao suporte de TI imediatamente. A empresa cobre danos acidentais, mas casos de negligência podem ser avaliados individualmente."
+    }
+  ]
+}

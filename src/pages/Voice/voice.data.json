@@ -1,0 +1,143 @@
+
+{
+  "title": "Tom de Voz",
+  "description": "Guia para comunicação consistente com nossa marca e valores",
+  "principles": [
+    {
+      "title": "Claro e Direto",
+      "description": "Comunicamos de forma objetiva e transparente, evitando jargões desnecessários.",
+      "examples": [
+        {
+          "good": "Vamos ajudar você a configurar sua conta em três passos simples.",
+          "bad": "Iremos proceder com a inicialização do seu perfil através de uma série de procedimentos simplificados."
+        },
+        {
+          "good": "Ocorreu um problema com o pagamento. Tente novamente com outro cartão.",
+          "bad": "Detectamos uma anomalia no processamento da sua transação financeira. Recomendamos a utilização de um método alternativo."
+        }
+      ]
+    },
+    {
+      "title": "Amigável e Humano",
+      "description": "Falamos como pessoas reais, de forma calorosa e acessível.",
+      "examples": [
+        {
+          "good": "Oi João! Tudo bem? Estamos felizes em ter você conosco.",
+          "bad": "Prezado usuário, confirmamos o recebimento de sua inscrição em nossa plataforma."
+        },
+        {
+          "good": "Entendemos sua frustração. Vamos trabalhar juntos para resolver isso.",
+          "bad": "Reconhecemos o inconveniente causado e procederemos com a análise da situação."
+        }
+      ]
+    },
+    {
+      "title": "Inspirador e Positivo",
+      "description": "Transmitimos otimismo e possibilidades, mesmo em situações desafiadoras.",
+      "examples": [
+        {
+          "good": "Você está a um passo de transformar a maneira como gerencia seus projetos.",
+          "bad": "Este software permite o gerenciamento eficiente de projetos."
+        },
+        {
+          "good": "Ops! Encontramos um pequeno problema, mas não se preocupe - vamos resolver rapidinho.",
+          "bad": "Erro encontrado. Tente novamente mais tarde."
+        }
+      ]
+    },
+    {
+      "title": "Inclusivo e Respeitoso",
+      "description": "Comunicamos respeitando a diversidade e evitando estereótipos.",
+      "examples": [
+        {
+          "good": "Envie para a equipe responsável pelo projeto.",
+          "bad": "Envie para os rapazes da TI."
+        },
+        {
+          "good": "Parabéns pela conquista!",
+          "bad": "Nem mesmo você acreditava que conseguiria, hein?"
+        }
+      ]
+    }
+  ],
+  "channels": [
+    {
+      "name": "Email",
+      "guidelines": [
+        "Use uma linha de assunto clara e específica",
+        "Comece com uma saudação personalizada",
+        "Mantenha parágrafos curtos e escanneáveis",
+        "Inclua uma assinatura com contatos alternativos",
+        "Evite excesso de formatação e cores"
+      ],
+      "examples": {
+        "subject": "Seu acesso à plataforma foi confirmado",
+        "greeting": "Olá Ana,",
+        "body": "Estamos felizes em confirmar que seu acesso à plataforma foi ativado com sucesso!\n\nVocê já pode fazer login usando seu email e a senha que você cadastrou. Caso precise de ajuda para começar, preparamos um guia rápido que você pode acessar aqui.\n\nEstamos à disposição para qualquer dúvida.",
+        "closing": "Até breve,\nEquipe de Suporte"
+      }
+    },
+    {
+      "name": "Redes Sociais",
+      "guidelines": [
+        "Adapte o tom para cada plataforma específica",
+        "Use linguagem mais casual e dinâmica",
+        "Responda comentários e mensagens prontamente",
+        "Utilize emojis com moderação",
+        "Mantenha a comunicação breve e direta"
+      ],
+      "examples": {
+        "linkedin": "Estamos expandindo nossa equipe! Buscamos profissionais apaixonados por inovação para nosso time de desenvolvimento. Confira as vagas no link. #Oportunidades #TechJobs",
+        "instagram": "✨ Nova funcionalidade chegando! 📱 Deslize para conhecer o recurso que vai transformar sua experiência. Conta pra gente o que achou nos comentários! 💬",
+        "twitter": "Acabamos de lançar nossa versão 2.0! Mais rápida, intuitiva e com todos os recursos que vocês pediram. Vem conferir: [link]"
+      }
+    },
+    {
+      "name": "Documentação Técnica",
+      "guidelines": [
+        "Mantenha explicações claras e precisas",
+        "Use tom instrutivo sem ser condescendente",
+        "Inclua exemplos práticos para cada conceito",
+        "Organize o conteúdo em seções lógicas",
+        "Evite humor ou linguagem muito casual"
+      ],
+      "examples": {
+        "title": "Guia de Integração da API",
+        "intro": "Este guia ajudará você a integrar nossa API em sua aplicação. Abordamos desde a autenticação até exemplos de chamadas para cada endpoint.",
+        "step": "Para autenticar sua aplicação, envie uma requisição POST para /auth com suas credenciais no formato JSON, conforme exemplo abaixo:",
+        "code": "{\n  \"client_id\": \"seu_client_id\",\n  \"client_secret\": \"seu_client_secret\"\n}"
+      }
+    }
+  ],
+  "vocabulary": {
+    "preferred": [
+      {
+        "use": "Ajudar",
+        "instead_of": "Assistir"
+      },
+      {
+        "use": "Simples",
+        "instead_of": "Básico"
+      },
+      {
+        "use": "Criar",
+        "instead_of": "Gerar"
+      },
+      {
+        "use": "Melhoria",
+        "instead_of": "Upgrade"
+      },
+      {
+        "use": "Equipe",
+        "instead_of": "Pessoal/Galera"
+      }
+    ],
+    "avoid": [
+      "Obviamente",
+      "Na verdade",
+      "Como você deve saber",
+      "Facilmente",
+      "Simplesmente"
+    ]
+  }
+}

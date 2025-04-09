@@ -1,0 +1,229 @@
+
+{
+  "title": "Links Úteis",
+  "description": "Documentação e recursos importantes para todas as equipes",
+  "categories": [
+    {
+      "id": "engineering",
+      "title": "Engenharia",
+      "icon": "Code",
+      "links": [
+        {
+          "title": "Guia de Arquitetura",
+          "description": "Padrões e práticas de arquitetura de software da empresa",
+          "url": "https://docs.company.com/engineering/architecture",
+          "icon": "Building"
+        },
+        {
+          "title": "Style Guide Frontend",
+          "description": "Padrões de codificação e componentes para desenvolvedores frontend",
+          "url": "https://docs.company.com/engineering/frontend",
+          "icon": "Layout"
+        },
+        {
+          "title": "Documentação APIs",
+          "description": "Referência completa das APIs internas e externas",
+          "url": "https://docs.company.com/engineering/api",
+          "icon": "FileJson"
+        },
+        {
+          "title": "Ambiente de Desenvolvimento",
+          "description": "Instruções para configuração do ambiente de desenvolvimento",
+          "url": "https://docs.company.com/engineering/setup",
+          "icon": "Terminal"
+        },
+        {
+          "title": "Padrões de Testes",
+          "description": "Guia para implementação de testes unitários, integração e e2e",
+          "url": "https://docs.company.com/engineering/testing",
+          "icon": "Ruler"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design",
+      "icon": "Palette",
+      "links": [
+        {
+          "title": "Design System",
+          "description": "Nossa biblioteca de componentes, padrões e diretrizes visuais",
+          "url": "https://design.company.com",
+          "icon": "Component"
+        },
+        {
+          "title": "Biblioteca de Ícones",
+          "description": "Conjunto completo de ícones utilizados nos produtos",
+          "url": "https://design.company.com/icons",
+          "icon": "Shapes"
+        },
+        {
+          "title": "Guia de Marca",
+          "description": "Uso de logo, cores, fontes e elementos da identidade visual",
+          "url": "https://design.company.com/brand",
+          "icon": "Brush"
+        },
+        {
+          "title": "Templates Figma",
+          "description": "Arquivos e templates oficiais para design de interfaces",
+          "url": "https://design.company.com/templates",
+          "icon": "Figma"
+        },
+        {
+          "title": "Pesquisas de Usuários",
+          "description": "Resultados e insights das pesquisas com usuários",
+          "url": "https://design.company.com/research",
+          "icon": "Users"
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "title": "Produto",
+      "icon": "Package",
+      "links": [
+        {
+          "title": "Roadmap do Produto",
+          "description": "Planejamento e cronograma de lançamentos",
+          "url": "https://product.company.com/roadmap",
+          "icon": "Map"
+        },
+        {
+          "title": "Métricas e Analytics",
+          "description": "Dashboards de performance e métricas principais",
+          "url": "https://product.company.com/metrics",
+          "icon": "BarChart"
+        },
+        {
+          "title": "Feedback de Usuários",
+          "description": "Portal de feedback e feature requests",
+          "url": "https://product.company.com/feedback",
+          "icon": "MessageSquare"
+        },
+        {
+          "title": "Especificações de Requisitos",
+          "description": "Documentação detalhada de requisitos de produtos",
+          "url": "https://product.company.com/requirements",
+          "icon": "ClipboardList"
+        },
+        {
+          "title": "Processos de Product Discovery",
+          "description": "Metodologias e frameworks para validação de ideias",
+          "url": "https://product.company.com/discovery",
+          "icon": "Search"
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Marketing",
+      "icon": "TrendingUp",
+      "links": [
+        {
+          "title": "Calendário de Campanhas",
+          "description": "Cronograma de campanhas de marketing e eventos",
+          "url": "https://marketing.company.com/calendar",
+          "icon": "Calendar"
+        },
+        {
+          "title": "Material Promocional",
+          "description": "Artes, banners e materiais para campanhas",
+          "url": "https://marketing.company.com/materials",
+          "icon": "Image"
+        },
+        {
+          "title": "Guia de SEO",
+          "description": "Melhores práticas e estratégias para otimização de busca",
+          "url": "https://marketing.company.com/seo",
+          "icon": "Search"
+        },
+        {
+          "title": "Social Media Guidelines",
+          "description": "Diretrizes para comunicação nas redes sociais",
+          "url": "https://marketing.company.com/social",
+          "icon": "Share2"
+        },
+        {
+          "title": "Métricas de Marketing",
+          "description": "Dashboards com KPIs e métricas de marketing",
+          "url": "https://marketing.company.com/metrics",
+          "icon": "PieChart"
+        }
+      ]
+    },
+    {
+      "id": "sales",
+      "title": "Vendas",
+      "icon": "DollarSign",
+      "links": [
+        {
+          "title": "CRM e Pipeline",
+          "description": "Acesso ao sistema de CRM e pipeline de vendas",
+          "url": "https://sales.company.com/crm",
+          "icon": "Users"
+        },
+        {
+          "title": "Catálogo de Produtos",
+          "description": "Informações detalhadas sobre produtos e preços",
+          "url": "https://sales.company.com/catalog",
+          "icon": "ShoppingBag"
+        },
+        {
+          "title": "Scripts de Vendas",
+          "description": "Scripts e argumentos para abordagem de clientes",
+          "url": "https://sales.company.com/scripts",
+          "icon": "FileText"
+        },
+        {
+          "title": "Contratos e Documentos",
+          "description": "Templates de contratos e documentos legais",
+          "url": "https://sales.company.com/contracts",
+          "icon": "FileText"
+        },
+        {
+          "title": "Programa de Comissões",
+          "description": "Estrutura e cálculo de comissões",
+          "url": "https://sales.company.com/commissions",
+          "icon": "Percent"
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Suporte",
+      "icon": "LifeBuoy",
+      "links": [
+        {
+          "title": "Base de Conhecimento",
+          "description": "Artigos e soluções para problemas comuns",
+          "url": "https://support.company.com/kb",
+          "icon": "BookOpen"
+        },
+        {
+          "title": "Fluxos de Atendimento",
+          "description": "Processos e procedimentos para atendimento ao cliente",
+          "url": "https://support.company.com/flows",
+          "icon": "GitBranch"
+        },
+        {
+          "title": "Status de Sistemas",
+          "description": "Estado atual dos sistemas e histórico de incidentes",
+          "url": "https://status.company.com",
+          "icon": "Activity"
+        },
+        {
+          "title": "Templates de Respostas",
+          "description": "Modelos padronizados para respostas ao cliente",
+          "url": "https://support.company.com/templates",
+          "icon": "MessageSquare"
+        },
+        {
+          "title": "Escalação de Problemas",
+          "description": "Matriz de escalação e contatos para problemas críticos",
+          "url": "https://support.company.com/escalation",
+          "icon": "AlertTriangle"
+        }
+      ]
+    }
+  ]
+}

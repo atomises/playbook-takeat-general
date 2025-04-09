@@ -1,0 +1,163 @@
+
+{
+  "title": "Calendário e Eventos",
+  "description": "Consulte as datas importantes, eventos corporativos e participe das atividades da empresa.",
+  "upcoming_events": [
+    {
+      "id": 1,
+      "title": "Town Hall T2 2025",
+      "date": "15/04/2025",
+      "time": "14:00 - 16:00",
+      "location": "Auditório Principal + Transmissão Online",
+      "description": "Apresentação dos resultados do trimestre, novidades de produtos e reconhecimento de colaboradores destaque.",
+      "category": "Corporativo",
+      "organizer": "Diretoria Executiva",
+      "registration_required": true,
+      "registration_link": "#town-hall-registration"
+    },
+    {
+      "id": 2,
+      "title": "Workshop de Liderança Situacional",
+      "date": "22/04/2025",
+      "time": "9:00 - 17:00",
+      "location": "Sala de Treinamento - 11° andar",
+      "description": "Treinamento prático sobre liderança situacional para gestores e líderes de projetos. Vagas limitadas a 20 participantes.",
+      "category": "Treinamento",
+      "organizer": "Recursos Humanos",
+      "registration_required": true,
+      "registration_link": "#workshop-leadership",
+      "vacancies": 20,
+      "remaining_vacancies": 8
+    },
+    {
+      "id": 3,
+      "title": "Happy Hour - Aniversariantes do Mês",
+      "date": "28/04/2025",
+      "time": "18:00 - 21:00",
+      "location": "Terraço - 12° andar",
+      "description": "Celebração dos aniversariantes do mês de abril. Comidas, bebidas e música ao vivo.",
+      "category": "Confraternização",
+      "organizer": "Comitê de Cultura",
+      "registration_required": false
+    },
+    {
+      "id": 4,
+      "title": "Lançamento do Novo Produto",
+      "date": "05/05/2025",
+      "time": "10:00 - 12:00",
+      "location": "Auditório Principal + Transmissão Online",
+      "description": "Apresentação oficial do nosso novo produto para o mercado, com demonstração de funcionalidades e estratégia de lançamento.",
+      "category": "Produto",
+      "organizer": "Equipe de Produto",
+      "registration_required": true,
+      "registration_link": "#product-launch"
+    },
+    {
+      "id": 5,
+      "title": "Hackathon: Inovação em Sustentabilidade",
+      "date": "15/05/2025 - 16/05/2025",
+      "time": "48 horas",
+      "location": "Espaço de Inovação - 9° andar",
+      "description": "Maratona de desenvolvimento de soluções tecnológicas para desafios de sustentabilidade. Equipes de 3 a 5 pessoas.",
+      "category": "Inovação",
+      "organizer": "Tecnologia & Inovação",
+      "registration_required": true,
+      "registration_link": "#hackathon-sustainability",
+      "registration_deadline": "05/05/2025"
+    },
+    {
+      "id": 6,
+      "title": "Café com Líderes",
+      "date": "20/05/2025",
+      "time": "9:00 - 10:30",
+      "location": "Sala Liberdade - 11° andar",
+      "description": "Conversa informal com a CEO e diretores sobre carreira, desafios e visão de futuro da empresa.",
+      "category": "Networking",
+      "organizer": "Recursos Humanos",
+      "registration_required": true,
+      "registration_link": "#coffee-with-leaders",
+      "vacancies": 15,
+      "remaining_vacancies": 5
+    }
+  ],
+  "recurring_events": [
+    {
+      "title": "All Hands",
+      "frequency": "Última sexta-feira do mês",
+      "time": "16:00 - 17:00",
+      "location": "Auditório Principal + Transmissão Online",
+      "description": "Reunião mensal com toda a empresa para compartilhar atualizações, celebrar conquistas e alinhar prioridades."
+    },
+    {
+      "title": "Tech Talks",
+      "frequency": "Todas as quartas-feiras",
+      "time": "12:00 - 13:00",
+      "location": "Sala de Treinamento + Transmissão Online",
+      "description": "Apresentações técnicas sobre novas tecnologias, ferramentas e metodologias. Cada semana um colaborador diferente apresenta um tema."
+    },
+    {
+      "title": "Happy Hour",
+      "frequency": "Primeira sexta-feira do mês",
+      "time": "18:00 - 21:00",
+      "location": "Terraço - 12° andar",
+      "description": "Momento de confraternização entre os colaboradores com bebidas, petiscos e música."
+    },
+    {
+      "title": "Clube do Livro",
+      "frequency": "Segunda terça-feira do mês",
+      "time": "12:30 - 13:30",
+      "location": "Sala Ipiranga - 10° andar",
+      "description": "Discussão sobre o livro do mês, com aplicações práticas para o ambiente de trabalho e desenvolvimento pessoal."
+    }
+  ],
+  "holidays": [
+    {
+      "date": "21/04/2025",
+      "name": "Tiradentes",
+      "type": "Feriado Nacional"
+    },
+    {
+      "date": "01/05/2025",
+      "name": "Dia do Trabalho",
+      "type": "Feriado Nacional"
+    },
+    {
+      "date": "20/06/2025",
+      "name": "Corpus Christi",
+      "type": "Feriado Nacional"
+    },
+    {
+      "date": "09/07/2025",
+      "name": "Revolução Constitucionalista",
+      "type": "Feriado Estadual (SP)"
+    }
+  ],
+  "company_dates": [
+    {
+      "date": "15/08/2025",
+      "name": "Aniversário da Empresa",
+      "description": "Comemoração dos 15 anos da empresa, com atividades especiais e confraternização para todos os colaboradores."
+    },
+    {
+      "date": "08/12/2025 - 12/12/2025",
+      "name": "Semana de Planejamento Anual",
+      "description": "Semana dedicada ao planejamento estratégico para 2026. Todas as equipes participam de workshops e sessões de alinhamento."
+    },
+    {
+      "date": "20/12/2025",
+      "name": "Festa de Fim de Ano",
+      "description": "Confraternização anual com todos os colaboradores e seus acompanhantes para celebrar as conquistas do ano."
+    }
+  ],
+  "how_to_create": {
+    "title": "Como Criar um Evento",
+    "steps": [
+      "Acesse o sistema de calendário corporativo através da intranet",
+      "Clique em 'Criar Novo Evento' e preencha todas as informações requisitadas",
+      "Especifique público-alvo, recursos necessários e orçamento (se aplicável)",
+      "Para eventos que requerem recursos corporativos (salas, equipamentos, catering), a aprovação do gestor é necessária",
+      "Eventos para mais de 30 pessoas precisam ser aprovados pelo comitê de eventos com pelo menos 3 semanas de antecedência"
+    ],
+    "contact": "Para suporte na criação de eventos corporativos, contate a equipe de Comunicação Interna através do e-mail eventos@empresa.com ou ramal 5570."
+  }
+}

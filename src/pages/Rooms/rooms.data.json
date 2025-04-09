@@ -1,0 +1,142 @@
+
+{
+  "title": "Salas",
+  "description": "Informações sobre todas as salas disponíveis em nossos escritórios e como reservá-las.",
+  "reservation": {
+    "how_to": "Para reservar uma sala, acesse o sistema de reservas através do link disponível na intranet ou utilize o aplicativo móvel. Escolha o escritório, a data, o horário e a sala desejada.",
+    "rules": [
+      "Reservas podem ser feitas com até 2 semanas de antecedência",
+      "Cancelamentos devem ser feitos com pelo menos 2 horas de antecedência",
+      "Salas de reunião devem ser reservadas para no mínimo 30 minutos e no máximo 4 horas consecutivas",
+      "Salas de foco têm limite máximo de 2 horas por reserva",
+      "Após três no-shows (não comparecimento sem cancelamento), o colaborador ficará impossibilitado de fazer reservas por 1 semana"
+    ],
+    "contact": "Em caso de problemas ou dúvidas com reservas, contate o Facilities através do e-mail facilities@empresa.com ou ramal 5500."
+  },
+  "offices": [
+    {
+      "name": "São Paulo - Matriz",
+      "address": "Av. Paulista, 1000, Bela Vista, São Paulo - SP",
+      "floors": [
+        {
+          "floor": "10º andar",
+          "rooms": [
+            {
+              "id": "sp-10-reunion-1",
+              "name": "Sala Ibirapuera",
+              "type": "Reunião",
+              "capacity": 12,
+              "equipment": ["TV 65\"", "Videoconferência", "Quadro Branco", "Adaptadores HDMI/VGA"],
+              "image": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&h=500&fit=crop"
+            },
+            {
+              "id": "sp-10-reunion-2",
+              "name": "Sala Ipiranga",
+              "type": "Reunião",
+              "capacity": 8,
+              "equipment": ["TV 55\"", "Videoconferência", "Flipchart"],
+              "image": "https://images.unsplash.com/photo-1524069290683-0457abfe42c3?w=800&h=500&fit=crop"
+            },
+            {
+              "id": "sp-10-focus-1",
+              "name": "Sala Foco 1",
+              "type": "Foco",
+              "capacity": 2,
+              "equipment": ["Monitor Extra", "Quadro Pequeno"],
+              "image": "https://images.unsplash.com/photo-1497215842964-222b430dc094?w=800&h=500&fit=crop"
+            },
+            {
+              "id": "sp-10-focus-2",
+              "name": "Sala Foco 2",
+              "type": "Foco",
+              "capacity": 1,
+              "equipment": ["Monitor Extra", "Isolamento Acústico"],
+              "image": "https://images.unsplash.com/photo-1497215842964-222b430dc094?w=800&h=500&fit=crop"
+            }
+          ]
+        },
+        {
+          "floor": "11º andar",
+          "rooms": [
+            {
+              "id": "sp-11-reunion-1",
+              "name": "Sala Liberdade",
+              "type": "Reunião",
+              "capacity": 16,
+              "equipment": ["TV 75\"", "Videoconferência", "Quadro Interativo", "Sistema de Som"],
+              "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&h=500&fit=crop"
+            },
+            {
+              "id": "sp-11-reunion-2",
+              "name": "Sala Pinheiros",
+              "type": "Reunião",
+              "capacity": 10,
+              "equipment": ["TV 65\"", "Videoconferência", "Quadro Branco"],
+              "image": "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=800&h=500&fit=crop"
+            },
+            {
+              "id": "sp-11-training",
+              "name": "Sala Treinamento",
+              "type": "Treinamento",
+              "capacity": 20,
+              "equipment": ["Projetor", "Videoconferência", "Microfones", "Notebooks para treinamento"],
+              "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rio de Janeiro",
+      "address": "Av. Rio Branco, 500, Centro, Rio de Janeiro - RJ",
+      "floors": [
+        {
+          "floor": "5º andar",
+          "rooms": [
+            {
+              "id": "rj-5-reunion-1",
+              "name": "Sala Copacabana",
+              "type": "Reunião",
+              "capacity": 10,
+              "equipment": ["TV 65\"", "Videoconferência", "Quadro Branco"],
+              "image": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&h=500&fit=crop"
+            },
+            {
+              "id": "rj-5-reunion-2",
+              "name": "Sala Ipanema",
+              "type": "Reunião",
+              "capacity": 6,
+              "equipment": ["TV 55\"", "Videoconferência", "Flipchart"],
+              "image": "https://images.unsplash.com/photo-1505409859467-3a796fd5798e?w=800&h=500&fit=crop"
+            },
+            {
+              "id": "rj-5-focus-1",
+              "name": "Sala Foco Leblon",
+              "type": "Foco",
+              "capacity": 2,
+              "equipment": ["Monitor Extra", "Quadro Pequeno"],
+              "image": "https://images.unsplash.com/photo-1497215842964-222b430dc094?w=800&h=500&fit=crop"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "Chegue alguns minutos antes do horário reservado para verificar se todos os equipamentos estão funcionando",
+    "Ao terminar a reunião, certifique-se de deixar a sala organizada para o próximo usuário",
+    "Caso precise de equipamentos adicionais, como adaptadores ou extensões, solicite ao Facilities com antecedência",
+    "Se a reunião terminar antes do previsto, libere a sala no sistema para que outros possam utilizá-la",
+    "Respeite o limite de tempo da sua reserva para não prejudicar outros colaboradores"
+  ],
+  "etiquette": {
+    "title": "Etiqueta nas Salas",
+    "rules": [
+      "Mantenha o tom de voz moderado, especialmente em áreas próximas a espaços abertos",
+      "Não consuma alimentos com odores fortes dentro das salas de reunião",
+      "Se precisar atender uma ligação durante a reunião, saia da sala para não atrapalhar",
+      "Recolha copos, garrafas e outros itens ao final da reunião",
+      "Desligue os equipamentos e as luzes ao sair"
+    ]
+  }
+}

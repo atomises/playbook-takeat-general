@@ -1,0 +1,167 @@
+
+{
+  "title": "Parceiros",
+  "description": "Conheça as empresas e organizações que colaboram conosco para oferecer as melhores soluções.",
+  "overview": "Trabalhamos com parceiros estratégicos para ampliar nossa oferta de valor, combinar forças complementares e proporcionar soluções mais completas aos nossos clientes. Nosso ecossistema de parceiros é cuidadosamente selecionado com base em valores compartilhados, qualidade de serviço e compromisso com a inovação.",
+  "categories": [
+    {
+      "id": "tech",
+      "name": "Tecnologia",
+      "description": "Parceiros que fornecem infraestrutura, plataformas e soluções tecnológicas que potencializam nossos produtos e serviços."
+    },
+    {
+      "id": "distribution",
+      "name": "Distribuição",
+      "description": "Revendedores, distribuidores e canais que ajudam a ampliar nosso alcance no mercado nacional e internacional."
+    },
+    {
+      "id": "services",
+      "name": "Serviços",
+      "description": "Empresas que oferecem serviços complementares aos nossos, criando um ecossistema completo para nossos clientes."
+    },
+    {
+      "id": "education",
+      "name": "Educação",
+      "description": "Instituições de ensino e capacitação que colaboram em pesquisas, formação de talentos e programas de educação."
+    }
+  ],
+  "partners": [
+    {
+      "id": 1,
+      "name": "TechCloud",
+      "category": "tech",
+      "logo": "https://via.placeholder.com/150x80",
+      "description": "Provedor líder de infraestrutura em nuvem, oferecendo soluções escaláveis e seguras para aplicações críticas.",
+      "partnership_type": "Tecnológico",
+      "website": "https://techcloud.com",
+      "testimonial": {
+        "quote": "A parceria com a TechCloud nos permite oferecer soluções robustas e escaláveis em nuvem, garantindo alta disponibilidade e segurança para nossos clientes.",
+        "author": "Carlos Mendes",
+        "role": "Diretor de Tecnologia"
+      }
+    },
+    {
+      "id": 2,
+      "name": "DataSecure",
+      "category": "tech",
+      "logo": "https://via.placeholder.com/150x80",
+      "description": "Especialista em cibersegurança e proteção de dados, com soluções avançadas de detecção e prevenção de ameaças.",
+      "partnership_type": "Tecnológico",
+      "website": "https://datasecure.com",
+      "testimonial": {
+        "quote": "Nossa parceria com a DataSecure agrega camadas adicionais de segurança que são essenciais para nossos clientes em setores regulados.",
+        "author": "Ana Silva",
+        "role": "Líder de Segurança da Informação"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Global Solutions",
+      "category": "distribution",
+      "logo": "https://via.placeholder.com/150x80",
+      "description": "Distribuidora global com presença em mais de 30 países, especializada em soluções corporativas e governamentais.",
+      "partnership_type": "Distribuição Internacional",
+      "website": "https://globalsolutions.com",
+      "testimonial": {
+        "quote": "A parceria com a Global Solutions foi fundamental para nossa expansão internacional, abrindo portas para mercados que seriam desafiadores de acessar sozinhos.",
+        "author": "Juliana Costa",
+        "role": "Diretora Comercial"
+      }
+    },
+    {
+      "id": 4,
+      "name": "BizPartners",
+      "category": "distribution",
+      "logo": "https://via.placeholder.com/150x80",
+      "description": "Rede de parceiros de negócios focados no mercado de médias empresas no Brasil e América Latina.",
+      "partnership_type": "Revenda e Implementação",
+      "website": "https://bizpartners.com.br",
+      "testimonial": null
+    },
+    {
+      "id": 5,
+      "name": "ConsultPro",
+      "category": "services",
+      "logo": "https://via.placeholder.com/150x80",
+      "description": "Consultoria especializada em transformação digital para empresas de médio e grande porte.",
+      "partnership_type": "Serviços Complementares",
+      "website": "https://consultpro.com",
+      "testimonial": {
+        "quote": "Unir nossos produtos com a experiência em consultoria da ConsultPro cria uma proposta de valor imbatível para clientes em processo de transformação digital.",
+        "author": "Pedro Lima",
+        "role": "VP de Produtos"
+      }
+    },
+    {
+      "id": 6,
+      "name": "EduTech Institute",
+      "category": "education",
+      "logo": "https://via.placeholder.com/150x80",
+      "description": "Instituto de pesquisa e educação especializado em tecnologias emergentes e inovação.",
+      "partnership_type": "Pesquisa e Desenvolvimento",
+      "website": "https://edutech.edu",
+      "testimonial": {
+        "quote": "A parceria com o EduTech Institute nos mantém na vanguarda da inovação, acessando pesquisas de ponta e talentos recém-formados.",
+        "author": "Marina Torres",
+        "role": "Diretora de Inovação"
+      }
+    },
+    {
+      "id": 7,
+      "name": "IntegraSoft",
+      "category": "services",
+      "logo": "https://via.placeholder.com/150x80",
+      "description": "Especialista em integrações complexas entre sistemas legados e novas tecnologias.",
+      "partnership_type": "Serviços Técnicos",
+      "website": "https://integrasoft.tech",
+      "testimonial": null
+    },
+    {
+      "id": 8,
+      "name": "Analytics Pro",
+      "category": "tech",
+      "logo": "https://via.placeholder.com/150x80",
+      "description": "Plataforma de análise de dados e inteligência de negócios para tomada de decisões baseadas em dados.",
+      "partnership_type": "Tecnológico",
+      "website": "https://analyticspro.ai",
+      "testimonial": null
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Recursos e Treinamentos",
+      "description": "Nossos parceiros têm acesso a recursos exclusivos, documentações técnicas e treinamentos especializados para maximizar resultados.",
+      "icon": "BookOpen"
+    },
+    {
+      "title": "Suporte Dedicado",
+      "description": "Oferecemos canais prioritários de suporte técnico e comercial para nossos parceiros, garantindo respostas rápidas e eficientes.",
+      "icon": "HeadphonesIcon"
+    },
+    {
+      "title": "Desenvolvimento Conjunto",
+      "description": "Colaboramos no desenvolvimento de soluções customizadas e integrações que atendam necessidades específicas do mercado.",
+      "icon": "Code"
+    },
+    {
+      "title": "Marketing Compartilhado",
+      "description": "Criamos iniciativas conjuntas de marketing, incluindo eventos, webinars e estudos de caso para promover as soluções integradas.",
+      "icon": "TrendingUp"
+    }
+  ],
+  "become_partner": {
+    "title": "Torne-se um Parceiro",
+    "description": "Estamos sempre abertos a novas parcerias estratégicas que tragam valor aos nossos clientes e complementem nossa oferta. Se sua empresa tem esse potencial, gostaríamos de conversar.",
+    "process": [
+      "Entre em contato através do e-mail partners@empresa.com",
+      "Nossa equipe agendará uma reunião inicial para entender sua empresa e explorar sinergias",
+      "Avaliaremos conjuntamente o modelo de parceria mais adequado",
+      "Formalizaremos a parceria e desenvolveremos um plano de ação conjunto"
+    ],
+    "contact": {
+      "name": "Departamento de Parcerias",
+      "email": "partners@empresa.com",
+      "phone": "(11) 3333-4444"
+    }
+  }
+}

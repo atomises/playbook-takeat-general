@@ -1,217 +1,134 @@
 
 .culture-page {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.culture-intro {
-  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 2rem;
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 1.75rem;
   font-weight: 600;
-  color: #333333;
-  margin: 0 0 20px 0;
-  position: relative;
-  padding-bottom: 10px;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
 }
 
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background-color: #0066cc;
-}
-
-.intro-text {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555555;
-  margin-bottom: 32px;
-}
-
-.values-grid {
+.valores-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
-.value-card {
-  background-color: white;
+.valor-card {
+  background-color: #f9f9f9;
   border-radius: 8px;
-  padding: 24px;
-  border: 1px solid #e1e1e1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.value-card:hover {
+.valor-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.value-icon {
-  width: 48px;
-  height: 48px;
-  background-color: rgba(0, 102, 204, 0.1);
-  color: #0066cc;
+.valor-icon {
+  background-color: #f0f7ff;
   border-radius: 50%;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom: 1.5rem;
+  color: #3b82f6;
 }
 
-.value-title {
-  font-size: 18px;
+.valor-title {
+  font-size: 1.25rem;
   font-weight: 600;
-  margin: 0 0 12px 0;
-  color: #333333;
+  margin-bottom: 1rem;
+  color: #333;
 }
 
-.value-description {
-  font-size: 14px;
+.valor-description {
+  color: #555;
   line-height: 1.6;
-  color: #555555;
   margin: 0;
 }
 
-.principles-section {
-  margin-bottom: 48px;
-}
-
-.principles-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 24px;
-}
-
-.principle-card {
-  height: 100%;
-}
-
-.work-environment-section {
-  margin-bottom: 48px;
-}
-
-.environment-features {
-  margin-bottom: 32px;
-}
-
-.environment-feature {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 40px;
-  align-items: center;
-}
-
-.environment-feature.reverse {
-  flex-direction: row-reverse;
-}
-
-.feature-image {
-  flex: 1;
-}
-
-.feature-image img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.feature-content {
-  flex: 1;
-}
-
-.feature-content h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0 0 16px 0;
-  color: #333333;
-}
-
-.feature-content p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555555;
+.principios-list {
+  padding: 0;
   margin: 0;
-}
-
-.diversity-section {
-  margin-bottom: 48px;
-  background-color: #f8f9fa;
-  padding: 32px;
-  border-radius: 8px;
-}
-
-.diversity-content {
-  display: flex;
-  gap: 40px;
-}
-
-.diversity-text {
-  flex: 1.5;
-}
-
-.diversity-text p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555555;
-  margin: 0 0 16px 0;
-}
-
-.diversity-text p:last-child {
-  margin-bottom: 0;
-}
-
-.diversity-stats {
-  flex: 1;
+  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.5rem;
 }
 
-.stat-item {
-  background-color: white;
+.principio-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background-color: #fff;
   border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
 
-.stat-value {
-  font-size: 32px;
-  font-weight: 700;
-  color: #0066cc;
-  margin-bottom: 8px;
+.principio-item:hover {
+  transform: translateX(5px);
 }
 
-.stat-label {
-  font-size: 14px;
-  color: #555555;
+.principio-bullet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
-.culture-highlight-section {
-  margin-top: 48px;
+.principio-content {
+  flex-grow: 1;
+}
+
+.principio-title {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.principio-description {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {
-  .values-grid,
-  .principles-list {
+  .valores-grid {
     grid-template-columns: 1fr;
   }
   
-  .environment-feature,
-  .environment-feature.reverse,
-  .diversity-content {
+  .principio-item {
     flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
   }
   
-  .feature-image {
-    margin-bottom: 20px;
+  .principio-bullet {
+    margin-bottom: 0.5rem;
   }
 }

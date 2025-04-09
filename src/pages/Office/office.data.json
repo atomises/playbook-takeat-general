@@ -1,0 +1,189 @@
+
+{
+  "title": "Escritório e Regras",
+  "description": "Informações sobre nossos escritórios, normas de utilização e dicas para um ambiente de trabalho harmonioso.",
+  "locations": [
+    {
+      "name": "São Paulo - Matriz",
+      "address": "Av. Paulista, 1000, Bela Vista, São Paulo - SP",
+      "phone": "(11) 3333-4444",
+      "hours": "Segunda a Sexta, 7h às 19h",
+      "access": "Acesso 24h mediante uso do crachá de identificação",
+      "floors": [
+        {
+          "number": "9",
+          "departments": ["Tecnologia", "Produto", "Design"],
+          "amenities": ["Estações de trabalho", "Salas de reunião", "Área de descompressão"]
+        },
+        {
+          "number": "10",
+          "departments": ["Marketing", "Vendas", "Customer Success"],
+          "amenities": ["Estações de trabalho", "Salas de reunião", "Cabines de ligação"]
+        },
+        {
+          "number": "11",
+          "departments": ["Recursos Humanos", "Financeiro", "Administrativo"],
+          "amenities": ["Estações de trabalho", "Salas de reunião", "Auditório"]
+        },
+        {
+          "number": "12",
+          "departments": ["Diretoria", "Jurídico"],
+          "amenities": ["Escritórios executivos", "Sala de reunião principal", "Terraço"]
+        }
+      ],
+      "transport": {
+        "metro": ["Linha Verde - Estação Trianon-Masp (5 min a pé)", "Linha Amarela - Estação Paulista (10 min a pé)"],
+        "bus": ["Diversas linhas na Av. Paulista", "Ponto de ônibus em frente ao edifício"],
+        "parking": "Estacionamento no subsolo com vagas para colaboradores (necessário cadastro prévio)"
+      },
+      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=500&fit=crop"
+    },
+    {
+      "name": "Rio de Janeiro",
+      "address": "Av. Rio Branco, 500, Centro, Rio de Janeiro - RJ",
+      "phone": "(21) 2222-3333",
+      "hours": "Segunda a Sexta, 8h às 18h",
+      "access": "Acesso 24h mediante uso do crachá de identificação",
+      "floors": [
+        {
+          "number": "5",
+          "departments": ["Tecnologia", "Produto", "Vendas"],
+          "amenities": ["Estações de trabalho", "Salas de reunião", "Área de café"]
+        }
+      ],
+      "transport": {
+        "metro": ["Estação Carioca (8 min a pé)"],
+        "bus": ["Diversas linhas na Av. Rio Branco"],
+        "parking": "Convênio com estacionamento próximo (desconto para colaboradores)"
+      },
+      "image": "https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?w=800&h=500&fit=crop"
+    }
+  ],
+  "office_rules": [
+    {
+      "category": "Acesso e Segurança",
+      "rules": [
+        "Utilize o crachá de identificação de forma visível durante todo o período nas dependências da empresa",
+        "Não empreste seu crachá ou permita que outras pessoas utilizem seu acesso",
+        "Visitantes devem ser registrados na recepção e acompanhados por um colaborador",
+        "Ao sair do escritório, certifique-se de que não deixou objetos de valor expostos",
+        "Em caso de perda do crachá, comunique imediatamente à equipe de Facilities"
+      ]
+    },
+    {
+      "category": "Espaços Compartilhados",
+      "rules": [
+        "Mantenha a organização e limpeza dos espaços de uso comum",
+        "Não deixe louças na pia da copa/cozinha após o uso",
+        "Identifique seus alimentos na geladeira com nome e data",
+        "Utilize as salas de reunião apenas com reserva prévia",
+        "Respeite o limite de ruído, especialmente em áreas de trabalho aberto"
+      ]
+    },
+    {
+      "category": "Estações de Trabalho",
+      "rules": [
+        "Mantenha sua mesa organizada, aplicando o conceito de 'clean desk' ao final do dia",
+        "Não consuma alimentos com odores fortes próximo às estações de trabalho",
+        "Utilize fones de ouvido para chamadas ou conteúdos com áudio",
+        "Não modifique a configuração de equipamentos compartilhados sem autorização",
+        "Comunique qualquer problema com equipamentos ou mobiliário ao suporte de TI ou Facilities"
+      ]
+    },
+    {
+      "category": "Política de Trabalho Híbrido",
+      "rules": [
+        "Colaboradores podem trabalhar remotamente até 3 dias por semana, conforme acordado com o gestor",
+        "Dias presenciais devem ser registrados no sistema de agendamento para controle de ocupação",
+        "Reuniões de equipe principais ocorrem nos dias designados para trabalho presencial",
+        "Colaboradores devem estar disponíveis online durante o horário comercial, mesmo em dias remotos",
+        "A empresa disponibiliza equipamentos para trabalho remoto mediante solicitação"
+      ]
+    }
+  ],
+  "amenities": [
+    {
+      "name": "Cafeteria",
+      "description": "Café, chá e água disponíveis para todos os colaboradores. Máquina de café especial disponível na área comum.",
+      "location": "Presente em todos os andares",
+      "hours": "Disponível durante todo o horário de funcionamento"
+    },
+    {
+      "name": "Academia",
+      "description": "Academia corporativa com equipamentos de cardio e musculação. Necessário cadastro prévio para utilização.",
+      "location": "Subsolo 1 - São Paulo",
+      "hours": "Segunda a Sexta, 6h às 22h"
+    },
+    {
+      "name": "Espaço de Descompressão",
+      "description": "Área com jogos, TV, sofás e pufs para momentos de descanso e integração entre colaboradores.",
+      "location": "9º andar - São Paulo / 5º andar - Rio de Janeiro",
+      "hours": "Disponível durante todo o horário de funcionamento"
+    },
+    {
+      "name": "Biblioteca",
+      "description": "Espaço com livros técnicos, de negócios e literatura geral. Empréstimos por até 15 dias.",
+      "location": "11º andar - São Paulo",
+      "hours": "Segunda a Sexta, 9h às 18h"
+    },
+    {
+      "name": "Sala de Amamentação",
+      "description": "Espaço privativo e confortável para colaboradoras em período de amamentação.",
+      "location": "10º andar - São Paulo / 5º andar - Rio de Janeiro",
+      "hours": "Disponível durante todo o horário de funcionamento"
+    },
+    {
+      "name": "Bicicletário",
+      "description": "Espaço seguro para guardar bicicletas, com vestiários e chuveiros disponíveis.",
+      "location": "Subsolo 2 - São Paulo / Térreo - Rio de Janeiro",
+      "hours": "Acesso 24h mediante uso do crachá"
+    }
+  ],
+  "etiquette": {
+    "title": "Etiqueta no Escritório",
+    "topics": [
+      {
+        "title": "Respeite o espaço dos colegas",
+        "tips": [
+          "Evite interromper alguém que está visivelmente concentrado",
+          "Mantenha conversas em tom moderado",
+          "Se precisar discutir assuntos longos, utilize uma sala de reunião"
+        ]
+      },
+      {
+        "title": "Mantenha a higiene pessoal",
+        "tips": [
+          "Cuide da sua higiene pessoal",
+          "Evite perfumes muito fortes",
+          "Não utilize o escritório para secar roupas ou tênis"
+        ]
+      },
+      {
+        "title": "Seja consciente com odores",
+        "tips": [
+          "Evite alimentos com cheiro forte na sua estação de trabalho",
+          "Utilize a copa/cozinha para refeições",
+          "Descarte adequadamente restos de alimentos"
+        ]
+      },
+      {
+        "title": "Comunicação adequada",
+        "tips": [
+          "Use fones de ouvido para chamadas ou conteúdos com áudio",
+          "Coloque o celular no modo silencioso ou vibração",
+          "Evite usar o viva-voz em espaços compartilhados"
+        ]
+      }
+    ]
+  },
+  "sustainability": {
+    "title": "Práticas Sustentáveis",
+    "practices": [
+      "Separe corretamente o lixo utilizando as lixeiras específicas para recicláveis, orgânicos e não-recicláveis",
+      "Utilize canecas e copos reutilizáveis em vez de descartáveis",
+      "Desligue luzes, monitores e equipamentos ao sair",
+      "Imprima apenas quando necessário e utilize frente e verso",
+      "Utilize os bicicletários e incentive a carona solidária para reduzir emissões"
+    ]
+  }
+}

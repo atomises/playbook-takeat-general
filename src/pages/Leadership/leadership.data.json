@@ -1,0 +1,204 @@
+
+{
+  "title": "Portal de Líderes",
+  "description": "Recursos, ferramentas e orientações exclusivas para líderes da empresa.",
+  "welcome": {
+    "title": "Bem-vindo ao Portal de Líderes",
+    "message": "Este espaço foi criado para apoiar você em sua jornada de liderança, oferecendo recursos, ferramentas e orientações para desenvolver suas habilidades e liderar sua equipe com excelência."
+  },
+  "leadership_principles": [
+    {
+      "title": "Lidere pelo Exemplo",
+      "description": "Demonstre os comportamentos e atitudes que espera de sua equipe. Suas ações falam mais alto que suas palavras.",
+      "icon": "Award"
+    },
+    {
+      "title": "Inspire Propósito",
+      "description": "Conecte o trabalho da equipe aos objetivos maiores da empresa e ao impacto que geram para clientes e sociedade.",
+      "icon": "Target"
+    },
+    {
+      "title": "Desenvolva Talentos",
+      "description": "Invista tempo no desenvolvimento das pessoas, identificando potenciais, oferecendo desafios e proporcionando feedback contínuo.",
+      "icon": "UserCheck"
+    },
+    {
+      "title": "Promova Autonomia",
+      "description": "Empodere sua equipe com confiança, recursos e clareza para que tomem decisões e assumam responsabilidades.",
+      "icon": "Key"
+    },
+    {
+      "title": "Cultive Inclusão",
+      "description": "Crie um ambiente onde todas as vozes são ouvidas e valorizadas, celebrando a diversidade de perspectivas e experiências.",
+      "icon": "Users"
+    },
+    {
+      "title": "Gerencie com Dados",
+      "description": "Base suas decisões em informações concretas, estabelecendo métricas claras e monitorando resultados regularmente.",
+      "icon": "BarChart"
+    }
+  ],
+  "tools_resources": [
+    {
+      "title": "Guia de One-on-Ones",
+      "description": "Template e diretrizes para conduzir reuniões individuais eficazes com membros da equipe.",
+      "link": "/documents/one-on-one-guide.pdf",
+      "icon": "Users"
+    },
+    {
+      "title": "Matriz de Feedback",
+      "description": "Framework para estruturar feedbacks construtivos e orientados ao desenvolvimento.",
+      "link": "/documents/feedback-matrix.xlsx",
+      "icon": "MessageSquare"
+    },
+    {
+      "title": "Plano de Desenvolvimento Individual",
+      "description": "Template para documentar objetivos de desenvolvimento e planos de ação para colaboradores.",
+      "link": "/documents/development-plan.docx",
+      "icon": "TrendingUp"
+    },
+    {
+      "title": "Guia de Recrutamento e Seleção",
+      "description": "Melhores práticas e perguntas estruturadas para processos seletivos consistentes.",
+      "link": "/documents/recruitment-guide.pdf",
+      "icon": "UserPlus"
+    },
+    {
+      "title": "Dashboard de Performance",
+      "description": "Ferramenta para visualização e acompanhamento de métricas e KPIs da equipe.",
+      "link": "/dashboard",
+      "icon": "PieChart"
+    },
+    {
+      "title": "Guia de Gestão de Conflitos",
+      "description": "Estratégias e técnicas para identificar, abordar e resolver conflitos na equipe.",
+      "link": "/documents/conflict-resolution.pdf",
+      "icon": "Shield"
+    }
+  ],
+  "development_opportunities": {
+    "programs": [
+      {
+        "title": "Programa de Mentoria de Liderança",
+        "description": "Mentoria com líderes seniores da empresa para acelerar seu desenvolvimento.",
+        "duration": "6 meses",
+        "format": "Encontros quinzenais de 1h",
+        "next_class": "Maio/2025",
+        "registration": "Março/2025"
+      },
+      {
+        "title": "Workshop de Feedback e Coaching",
+        "description": "Treinamento prático sobre técnicas de feedback e coaching para potencializar sua equipe.",
+        "duration": "16 horas",
+        "format": "4 sessões de 4h (presencial)",
+        "next_class": "Junho/2025",
+        "registration": "Até 15/05/2025"
+      },
+      {
+        "title": "Liderança em Ambientes Ágeis",
+        "description": "Conceitos e práticas para liderar equipes em contextos de agilidade e transformação.",
+        "duration": "20 horas",
+        "format": "5 sessões de 4h (online)",
+        "next_class": "Agosto/2025",
+        "registration": "Até 30/06/2025"
+      },
+      {
+        "title": "Liderança Inclusiva",
+        "description": "Ferramentas para criar e manter um ambiente de trabalho diverso e inclusivo.",
+        "duration": "8 horas",
+        "format": "2 sessões de 4h (presencial ou online)",
+        "next_class": "Setembro/2025",
+        "registration": "Até 15/08/2025"
+      }
+    ],
+    "external_resources": [
+      {
+        "title": "Harvard Business Review - Acesso Premium",
+        "description": "Acesso ilimitado a artigos, ferramentas e webinars da HBR sobre liderança e gestão.",
+        "how_to_access": "Solicite sua conta através do Portal de Benefícios"
+      },
+      {
+        "title": "LinkedIn Learning",
+        "description": "Cursos online sobre liderança, gestão de equipes e habilidades de negócio.",
+        "how_to_access": "Use seu email corporativo para acessar a plataforma"
+      },
+      {
+        "title": "Biblioteca de Liderança",
+        "description": "Acervo físico e digital com mais de 500 livros sobre liderança e desenvolvimento.",
+        "how_to_access": "Disponível no 11º andar (SP) e através do Portal de Conhecimento"
+      }
+    ]
+  },
+  "leader_spotlights": [
+    {
+      "name": "Ana Oliveira",
+      "role": "Diretora de Produto",
+      "insight": "Liderar é muito mais sobre fazer as perguntas certas do que ter todas as respostas. Quando você pergunta e realmente escuta, você não apenas obtém insights valiosos, mas também empodera sua equipe a pensar criticamente e desenvolver confiança.",
+      "image": "https://randomuser.me/api/portraits/women/22.jpg"
+    },
+    {
+      "name": "Carlos Mendes",
+      "role": "Gerente de Engenharia",
+      "insight": "O maior desafio que enfrentei como líder foi abandonar o papel de 'solucionador de problemas técnicos' para me tornar um habilitador de pessoas. Aprendi que meu sucesso não está mais em quanto código eu escrevo, mas em quão bem minha equipe trabalha junta.",
+      "image": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      "name": "Juliana Santos",
+      "role": "Diretora de Operações",
+      "insight": "Como líderes, somos responsáveis por criar clareza no meio do caos. Isso significa definir prioridades claras, comunicar expectativas e remover obstáculos. Quando sua equipe sabe exatamente onde estamos indo e por quê, eles se movem com mais confiança e velocidade.",
+      "image": "https://randomuser.me/api/portraits/women/33.jpg"
+    }
+  ],
+  "calendar": [
+    {
+      "title": "Workshop: Liderança Inclusiva",
+      "date": "15/05/2025",
+      "time": "09:00 - 17:00",
+      "location": "Sala de Treinamento - 11º andar",
+      "description": "Workshop prático sobre como criar e manter um ambiente de trabalho diverso e inclusivo."
+    },
+    {
+      "title": "Encontro de Líderes Q2",
+      "date": "28/05/2025",
+      "time": "14:00 - 18:00",
+      "location": "Auditório Principal + Transmissão Online",
+      "description": "Apresentação de resultados do Q1, diretrizes para Q2 e alinhamento de estratégias entre líderes."
+    },
+    {
+      "title": "Círculo de Mentoria",
+      "date": "10/06/2025",
+      "time": "10:00 - 12:00",
+      "location": "Sala Liberdade - 11º andar",
+      "description": "Sessão de mentoria em grupo para líderes juniores com executivos seniores da empresa."
+    },
+    {
+      "title": "Treinamento: Gestão de Performance",
+      "date": "22/06/2025",
+      "time": "09:00 - 17:00",
+      "location": "Online (Microsoft Teams)",
+      "description": "Capacitação sobre o novo ciclo de avaliação de desempenho e desenvolvimento de carreira."
+    }
+  ],
+  "important_dates": [
+    {
+      "title": "Ciclo de Avaliação de Performance",
+      "date": "01/07/2025 - 31/07/2025",
+      "description": "Período para conduzir avaliações formais de desempenho e feedback com colaboradores."
+    },
+    {
+      "title": "Revisão de Metas Q3",
+      "date": "15/06/2025 - 30/06/2025",
+      "description": "Prazo para revisar e ajustar metas individuais e de equipe para o próximo trimestre."
+    },
+    {
+      "title": "Período de Calibragem",
+      "date": "01/08/2025 - 15/08/2025",
+      "description": "Sessões de calibragem para alinhamento de avaliações entre gestores e áreas."
+    },
+    {
+      "title": "Ciclo de Promoções",
+      "date": "01/09/2025 - 15/09/2025",
+      "description": "Período para submissão de recomendações de promoção para colaboradores."
+    }
+  ]
+}

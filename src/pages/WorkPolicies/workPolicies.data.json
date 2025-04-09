@@ -1,0 +1,161 @@
+
+{
+  "title": "Políticas de Trabalho",
+  "description": "Conheça nossas políticas e diretrizes que orientam nossa forma de trabalhar.",
+  "categories": [
+    {
+      "id": "hybrid-work",
+      "title": "Trabalho Híbrido",
+      "policy": {
+        "summary": "Nosso modelo de trabalho combina atividades presenciais e remotas, oferecendo flexibilidade e mantendo a colaboração entre as equipes.",
+        "rules": [
+          "Colaboradores podem trabalhar remotamente até 3 dias por semana, conforme acordado com o gestor",
+          "Pelo menos 2 dias por semana devem ser presenciais para reuniões e atividades colaborativas",
+          "O cronograma de trabalho presencial deve ser estabelecido com antecedência para planejamento de ocupação",
+          "As equipes devem alinhar seus dias presenciais para garantir a colaboração efetiva",
+          "Mudanças no cronograma de trabalho presencial devem ser comunicadas com antecedência ao gestor"
+        ],
+        "exceptions": [
+          "Algumas funções podem exigir presença física mais frequente devido à natureza do trabalho",
+          "Colaboradores que residem a mais de 100km do escritório podem trabalhar remotamente em período integral",
+          "Em circunstâncias excepcionais (como questões médicas ou familiares), arranjos especiais podem ser discutidos com RH"
+        ]
+      }
+    },
+    {
+      "id": "home-office",
+      "title": "Home Office",
+      "policy": {
+        "summary": "Diretrizes e recomendações para garantir um ambiente de trabalho remoto produtivo, seguro e saudável.",
+        "equipment": [
+          "A empresa fornece notebook, monitor, teclado, mouse e headset para trabalho remoto",
+          "Equipamentos adicionais podem ser solicitados com justificativa e aprovação do gestor",
+          "Todos os equipamentos fornecidos são de propriedade da empresa e devem ser devolvidos ao término do vínculo empregatício",
+          "Problemas técnicos devem ser reportados imediatamente ao suporte de TI"
+        ],
+        "ergonomics": [
+          "Utilize uma cadeira com apoio lombar e altura ajustável",
+          "Posicione o monitor na altura dos olhos e a aproximadamente um braço de distância",
+          "Mantenha os pulsos em posição neutra ao usar teclado e mouse",
+          "Faça pausas regulares: a cada 50 minutos de trabalho, descanse 10 minutos",
+          "A empresa oferece subsídio para aquisição de cadeira ergonômica mediante aprovação"
+        ],
+        "connectivity": [
+          "É responsabilidade do colaborador garantir conexão de internet estável e adequada",
+          "A empresa oferece auxílio internet de R$ 100/mês para gastos com conectividade",
+          "Em caso de problemas de conexão, o colaborador deve comunicar imediatamente seu gestor e, se necessário, dirigir-se ao escritório"
+        ]
+      }
+    },
+    {
+      "id": "working-hours",
+      "title": "Horário de Trabalho",
+      "policy": {
+        "summary": "Normas sobre jornada de trabalho, horário flexível, banco de horas e registro de ponto.",
+        "core_hours": "Todos os colaboradores devem estar disponíveis no horário principal: 10h às 16h, independentemente do local de trabalho.",
+        "flexible_hours": "O início e fim da jornada podem ser flexíveis entre 7h e 19h, respeitando a carga horária contratual e o horário principal.",
+        "time_tracking": [
+          "O registro de ponto é obrigatório para todos os colaboradores CLT",
+          "O registro deve ser feito através do sistema oficial de ponto eletrônico",
+          "Devem ser registrados: início da jornada, saída para almoço, retorno do almoço e fim da jornada",
+          "O tempo mínimo de almoço é de 1 hora e o máximo de 2 horas"
+        ],
+        "overtime": [
+          "Horas extras devem ser previamente autorizadas pelo gestor",
+          "Horas extras autorizadas são compensadas em banco de horas na proporção 1:1 em dias úteis e 1:2 em fins de semana e feriados",
+          "O banco de horas deve ser compensado dentro do período de 6 meses",
+          "As compensações devem ser agendadas com o gestor com pelo menos 48h de antecedência"
+        ]
+      }
+    },
+    {
+      "id": "communication",
+      "title": "Comunicação",
+      "policy": {
+        "summary": "Diretrizes para comunicação eficiente e respeitosa entre equipes, independentemente do local de trabalho.",
+        "channels": [
+          {
+            "name": "Slack",
+            "purpose": "Comunicação em tempo real para assuntos de resposta rápida, dúvidas e alinhamentos breves",
+            "expectations": "Resposta em até 2 horas durante o horário de trabalho"
+          },
+          {
+            "name": "Email",
+            "purpose": "Comunicação formal, assuntos que exigem registro ou envolvem pessoas externas",
+            "expectations": "Resposta em até 24 horas úteis"
+          },
+          {
+            "name": "Microsoft Teams",
+            "purpose": "Videoconferências, reuniões e colaboração em documentos",
+            "expectations": "Câmera ligada em reuniões sempre que possível"
+          },
+          {
+            "name": "Confluence",
+            "purpose": "Documentação de processos, políticas e conhecimento",
+            "expectations": "Consultar antes de perguntar informações já documentadas"
+          }
+        ],
+        "meetings": [
+          "Todas as reuniões devem ter pauta clara e objetivos definidos",
+          "Reuniões devem ser agendadas com pelo menos 24h de antecedência",
+          "Duração padrão de reuniões: 30 minutos, com exceções justificadas",
+          "Sexta-feira após as 15h são horários protegidos: evite agendar reuniões"
+        ],
+        "availability": [
+          "Mantenha seu status atualizado nas ferramentas de comunicação",
+          "Comunique ausências planejadas com antecedência",
+          "Configure mensagens automáticas durante períodos de ausência",
+          "Respeite o horário de trabalho dos colegas e evite contatos fora do expediente, exceto em emergências"
+        ]
+      }
+    },
+    {
+      "id": "security",
+      "title": "Segurança da Informação",
+      "policy": {
+        "summary": "Práticas e orientações para proteção de dados e informações confidenciais, independentemente do ambiente de trabalho.",
+        "password": [
+          "Use senhas fortes com pelo menos 12 caracteres, combinando letras, números e símbolos",
+          "Altere suas senhas a cada 90 dias",
+          "Utilize autenticação de dois fatores para todos os serviços corporativos",
+          "Não compartilhe senhas ou deixe-as visíveis no seu ambiente de trabalho"
+        ],
+        "device_security": [
+          "Mantenha seu computador bloqueado sempre que se afastar",
+          "Instale apenas softwares autorizados pela empresa",
+          "Mantenha o sistema operacional e softwares sempre atualizados",
+          "Não conecte dispositivos não autorizados ao equipamento corporativo"
+        ],
+        "data_protection": [
+          "Informações confidenciais não devem ser discutidas em ambientes públicos",
+          "Evite imprimir documentos confidenciais em home office; se necessário, destrua-os adequadamente após o uso",
+          "Não compartilhe tela em ambientes onde pessoas não autorizadas possam visualizar informações sensíveis",
+          "Utilize apenas os serviços de armazenamento em nuvem aprovados pela empresa"
+        ],
+        "incident_reporting": "Qualquer incidente de segurança ou suspeita de violação deve ser reportado imediatamente ao time de Segurança da Informação através do email security@empresa.com ou ramal 5600."
+      }
+    }
+  ],
+  "contacts": [
+    {
+      "department": "Recursos Humanos",
+      "contact": "rh@empresa.com | Ramal 5500",
+      "topics": ["Dúvidas sobre políticas de trabalho", "Arranjos especiais", "Questões de ergonomia"]
+    },
+    {
+      "department": "Tecnologia da Informação",
+      "contact": "ti@empresa.com | Ramal 5700",
+      "topics": ["Suporte a equipamentos", "Problemas de conectividade", "Acesso a sistemas"]
+    },
+    {
+      "department": "Segurança da Informação",
+      "contact": "security@empresa.com | Ramal 5600",
+      "topics": ["Incidentes de segurança", "Dúvidas sobre proteção de dados", "Solicitações de acesso"]
+    },
+    {
+      "department": "Facilities",
+      "contact": "facilities@empresa.com | Ramal 5800",
+      "topics": ["Reserva de espaços no escritório", "Infraestrutura", "Materiais de escritório"]
+    }
+  ]
+}

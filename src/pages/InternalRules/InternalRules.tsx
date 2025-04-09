@@ -28,17 +28,15 @@ const InternalRules: React.FC = () => {
         icon={<Book size={28} />}
       />
       
-      <div className="rules-categories">
-        {data.categories.map((category) => (
-          <Card
-            key={category.id}
-            title={category.title}
-            description={category.description}
-            icon={<Users size={24} />}
-            className="rule-category-card"
-          />
-        ))}
-      </div>
+      {data?.categories?.map((category) => (
+      <Card
+        key={category.id}
+        title={category.title}
+        description={category.description}
+        icon={<Users size={24} />}
+        className="rule-category-card"
+      />
+    ))}
       
       <div className="rules-sections">
         <div className="rules-section">

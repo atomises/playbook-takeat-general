@@ -27,8 +27,8 @@ const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
 
   // Use imported LucideIcons to get icons dynamically
   const getIcon = (iconName: string) => {
-    const Icon = LucideIcons[iconName as keyof typeof LucideIcons];
-    return Icon ? <Icon size={20} /> : null;
+    const IconComponent = LucideIcons[iconName as keyof typeof LucideIcons];
+    return IconComponent ? <IconComponent size={20} /> : null;
   };
 
   return (

@@ -4,15 +4,15 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Card from '../../components/Card/Card';
 import cardData from '../../components/Card/card.data.json';
+import * as LucideIcons from 'lucide-react';
 import './Home.css';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
   
-  // Dynamically import icons from lucide-react
+  // Use imported LucideIcons to get icons dynamically
   const getIcon = (iconName: string) => {
-    const lucideIcons = require('lucide-react');
-    const Icon = lucideIcons[iconName];
+    const Icon = LucideIcons[iconName as keyof typeof LucideIcons];
     return Icon ? <Icon size={24} /> : null;
   };
 

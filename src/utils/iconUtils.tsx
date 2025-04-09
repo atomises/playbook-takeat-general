@@ -8,8 +8,8 @@ export const getIconByName = (name: string, size: number = 24): React.ReactNode 
   const iconName = name as IconName;
   
   if (iconName in LucideIcons) {
-    const Icon = LucideIcons[iconName];
-    return <Icon size={size} />;
+    const IconComponent = LucideIcons[iconName];
+    return <IconComponent size={size} />;
   }
   
   // Fallback para um ícone padrão se o nome não for encontrado

@@ -11,6 +11,11 @@ import PlaceholderPage from '../pages/PlaceholderPage/PlaceholderPage';
 import Members from '../pages/Members/Members';
 import Policies from '../pages/Policies/Policies';
 import Paths from '../pages/Paths/Paths';
+import Dictionary from '../pages/Dictionary/Dictionary';
+import Product from '../pages/Product/Product';
+import History from '../pages/History/History';
+import Culture from '../pages/Culture/Culture';
+import Organization from '../pages/Organization/Organization';
 
 const AppRoutes: React.FC = () => {
   return (
@@ -138,7 +143,7 @@ const AppRoutes: React.FC = () => {
         path="/product" 
         element={
           <MainLayout>
-            <PlaceholderPage title="Nosso Produto" />
+            <Product />
           </MainLayout>
         } 
       />
@@ -146,7 +151,7 @@ const AppRoutes: React.FC = () => {
         path="/history" 
         element={
           <MainLayout>
-            <PlaceholderPage title="Nossa História" />
+            <History />
           </MainLayout>
         } 
       />
@@ -154,7 +159,7 @@ const AppRoutes: React.FC = () => {
         path="/culture" 
         element={
           <MainLayout>
-            <Cultura />
+            <Culture />
           </MainLayout>
         } 
       />
@@ -170,7 +175,7 @@ const AppRoutes: React.FC = () => {
         path="/dictionary" 
         element={
           <MainLayout>
-            <PlaceholderPage title="Dicionário da Empresa" />
+            <Dictionary />
           </MainLayout>
         } 
       />
@@ -186,7 +191,7 @@ const AppRoutes: React.FC = () => {
         path="/organization" 
         element={
           <MainLayout>
-            <PlaceholderPage title="Quadro de Organização" />
+            <Organization />
           </MainLayout>
         } 
       />

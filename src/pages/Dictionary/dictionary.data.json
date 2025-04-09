@@ -1,0 +1,127 @@
+
+{
+  "title": "Dicionário da Empresa",
+  "description": "Aprenda os termos e expressões utilizados no dia a dia da nossa empresa para se comunicar eficientemente com todos os times.",
+  "terms": [
+    {
+      "term": "ADR",
+      "definition": "Architecture Decision Record - Documento que registra as decisões arquiteturais importantes tomadas durante o desenvolvimento de produtos.",
+      "example": "Antes de mudarmos o banco de dados, vamos criar um ADR para registrar a decisão e seus motivos.",
+      "related": ["Documentação", "Arquitetura"]
+    },
+    {
+      "term": "BAU",
+      "definition": "Business As Usual - Refere-se às operações normais e rotineiras do negócio.",
+      "example": "Esse ticket é BAU, pode ser tratado dentro do fluxo normal de trabalho.",
+      "related": ["Operações", "Rotina"]
+    },
+    {
+      "term": "BHAGs",
+      "definition": "Big Hairy Audacious Goals - Metas ousadas e ambiciosas de longo prazo que inspiram equipes e definem direção estratégica.",
+      "example": "Nosso BHAG é ser o líder de mercado em nossa categoria até 2027.",
+      "related": ["Estratégia", "Metas", "OKRs"]
+    },
+    {
+      "term": "CAC",
+      "definition": "Custo de Aquisição de Cliente - Métrica que indica quanto custa para adquirir um novo cliente, incluindo marketing e vendas.",
+      "example": "Nosso CAC diminuiu 15% no último trimestre devido às otimizações de marketing.",
+      "related": ["Métricas", "Marketing", "Vendas"]
+    },
+    {
+      "term": "Daily",
+      "definition": "Reunião diária rápida onde cada membro da equipe compartilha o que fez, o que vai fazer e quais obstáculos enfrenta.",
+      "example": "Na daily de hoje, vou mencionar que preciso de ajuda com a integração da API.",
+      "related": ["Scrum", "Agile", "Standup"]
+    },
+    {
+      "term": "Discovery",
+      "definition": "Fase de pesquisa e exploração para entender melhor problemas, usuários e potenciais soluções antes de desenvolver um produto.",
+      "example": "Vamos dedicar duas semanas para discovery antes de definir o escopo do projeto.",
+      "related": ["UX Research", "Produto", "Design Thinking"]
+    },
+    {
+      "term": "Epic",
+      "definition": "Uma grande iniciativa ou corpo de trabalho que pode ser dividido em várias histórias menores.",
+      "example": "A epic de redesign do checkout inclui 12 histórias de usuário diferentes.",
+      "related": ["Agile", "User Stories", "Backlog"]
+    },
+    {
+      "term": "Feature Flag",
+      "definition": "Técnica que permite ativar ou desativar funcionalidades no código sem necessidade de novo deploy.",
+      "example": "Vamos lançar com feature flag para testar com apenas 10% dos usuários primeiro.",
+      "related": ["Desenvolvimento", "Lançamento", "A/B Testing"]
+    },
+    {
+      "term": "Go-to-Market",
+      "definition": "Estratégia para lançar um produto ou nova funcionalidade no mercado, incluindo planos de comunicação, vendas e distribuição.",
+      "example": "O time de marketing está finalizando a estratégia de go-to-market para o novo produto.",
+      "related": ["Lançamento", "Marketing", "Produtos"]
+    },
+    {
+      "term": "HIPPO",
+      "definition": "Highest Paid Person's Opinion - Refere-se à tendência de dar mais peso à opinião da pessoa mais bem paga ou de cargo mais alto.",
+      "example": "Não podemos tomar decisões baseadas apenas no HIPPO, precisamos de dados.",
+      "related": ["Tomada de decisão", "Cultura"]
+    },
+    {
+      "term": "KPI",
+      "definition": "Key Performance Indicator - Métricas principais que indicam o sucesso em relação aos objetivos estabelecidos.",
+      "example": "Retenção de clientes é um dos nossos KPIs mais importantes neste trimestre.",
+      "related": ["Métricas", "Objetivos", "Performance"]
+    },
+    {
+      "term": "LTV",
+      "definition": "Lifetime Value - Valor total que um cliente traz para o negócio durante todo o seu relacionamento com a empresa.",
+      "example": "Estamos focando em aumentar o LTV por meio de venda de serviços adicionais.",
+      "related": ["Métricas", "Revenue", "Clientes"]
+    },
+    {
+      "term": "MVP",
+      "definition": "Minimum Viable Product - Versão mínima de um produto com recursos suficientes para atender os primeiros usuários e obter feedback.",
+      "example": "O MVP será lançado no próximo mês, focando apenas nas funcionalidades essenciais.",
+      "related": ["Produto", "Desenvolvimento", "Lean"]
+    },
+    {
+      "term": "NPS",
+      "definition": "Net Promoter Score - Métrica que mede a lealdade e satisfação dos clientes baseada na probabilidade de recomendação.",
+      "example": "Nosso NPS aumentou de 45 para 60 após as melhorias na experiência do cliente.",
+      "related": ["Experiência do Cliente", "Métricas", "Satisfação"]
+    },
+    {
+      "term": "OKR",
+      "definition": "Objectives and Key Results - Método para definir objetivos e medir progresso em direção a eles.",
+      "example": "No próximo trimestre, nosso OKR principal é melhorar a velocidade de carregamento do app em 30%.",
+      "related": ["Metas", "Estratégia", "Performance"]
+    },
+    {
+      "term": "P0, P1, P2",
+      "definition": "Níveis de prioridade para tarefas e bugs, onde P0 é a prioridade máxima (crítica).",
+      "example": "Temos um bug P0 que está afetando o checkout, precisamos resolver imediatamente.",
+      "related": ["Bugs", "Priorização", "Desenvolvimento"]
+    },
+    {
+      "term": "QA",
+      "definition": "Quality Assurance - Processo para garantir que produtos e serviços atendam aos padrões de qualidade definidos.",
+      "example": "A funcionalidade está pronta para revisão de QA antes de ir para produção.",
+      "related": ["Testes", "Qualidade", "Desenvolvimento"]
+    },
+    {
+      "term": "Retro",
+      "definition": "Retrospectiva - Reunião onde a equipe reflete sobre o que funcionou bem, o que não funcionou e como melhorar no próximo ciclo.",
+      "example": "Na retro de hoje, vamos discutir como melhorar o processo de code review.",
+      "related": ["Agile", "Melhoria Contínua", "Scrum"]
+    },
+    {
+      "term": "Spike",
+      "definition": "Um período curto dedicado à pesquisa, investigação ou prototipagem para entender melhor um problema técnico.",
+      "example": "Vamos fazer um spike de dois dias para investigar a viabilidade dessa nova tecnologia.",
+      "related": ["Desenvolvimento", "Pesquisa", "Agile"]
+    },
+    {
+      "term": "Tech Debt",
+      "definition": "Dívida Técnica - Trabalho que precisa ser feito no futuro devido a escolhas rápidas ou subótimas feitas no presente.",
+      "example": "Precisamos dedicar o próximo sprint para reduzir o tech debt acumulado nos últimos meses.",
+      "related": ["Desenvolvimento", "Refatoração", "Qualidade"]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+
+{
+  "title": "Quadro de Organização",
+  "description": "Conheça nossa estrutura organizacional, principais líderes e como as equipes estão distribuídas globalmente.",
+  "leadership": {
+    "ceo": {
+      "name": "Mariana Santos",
+      "title": "CEO & Co-Fundadora",
+      "bio": "Mariana lidera a empresa desde 2018, focando na estratégia de expansão global e transformação digital. Sob sua liderança, a empresa dobrou seu valor de mercado e expandiu para novos mercados internacionais.",
+      "email": "mariana.santos@empresa.com",
+      "photo": null
+    },
+    "executives": [
+      {
+        "name": "Lucas Ferreira",
+        "title": "CTO",
+        "bio": "Responsável pela estratégia tecnológica e inovação de produtos. Lucas lidera uma equipe de 120 engenheiros distribuídos globalmente.",
+        "photo": null
+      },
+      {
+        "name": "Isabela Mendes",
+        "title": "CFO",
+        "bio": "Com mais de 15 anos de experiência em finanças corporativas, Isabela supervisiona todas as operações financeiras e de investimentos da empresa.",
+        "photo": null
+      },
+      {
+        "name": "Rafael Costa",
+        "title": "COO",
+        "bio": "Rafael gerencia as operações globais da empresa, garantindo eficiência e escalabilidade em todos os processos e departamentos.",
+        "photo": null
+      },
+      {
+        "name": "Camila Oliveira",
+        "title": "CHRO",
+        "bio": "Lidera as estratégias de recursos humanos, focando em cultura organizacional, desenvolvimento de talentos e bem-estar dos colaboradores.",
+        "photo": null
+      },
+      {
+        "name": "André Silva",
+        "title": "CMO",
+        "bio": "Responsável por todas as iniciativas de marketing global, branding e crescimento da empresa nos diversos mercados.",
+        "photo": null
+      }
+    ]
+  },
+  "departments": [
+    {
+      "id": "product",
+      "name": "Produto & Engenharia",
+      "leader": "Lucas Ferreira, CTO",
+      "teamSize": 120,
+      "description": "Responsável pelo desenvolvimento, design e manutenção dos nossos produtos digitais. A área combina times multidisciplinares de engenharia, design e produto para entregar soluções inovadoras.",
+      "teams": [
+        {
+          "name": "Desenvolvimento Frontend",
+          "description": "Especialistas em criar interfaces intuitivas e responsivas utilizando as mais modernas tecnologias web."
+        },
+        {
+          "name": "Desenvolvimento Backend",
+          "description": "Responsáveis pela arquitetura, APIs e infraestrutura que sustentam nossos produtos."
+        },
+        {
+          "name": "Design UX/UI",
+          "description": "Focados em criar experiências excepcionais para os usuários, combinando estética e funcionalidade."
+        },
+        {
+          "name": "Quality Assurance",
+          "description": "Garantem a qualidade e confiabilidade de nossos produtos através de testes automatizados e manuais."
+        },
+        {
+          "name": "Product Management",
+          "description": "Definem a visão do produto e priorizam recursos baseados em dados e feedback de usuários."
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing & Vendas",
+      "leader": "André Silva, CMO",
+      "teamSize": 85,
+      "description": "Responsável por todas as atividades de marketing, aquisição de clientes, branding e comunicação externa. Trabalha em estreita colaboração com as equipes de vendas para impulsionar o crescimento.",
+      "teams": [
+        {
+          "name": "Marketing Digital",
+          "description": "Especialistas em campanhas digitais, SEO, mídia paga e análise de performance."
+        },
+        {
+          "name": "Vendas Corporativas",
+          "description": "Focados em grandes contas e parcerias estratégicas com empresas de médio e grande porte."
+        },
+        {
+          "name": "Sucesso do Cliente",
+          "description": "Garantem que os clientes obtenham o máximo valor de nossos produtos e serviços."
+        },
+        {
+          "name": "Comunicação & PR",
+          "description": "Gerenciam a imagem da empresa, relações com a mídia e comunicações externas."
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Finanças & Operações",
+      "leader": "Isabela Mendes, CFO",
+      "teamSize": 45,
+      "description": "Supervisiona todas as operações financeiras, contabilidade, planejamento estratégico e relações com investidores, garantindo a saúde financeira e o crescimento sustentável da empresa.",
+      "teams": [
+        {
+          "name": "Contabilidade & Controle",
+          "description": "Responsáveis por registros financeiros, relatórios e conformidade fiscal."
+        },
+        {
+          "name": "Planejamento Financeiro",
+          "description": "Focados em projeções, orçamentos e análise financeira estratégica."
+        },
+        {
+          "name": "Operações",
+          "description": "Gerenciam a infraestrutura física, logística e processos operacionais da empresa."
+        },
+        {
+          "name": "Investimentos & M&A",
+          "description": "Lideram iniciativas de captação de recursos, fusões e aquisições."
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "name": "Pessoas & Cultura",
+      "leader": "Camila Oliveira, CHRO",
+      "teamSize": 30,
+      "description": "Dedicada a construir uma cultura organizacional forte e atrair, desenvolver e reter os melhores talentos. Responsável por todas as iniciativas de recursos humanos e bem-estar dos colaboradores.",
+      "teams": [
+        {
+          "name": "Recrutamento & Seleção",
+          "description": "Especialistas em atrair e contratar os melhores talentos alinhados com nossa cultura."
+        },
+        {
+          "name": "Desenvolvimento & Aprendizagem",
+          "description": "Focados em programas de treinamento, mentoria e crescimento profissional."
+        },
+        {
+          "name": "Cultura & Engajamento",
+          "description": "Cultivam um ambiente de trabalho positivo e promovem iniciativas de engajamento."
+        },
+        {
+          "name": "Compensação & Benefícios",
+          "description": "Gerenciam políticas salariais, benefícios e reconhecimento de colaboradores."
+        }
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "value": "950+",
+      "label": "Colaboradores Globais",
+      "trend": "up",
+      "trendValue": "15% no último ano"
+    },
+    {
+      "value": "12",
+      "label": "Escritórios Globais",
+      "trend": "up",
+      "trendValue": "2 novos em 2023"
+    },
+    {
+      "value": "38%",
+      "label": "Mulheres em Liderança",
+      "trend": "up",
+      "trendValue": "5% no último ano"
+    },
+    {
+      "value": "25",
+      "label": "Nacionalidades",
+      "trend": null,
+      "trendValue": null
+    }
+  ],
+  "locations": [
+    {
+      "country": "Brasil",
+      "city": "São Paulo",
+      "address": "Av. Paulista, 1000, Bela Vista",
+      "employeeCount": 350,
+      "teams": ["Produto", "Marketing", "Finanças", "RH", "Operações"]
+    },
+    {
+      "country": "Brasil",
+      "city": "Rio de Janeiro",
+      "address": "Av. Rio Branco, 500, Centro",
+      "employeeCount": 120,
+      "teams": ["Engenharia", "Suporte", "Vendas"]
+    },
+    {
+      "country": "Argentina",
+      "city": "Buenos Aires",
+      "address": "Av. Corrientes 456, C1043",
+      "employeeCount": 85,
+      "teams": ["Produto", "Marketing", "Vendas"]
+    },
+    {
+      "country": "México",
+      "city": "Cidade do México",
+      "address": "Paseo de la Reforma 222, Juárez",
+      "employeeCount": 75,
+      "teams": ["Vendas", "Suporte", "Marketing"]
+    },
+    {
+      "country": "EUA",
+      "city": "Nova York",
+      "address": "335 Madison Ave, NY 10017",
+      "employeeCount": 120,
+      "teams": ["Engenharia", "Vendas", "Finanças"]
+    },
+    {
+      "country": "Portugal",
+      "city": "Lisboa",
+      "address": "Avenida da Liberdade 110, 1269-046",
+      "employeeCount": 65,
+      "teams": ["Engenharia", "Produto", "Suporte"]
+    }
+  ]
+}

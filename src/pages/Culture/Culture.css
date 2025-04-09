@@ -1,0 +1,217 @@
+
+.culture-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.culture-intro {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  margin: 0 0 20px 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #0066cc;
+}
+
+.intro-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin-bottom: 32px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.value-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 102, 204, 0.1);
+  color: #0066cc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.value-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #333333;
+}
+
+.value-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0;
+}
+
+.principles-section {
+  margin-bottom: 48px;
+}
+
+.principles-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.principle-card {
+  height: 100%;
+}
+
+.work-environment-section {
+  margin-bottom: 48px;
+}
+
+.environment-features {
+  margin-bottom: 32px;
+}
+
+.environment-feature {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.environment-feature.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+  flex: 1;
+}
+
+.feature-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-content {
+  flex: 1;
+}
+
+.feature-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: #333333;
+}
+
+.feature-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0;
+}
+
+.diversity-section {
+  margin-bottom: 48px;
+  background-color: #f8f9fa;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.diversity-content {
+  display: flex;
+  gap: 40px;
+}
+
+.diversity-text {
+  flex: 1.5;
+}
+
+.diversity-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0 0 16px 0;
+}
+
+.diversity-text p:last-child {
+  margin-bottom: 0;
+}
+
+.diversity-stats {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stat-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0066cc;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #555555;
+}
+
+.culture-highlight-section {
+  margin-top: 48px;
+}
+
+@media (max-width: 768px) {
+  .values-grid,
+  .principles-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .environment-feature,
+  .environment-feature.reverse,
+  .diversity-content {
+    flex-direction: column;
+  }
+  
+  .feature-image {
+    margin-bottom: 20px;
+  }
+}

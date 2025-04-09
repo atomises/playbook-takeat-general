@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Github } from 'lucide-react';
 import './Footer.css';
 
@@ -9,29 +10,36 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ 
-  className = '', 
-  githubLink = 'https://github.com/your-company/your-repo' 
+  className = '',
+  githubLink = 'https://github.com'
 }) => {
-  const currentYear = new Date().getFullYear();
-  
   return (
-    <footer className={`app-footer ${className}`}>
+    <motion.footer 
+      className={`footer ${className}`}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2 }}
+    >
       <div className="footer-content">
-        <p className="copyright">
-          &copy; {currentYear} Empresa. Todos os direitos reservados.
-        </p>
+        <div className="footer-copyright">
+          © {new Date().getFullYear()} MyCompany. Todos os direitos reservados.
+        </div>
         
-        <a 
-          href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="github-link"
-          title="Visite nosso GitHub"
-        >
-          <Github size={20} />
-        </a>
+        <div className="footer-links">
+          <a href="#" className="footer-link">Política de Privacidade</a>
+          <a href="#" className="footer-link">Termos de Uso</a>
+          <a
+            href={githubLink}
+            className="github-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github size={18} />
+            <span>GitHub</span>
+          </a>
+        </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

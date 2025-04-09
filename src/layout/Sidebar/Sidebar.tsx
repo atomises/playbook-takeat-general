@@ -103,8 +103,15 @@ const Sidebar: React.FC<SidebarProps> = ({
                 className="category-header"
                 onClick={() => toggleCategory(category.id)}
               >
-                {!collapsed && (
+                {collapsed ? (
+                  <div className="category-icon-collapsed">
+                    {category.icon && getIconByName(category.icon, 20)}
+                  </div>
+                ) : (
                   <>
+                    <div className="category-icon">
+                      {category.icon && getIconByName(category.icon, 16)}
+                    </div>
                     <h3 className="category-title">{category.title}</h3>
                     <div className="category-toggle">
                       {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
@@ -117,8 +124,8 @@ const Sidebar: React.FC<SidebarProps> = ({
                 className="sidebar-nav"
                 initial={false}
                 animate={{ 
-                  height: (!collapsed && isExpanded) ? 'auto' : collapsed ? 'auto' : 0,
-                  opacity: (!collapsed && isExpanded) ? 1 : collapsed ? 1 : 0
+                  height: (!collapsed && isExpanded) ? 'auto' : collapsed ? 0 : 0,
+                  opacity: (!collapsed && isExpanded) ? 1 : 0
                 }}
                 transition={{ duration: 0.3 }}
               >

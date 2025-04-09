@@ -15,6 +15,7 @@ import Dictionary from './pages/Dictionary/Dictionary';
 import Organization from './pages/Organization/Organization';
 import Paths from './pages/Paths/Paths';
 import Voice from './pages/Voice/Voice';
+import Purchases from './pages/Purchases/Purchases';
 import Rooms from './pages/Rooms/Rooms';
 import Office from './pages/Office/Office';
 import Calendar from './pages/Calendar/Calendar';
@@ -42,6 +43,7 @@ const App: React.FC = () => {
           <Route path="/organization" element={<Organization />} />
           <Route path="/paths" element={<Paths />} />
           <Route path="/voice" element={<Voice />} />
+          <Route path="/purchases" element={<Purchases />} />
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/office" element={<Office />} />
           <Route path="/calendar" element={<Calendar />} />

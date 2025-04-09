@@ -1,0 +1,144 @@
+
+{
+  "title": "Compras",
+  "description": "Guia completo sobre como realizar solicitações de compras na empresa, aprovações necessárias e políticas relacionadas.",
+  "categories": [
+    {
+      "id": "office",
+      "title": "Material de Escritório",
+      "icon": "FileText",
+      "description": "Itens de escritório como papelaria, materiais de organização e suprimentos diversos."
+    },
+    {
+      "id": "software",
+      "title": "Software",
+      "icon": "Package",
+      "description": "Licenças, aplicativos e serviços digitais para uso profissional."
+    },
+    {
+      "id": "hardware",
+      "title": "Hardware",
+      "icon": "Monitor",
+      "description": "Equipamentos eletrônicos, computadores, periféricos e acessórios."
+    },
+    {
+      "id": "travel",
+      "title": "Viagens",
+      "icon": "Plane",
+      "description": "Passagens, hospedagens e despesas relacionadas a viagens corporativas."
+    },
+    {
+      "id": "services",
+      "title": "Serviços",
+      "icon": "FileCheck",
+      "description": "Contratação de serviços terceirizados e consultoria externa."
+    },
+    {
+      "id": "events",
+      "title": "Eventos",
+      "icon": "Calendar",
+      "description": "Materiais e serviços para eventos corporativos e treinamentos."
+    }
+  ],
+  "process": {
+    "title": "Processo de Compra",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Identificação da Necessidade",
+        "description": "Identifique a necessidade de compra e verifique se já não existe algo similar disponível na empresa."
+      },
+      {
+        "id": 2,
+        "title": "Pedido de Orçamento",
+        "description": "Para compras acima de R$ 500, solicite pelo menos 3 orçamentos de fornecedores diferentes."
+      },
+      {
+        "id": 3,
+        "title": "Solicitação no Sistema",
+        "description": "Preencha o formulário de solicitação no sistema de compras, anexando os orçamentos obtidos."
+      },
+      {
+        "id": 4,
+        "title": "Aprovação",
+        "description": "Aguarde a aprovação da sua solicitação de acordo com os limites de alçada estabelecidos."
+      },
+      {
+        "id": 5,
+        "title": "Processamento",
+        "description": "Após aprovação, o departamento de compras processará seu pedido e fará o contato com o fornecedor."
+      },
+      {
+        "id": 6,
+        "title": "Recebimento e Confirmação",
+        "description": "Ao receber o item ou serviço, confirme o recebimento no sistema para finalizar o processo."
+      }
+    ]
+  },
+  "approval_levels": [
+    {
+      "amount": "Até R$ 500",
+      "approver": "Gestor direto"
+    },
+    {
+      "amount": "R$ 501 a R$ 5.000",
+      "approver": "Gerente de departamento"
+    },
+    {
+      "amount": "R$ 5.001 a R$ 15.000",
+      "approver": "Diretor da área"
+    },
+    {
+      "amount": "R$ 15.001 a R$ 50.000",
+      "approver": "Diretoria executiva"
+    },
+    {
+      "amount": "Acima de R$ 50.000",
+      "approver": "CEO e conselho"
+    }
+  ],
+  "purchase_limits": {
+    "title": "Limites de Compra sem Aprovação Prévia",
+    "description": "Cada departamento possui uma verba mensal para pequenas compras sem necessidade de aprovação prévia, limitada aos seguintes valores:",
+    "limits": [
+      {
+        "department": "Tecnologia",
+        "limit": "R$ 2.000 / mês"
+      },
+      {
+        "department": "Marketing",
+        "limit": "R$ 3.000 / mês"
+      },
+      {
+        "department": "Operações",
+        "limit": "R$ 1.500 / mês"
+      },
+      {
+        "department": "Recursos Humanos",
+        "limit": "R$ 1.000 / mês"
+      },
+      {
+        "department": "Administrativo",
+        "limit": "R$ 2.500 / mês"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "Qual o prazo médio para aprovação de uma compra?",
+      "answer": "O prazo médio para aprovação varia de acordo com o valor da compra. Solicitações de até R$ 500 geralmente são aprovadas em até 24 horas. Para valores maiores, o prazo pode ser de 2 a 5 dias úteis."
+    },
+    {
+      "question": "Como solicito compras emergenciais?",
+      "answer": "Para compras emergenciais, marque a opção 'Urgente' no formulário de solicitação e especifique o motivo da urgência. Adicionalmente, entre em contato com o departamento de compras por telefone para agilizar o processo."
+    },
+    {
+      "question": "Posso fazer compras diretamente e pedir reembolso?",
+      "answer": "Compras diretas com reembolso só são permitidas em situações excepcionais e com autorização prévia do seu gestor. Caso seja necessário, mantenha todas as notas fiscais e recibos para solicitar o reembolso."
+    },
+    {
+      "question": "Onde encontro a lista de fornecedores aprovados?",
+      "answer": "A lista de fornecedores aprovados está disponível na intranet, na seção 'Compras > Fornecedores'. Sempre dê preferência a estes fornecedores, pois já passaram por um processo de homologação."
+    }
+  ]
+}

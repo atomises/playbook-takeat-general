@@ -4,6 +4,7 @@
     {
       "id": "playbook",
       "title": "Playbook",
+      "icon": "BookOpen",
       "items": [
         {
           "id": "internal-rules",
@@ -34,6 +35,7 @@
     {
       "id": "work",
       "title": "Pra Seu Trabalho",
+      "icon": "Briefcase",
       "items": [
         {
           "id": "paths",
@@ -94,6 +96,7 @@
     {
       "id": "about",
       "title": "Sobre",
+      "icon": "Info",
       "items": [
         {
           "id": "product",
@@ -136,6 +139,19 @@
           "title": "Quadro de Organização",
           "icon": "Users",
           "path": "/organization"
+        }
+      ]
+    },
+    {
+      "id": "useful",
+      "title": "Links Úteis",
+      "icon": "Link",
+      "items": [
+        {
+          "id": "useful-links",
+          "title": "Links Úteis",
+          "icon": "ExternalLink",
+          "path": "/useful-links"
         }
       ]
     }

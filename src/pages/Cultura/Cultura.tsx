@@ -5,8 +5,8 @@ import * as LucideIcons from 'lucide-react';
 import './Cultura.css';
 import data from './cultura.data.json';
 
-// Type assertion for dynamic icon lookup
-type IconComponentType = keyof typeof LucideIcons;
+// Properly type the Lucide icons
+type IconName = keyof typeof LucideIcons;
 
 const Cultura: React.FC = () => {
   const containerVariants = {
@@ -30,11 +30,16 @@ const Cultura: React.FC = () => {
 
   // Fixed getIcon function with proper typing
   const getIcon = (iconName: string, size = 24) => {
-    if (iconName in LucideIcons) {
-      const Icon = LucideIcons[iconName as IconComponentType];
-      return <Icon size={size} />;
-    }
-    return null;
+    // Check if the icon exists in LucideIcons
+    const iconExists = Object.prototype.hasOwnProperty.call(LucideIcons, iconName);
+    if (!iconExists) return null;
+    
+    // Use dynamic access with type assertion
+    const IconComponent = LucideIcons[iconName as IconName];
+    // Check if the icon is a valid component
+    if (typeof IconComponent !== 'function') return null;
+    
+    return React.createElement(IconComponent, { size });
   };
 
   return (

@@ -12,8 +12,8 @@ interface SidebarProps {
   className?: string;
 }
 
-// Type assertion for dynamic icon lookup
-type IconComponentType = keyof typeof LucideIcons;
+// Properly type the Lucide icons
+type IconName = keyof typeof LucideIcons;
 
 const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
   const [collapsed, setCollapsed] = useState(false);
@@ -30,11 +30,16 @@ const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
 
   // Fixed getIcon function with proper typing
   const getIcon = (iconName: string) => {
-    if (iconName in LucideIcons) {
-      const Icon = LucideIcons[iconName as IconComponentType];
-      return <Icon size={20} />;
-    }
-    return null;
+    // Check if the icon exists in LucideIcons
+    const iconExists = Object.prototype.hasOwnProperty.call(LucideIcons, iconName);
+    if (!iconExists) return null;
+    
+    // Use dynamic access with type assertion
+    const IconComponent = LucideIcons[iconName as IconName];
+    // Check if the icon is a valid component
+    if (typeof IconComponent !== 'function') return null;
+    
+    return React.createElement(IconComponent, { size: 20 });
   };
 
   return (

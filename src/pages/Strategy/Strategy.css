@@ -1,0 +1,467 @@
+
+.strategy-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.section-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #495057;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+}
+
+/* Visão e Missão */
+.vision-mission-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.vision-box,
+.mission-box {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.vision-box {
+  border-left: 4px solid #4263eb;
+}
+
+.mission-box {
+  border-left: 4px solid #40c057;
+}
+
+.vision-box h2,
+.mission-box h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.vision-box p,
+.mission-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #495057;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.vision-box::before,
+.mission-box::before {
+  content: '"';
+  position: absolute;
+  font-size: 10rem;
+  opacity: 0.05;
+  font-family: serif;
+  top: -2rem;
+  right: 1rem;
+  line-height: 1;
+}
+
+/* Métricas */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.metric-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.metric-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.metric-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.metric-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #343a40;
+}
+
+.metric-trend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.metric-trend.up {
+  background-color: rgba(64, 192, 87, 0.1);
+  color: #40c057;
+}
+
+.metric-trend.down {
+  background-color: rgba(250, 82, 82, 0.1);
+  color: #fa5252;
+  transform: rotate(180deg);
+}
+
+.metric-values {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.metric-current,
+.metric-target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #212529;
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-top: 0.25rem;
+}
+
+.metric-progress-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.metric-progress-bar {
+  flex: 1;
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.metric-progress-fill {
+  height: 100%;
+  background-color: #4263eb;
+  border-radius: 4px;
+}
+
+.metric-progress-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #495057;
+  min-width: 2.5rem;
+  text-align: right;
+}
+
+/* Pilares */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.pillar-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e9ecef;
+}
+
+.pillar-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pillar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(66, 99, 235, 0.1);
+  border-radius: 8px;
+  color: #4263eb;
+  margin-bottom: 1rem;
+}
+
+.pillar-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #212529;
+}
+
+.pillar-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #495057;
+  margin-bottom: 1.5rem;
+}
+
+.pillar-goals {
+  margin-top: auto;
+}
+
+.pillar-goals h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #343a40;
+}
+
+.pillar-goals ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pillar-goals li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: #495057;
+  line-height: 1.4;
+}
+
+.pillar-goals li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4263eb;
+  font-weight: bold;
+}
+
+/* Iniciativas */
+.initiatives-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.initiative-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+}
+
+.initiative-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.initiative-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.initiative-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #212529;
+}
+
+.initiative-status {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.initiative-status.em-andamento {
+  background-color: #e3fafc;
+  color: #0c8599;
+}
+
+.initiative-status.planejamento {
+  background-color: #fff3bf;
+  color: #f59f00;
+}
+
+.initiative-status.não-iniciado {
+  background-color: #f1f3f5;
+  color: #495057;
+}
+
+.initiative-status.concluído {
+  background-color: #d3f9d8;
+  color: #2b8a3e;
+}
+
+.initiative-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #495057;
+  margin-bottom: 1.5rem;
+}
+
+.initiative-progress {
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4263eb;
+  border-radius: 4px;
+}
+
+.progress-text {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.initiative-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.initiative-detail {
+  font-size: 0.85rem;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #495057;
+  margin-right: 0.25rem;
+}
+
+.detail-value {
+  color: #343a40;
+}
+
+/* Tendências */
+.trends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.trend-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.trend-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trend-details {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.trend-detail {
+  font-size: 0.85rem;
+}
+
+.trend-impact {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.trend-impact.alto {
+  background-color: #ffe3e3;
+  color: #e03131;
+}
+
+.trend-impact.médio {
+  background-color: #fff3bf;
+  color: #f59f00;
+}
+
+.trend-impact.baixo {
+  background-color: #d3f9d8;
+  color: #2b8a3e;
+}
+
+.trend-timeframe {
+  color: #495057;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .vision-mission-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .metrics-grid,
+  .pillars-grid,
+  .initiatives-list,
+  .trends-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .initiative-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .initiative-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

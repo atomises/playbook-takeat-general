@@ -1,105 +1,218 @@
 
 {
-  "title": "Nosso Produto",
-  "description": "Conheça a solução completa que oferecemos para atender às necessidades do seu negócio.",
-  "productName": "EnterprisePro Suite",
-  "tagline": "A plataforma integrada que transforma a eficiência operacional da sua empresa.",
-  "imageUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8dGVjaHxlbnwwfHx8fDE2MTY0MzEwNTg&ixlib=rb-4.0.3&q=80&w=500",
-  "keyHighlights": [
-    "Plataforma totalmente integrada",
-    "Experiência de usuário simplificada",
-    "Segurança e conformidade de nível empresarial",
-    "Suporte 24/7 especializado",
-    "Personalização avançada"
-  ],
-  "overview": "O EnterprisePro Suite é nossa solução empresarial completa, projetada para otimizar operações, melhorar a colaboração e impulsionar resultados de negócios. Combinando tecnologia avançada com uma interface intuitiva, nossa plataforma se adapta às necessidades específicas de organizações de todos os tamanhos.",
-  "features": [
-    {
-      "title": "Automação Inteligente",
-      "description": "Automatize processos repetitivos e reduza erros manuais com fluxos de trabalho inteligentes que se adaptam às necessidades do seu negócio."
-    },
-    {
-      "title": "Dashboards Personalizáveis",
-      "description": "Visualize métricas-chave em dashboards interativos que permitem análise em tempo real e tomada de decisões baseada em dados."
-    },
-    {
-      "title": "Colaboração em Tempo Real",
-      "description": "Permite que equipes trabalhem simultaneamente em documentos e projetos, com comunicação integrada e ferramentas de gerenciamento de tarefas."
-    },
-    {
-      "title": "Integração Completa",
-      "description": "Conecte-se facilmente com centenas de aplicativos e serviços através de nossa API robusta e conectores pré-construídos."
-    },
-    {
-      "title": "Segurança Avançada",
-      "description": "Proteja dados sensíveis com criptografia de ponta a ponta, controles de acesso granulares e monitoramento contínuo de ameaças."
-    },
-    {
-      "title": "Escalabilidade Empresarial",
-      "description": "Infraestrutura que cresce com seu negócio, suportando desde pequenas equipes até operações globais com desempenho consistente."
-    }
-  ],
-  "howItWorks": [
-    {
-      "title": "Avaliação e Planejamento",
-      "description": "Nossa equipe analisa suas necessidades específicas e desenvolve um plano de implementação personalizado para sua organização."
-    },
-    {
-      "title": "Configuração e Integração",
-      "description": "Configuramos a plataforma de acordo com seus requisitos, integrando com seus sistemas existentes e migrando dados quando necessário."
-    },
-    {
-      "title": "Treinamento e Adoção",
-      "description": "Fornecemos treinamento abrangente para garantir que sua equipe aproveite ao máximo todas as funcionalidades da plataforma."
-    },
-    {
-      "title": "Suporte Contínuo",
-      "description": "Nossa equipe de suporte especializado está disponível 24/7 para ajudar com qualquer questão e garantir o funcionamento ideal da plataforma."
-    }
-  ],
-  "industries": [
-    {
-      "name": "Serviços Financeiros",
-      "description": "Soluções que atendem às necessidades específicas de bancos, seguradoras e gestoras de investimentos, com foco em segurança e conformidade."
-    },
-    {
-      "name": "Saúde",
-      "description": "Ferramentas especializadas para hospitais, clínicas e operadoras de saúde, priorizando a privacidade do paciente e eficiência operacional."
-    },
-    {
-      "name": "Varejo",
-      "description": "Recursos adaptados para varejistas físicos e online, incluindo gestão de inventário, experiência do cliente e análise de vendas."
-    },
-    {
-      "name": "Manufatura",
-      "description": "Soluções para otimizar a cadeia de suprimentos, monitorar a produção e melhorar a qualidade do produto em ambientes industriais."
-    }
-  ],
-  "upcomingReleases": {
-    "description": "No próximo trimestre, estamos lançando nossa nova funcionalidade de IA preditiva, que utilizará machine learning para antecipar tendências de negócios e recomendar ações proativas. Além disso, nossa plataforma móvel completa estará disponível, permitindo acesso total às funcionalidades em qualquer dispositivo."
+  "title": "Nossos Produtos",
+  "description": "Conheça em detalhes os produtos e serviços que oferecemos ao mercado.",
+  "featuredProduct": {
+    "name": "Plataforma Compass",
+    "description": "Nossa plataforma principal oferece uma solução completa para empresas que buscam otimizar seus processos internos e melhorar a produtividade das equipes.",
+    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
+    "features": [
+      "Gerenciamento completo de projetos",
+      "Automação de processos operacionais",
+      "Análise de dados em tempo real",
+      "Integração com mais de 200 ferramentas",
+      "Suporte 24/7 e atendimento personalizado"
+    ]
   },
-  "testimonials": [
+  "products": [
     {
-      "author": "Ana Silva",
-      "role": "CTO, TechCorp",
-      "rating": 5,
-      "text": "O EnterprisePro transformou completamente nossa eficiência operacional. Conseguimos reduzir em 30% o tempo gasto em tarefas administrativas e melhorar significativamente a colaboração entre equipes."
+      "name": "Compass Analytics",
+      "description": "Ferramenta de análise de dados que transforma informações complexas em insights acionáveis para tomada de decisões estratégicas.",
+      "icon": "BarChart",
+      "features": [
+        "Dashboards personalizáveis",
+        "Relatórios automatizados",
+        "Inteligência artificial para previsões",
+        "Exportação em múltiplos formatos"
+      ]
     },
     {
-      "author": "Carlos Mendes",
-      "role": "Diretor de Operações, FinanceBank",
-      "rating": 4,
-      "text": "A segurança e a conformidade eram nossas principais preocupações, e o EnterprisePro superou todas as nossas expectativas. O suporte da equipe tem sido excepcional durante toda a implementação."
+      "name": "Compass Flow",
+      "description": "Solução para automação de fluxos de trabalho que elimina tarefas repetitivas e aumenta a produtividade das equipes.",
+      "icon": "Zap",
+      "features": [
+        "Designer de fluxos intuitivo",
+        "Automação de aprovações",
+        "Integração com sistemas legados",
+        "Rastreamento de processos em tempo real"
+      ]
     },
     {
-      "author": "Mariana Costa",
-      "role": "Gerente de Projetos, RetailGlobal",
-      "rating": 5,
-      "text": "Desde que implementamos o EnterprisePro, conseguimos acelerar o lançamento de novos produtos em 40%. A visibilidade em tempo real e as ferramentas de colaboração fazem toda a diferença."
+      "name": "Compass Secure",
+      "description": "Plataforma de segurança que protege dados sensíveis e garante conformidade com regulamentações de proteção de dados.",
+      "icon": "Shield",
+      "features": [
+        "Criptografia de ponta a ponta",
+        "Controle de acesso granular",
+        "Auditoria de segurança",
+        "Conformidade com LGPD e GDPR"
+      ]
+    },
+    {
+      "name": "Compass Talent",
+      "description": "Sistema de gestão de pessoas que apoia processos de recrutamento, desenvolvimento e retenção de talentos.",
+      "icon": "Users",
+      "features": [
+        "ATS completo para recrutamento",
+        "Avaliação de desempenho 360°",
+        "Planos de desenvolvimento personalizados",
+        "Pesquisas de clima organizacional"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "company": "TechSolutions",
+      "industry": "Tecnologia",
+      "logo": "https://via.placeholder.com/100x50",
+      "challenge": "Gerenciar mais de 200 projetos simultâneos com equipes distribuídas em 3 países diferentes.",
+      "solution": "Implementação do Compass com módulos personalizados para gestão de projetos e integração com ferramentas de desenvolvimento.",
+      "results": [
+        "Redução de 30% no tempo de entrega dos projetos",
+        "Aumento de 25% na produtividade das equipes",
+        "Economia de R$ 2 milhões em 12 meses"
+      ]
+    },
+    {
+      "company": "FinancePro",
+      "industry": "Serviços Financeiros",
+      "logo": "https://via.placeholder.com/100x50",
+      "challenge": "Garantir conformidade com regulamentações financeiras enquanto escalava suas operações internacionais.",
+      "solution": "Implementação do Compass Secure com customizações específicas para o setor financeiro.",
+      "results": [
+        "100% de conformidade com regulamentações",
+        "Redução de 40% no tempo de auditoria",
+        "Eliminação de multas por não-conformidade"
+      ]
+    },
+    {
+      "company": "RetailGiant",
+      "industry": "Varejo",
+      "logo": "https://via.placeholder.com/100x50",
+      "challenge": "Integrar dados de vendas de mais de 200 lojas físicas e e-commerce para melhorar decisões de estoque.",
+      "solution": "Implementação do Compass Analytics com painéis personalizados para gestão de inventário e previsão de demanda.",
+      "results": [
+        "Redução de 22% em ruptura de estoque",
+        "Aumento de 15% nas vendas",
+        "Redução de 35% em excesso de inventário"
+      ]
+    }
+  ],
+  "pricing": [
+    {
+      "title": "Starter",
+      "price": "99",
+      "period": "mês",
+      "description": "Ideal para pequenas empresas em fase inicial",
+      "highlighted": false,
+      "features": [
+        {
+          "text": "Até 10 usuários",
+          "included": true
+        },
+        {
+          "text": "3 projetos simultâneos",
+          "included": true
+        },
+        {
+          "text": "Armazenamento de 10GB",
+          "included": true
+        },
+        {
+          "text": "Suporte por e-mail",
+          "included": true
+        },
+        {
+          "text": "Integrações básicas",
+          "included": true
+        },
+        {
+          "text": "Analytics avançado",
+          "included": false
+        },
+        {
+          "text": "API completa",
+          "included": false
+        }
+      ]
+    },
+    {
+      "title": "Professional",
+      "price": "299",
+      "period": "mês",
+      "description": "Para empresas em crescimento com várias equipes",
+      "highlighted": true,
+      "features": [
+        {
+          "text": "Até 50 usuários",
+          "included": true
+        },
+        {
+          "text": "Projetos ilimitados",
+          "included": true
+        },
+        {
+          "text": "Armazenamento de 100GB",
+          "included": true
+        },
+        {
+          "text": "Suporte prioritário",
+          "included": true
+        },
+        {
+          "text": "Integrações avançadas",
+          "included": true
+        },
+        {
+          "text": "Analytics avançado",
+          "included": true
+        },
+        {
+          "text": "API completa",
+          "included": false
+        }
+      ]
+    },
+    {
+      "title": "Enterprise",
+      "price": "799",
+      "period": "mês",
+      "description": "Solução completa para grandes empresas",
+      "highlighted": false,
+      "features": [
+        {
+          "text": "Usuários ilimitados",
+          "included": true
+        },
+        {
+          "text": "Projetos ilimitados",
+          "included": true
+        },
+        {
+          "text": "Armazenamento ilimitado",
+          "included": true
+        },
+        {
+          "text": "Suporte 24/7 dedicado",
+          "included": true
+        },
+        {
+          "text": "Todas as integrações",
+          "included": true
+        },
+        {
+          "text": "Analytics avançado",
+          "included": true
+        },
+        {
+          "text": "API completa",
+          "included": true
+        }
+      ]
     }
   ],
   "highlight": {
-    "text": "Nossa missão é capacitar empresas com tecnologia que simplifica o complexo, automatiza o repetitivo e libera o potencial humano para inovação e crescimento.",
-    "author": "Miguel Santos, CEO"
+    "text": "Nossos produtos são desenvolvidos com base em anos de experiência e pesquisa, sempre buscando oferecer as melhores soluções para os desafios reais das empresas.",
+    "author": "Pedro Mendes, CTO e Co-fundador"
   }
 }

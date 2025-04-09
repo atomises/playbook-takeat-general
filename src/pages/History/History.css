@@ -1,340 +1,218 @@
 
 .history-page {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.history-intro {
   display: flex;
-  gap: 40px;
-  margin-bottom: 60px;
-  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
 }
 
-.intro-content {
-  flex: 1;
-}
-
-.intro-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #333333;
-  margin: 0 0 20px 0;
-}
-
-.intro-description {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555555;
-}
-
-.founder-quote {
-  flex: 1;
-  background-color: #f8f9fa;
-  border-left: 4px solid #0066cc;
-  padding: 30px;
-  border-radius: 0 8px 8px 0;
-}
-
-.founder-quote blockquote {
-  margin: 0;
-  font-size: 18px;
-  font-style: italic;
-  color: #333333;
-  line-height: 1.6;
-}
-
-.founder-quote cite {
-  display: block;
-  margin-top: 16px;
-  font-style: normal;
+.section-title {
+  font-size: 1.5rem;
   font-weight: 600;
-  color: #555555;
+  margin-bottom: 1.5rem;
+  color: #333;
 }
 
-.timeline-container {
+/* Seção dos fundadores */
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.founder-card {
+  display: flex;
+  gap: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.founder-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.founder-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.founder-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-info {
+  flex: 1;
+}
+
+.founder-info h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #212529;
+}
+
+.founder-title {
+  font-size: 0.9rem;
+  color: #495057;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.founder-bio {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #495057;
+}
+
+/* Timeline */
+.timeline {
   position: relative;
-  margin: 80px 0;
-  padding: 0 20px;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
 }
 
-.timeline-line {
+.timeline::before {
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%;
-  width: 4px;
-  background-color: #0066cc;
-  transform: translateX(-50%);
-}
-
-.timeline {
-  position: relative;
+  left: 10px;
+  width: 2px;
+  background-color: #dee2e6;
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 60px;
-  width: 45%;
+  margin-bottom: 2.5rem;
 }
 
 .timeline-item:last-child {
   margin-bottom: 0;
 }
 
-.timeline-item::after {
-  content: '';
+.timeline-marker {
   position: absolute;
-  top: 20px;
-  width: 20px;
-  height: 20px;
-  background-color: #0066cc;
+  left: -2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid #4263eb;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.2);
+  color: #4263eb;
+  z-index: 1;
 }
 
-.timeline-item.left {
-  left: 0;
-}
-
-.timeline-item.right {
-  left: 55%;
-}
-
-.timeline-item.left::after {
-  right: -60px;
-}
-
-.timeline-item.right::after {
-  left: -60px;
+.timeline-year {
+  position: absolute;
+  left: 3rem;
+  top: 0.25rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #495057;
+  background: #f8f9fa;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
 }
 
 .timeline-content {
-  background-color: white;
-  border: 1px solid #e1e1e1;
+  background-color: #f8f9fa;
   border-radius: 8px;
-  padding: 24px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  padding: 1.5rem;
+  margin-left: 2rem;
+  transition: transform 0.2s;
 }
 
 .timeline-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-date {
-  display: inline-block;
-  background-color: #0066cc;
-  color: white;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 4px 12px;
-  border-radius: 16px;
-  margin-bottom: 12px;
+  transform: translateY(-2px);
 }
 
 .timeline-title {
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin: 0 0 12px 0;
-  color: #333333;
+  margin-bottom: 0.5rem;
+  color: #212529;
 }
 
 .timeline-description {
-  font-size: 14px;
+  font-size: 0.9rem;
   line-height: 1.5;
-  color: #555555;
-  margin-bottom: 16px;
+  color: #495057;
 }
 
-.timeline-achievement {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  color: #0066cc;
-  font-weight: 500;
-}
-
-.section-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #333333;
-  margin: 0 0 24px 0;
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background-color: #0066cc;
-}
-
-.milestones-section {
-  margin-bottom: 60px;
-}
-
+/* Marcos */
 .milestones-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
 .milestone-card {
-  display: flex;
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  border: 1px solid #e1e1e1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  height: 100%;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .milestone-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.milestone-icon {
-  width: 48px;
-  height: 48px;
-  background-color: rgba(0, 102, 204, 0.1);
-  color: #0066cc;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 16px;
-}
-
-.milestone-content {
-  flex: 1;
-}
-
-.milestone-title {
-  font-size: 16px;
-  font-weight: 600;
-  margin: 0 0 8px 0;
-  color: #333333;
-}
-
-.milestone-description {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #555555;
-  margin: 0;
-}
-
-.leadership-section {
-  margin-bottom: 60px;
-}
-
-.leaders-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 24px;
-}
-
-.leader-card {
-  display: flex;
-  align-items: flex-start;
-  background-color: white;
-  border-radius: 8px;
-  padding: 24px;
-  border: 1px solid #e1e1e1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-}
-
-.leader-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.leader-image {
-  margin-right: 16px;
-}
-
-.leader-avatar {
-  width: 60px;
-  height: 60px;
-  background-color: #0066cc;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.leader-info {
-  flex: 1;
-}
-
-.leader-name {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0 0 4px 0;
-  color: #333333;
-}
-
-.leader-role {
-  font-size: 14px;
-  font-weight: 500;
-  color: #0066cc;
-  margin: 0 0 8px 0;
-}
-
-.leader-period {
-  font-size: 14px;
-  color: #666666;
-  margin: 0 0 12px 0;
-}
-
-.leader-contribution {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #555555;
-  margin: 0;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .history-highlight-section {
-  margin-top: 48px;
+  margin-top: 2rem;
 }
 
+/* Responsivo */
 @media (max-width: 768px) {
-  .history-intro {
-    flex-direction: column;
-  }
-  
-  .timeline-line {
-    left: 20px;
-  }
-  
-  .timeline-item {
-    width: 100%;
-    padding-left: 45px;
-  }
-  
-  .timeline-item.left,
-  .timeline-item.right {
-    left: 0;
-  }
-  
-  .timeline-item.left::after,
-  .timeline-item.right::after {
-    left: -10px;
-  }
-  
-  .milestones-grid,
-  .leaders-grid {
+  .founders-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline::before {
+    left: 8px;
+  }
+  
+  .timeline-marker {
+    left: -1.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .timeline-year {
+    left: 2.5rem;
+  }
+  
+  .timeline-content {
+    margin-left: 1.5rem;
+  }
+  
+  .milestones-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .founder-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .founder-image {
+    margin-bottom: 1rem;
   }
 }

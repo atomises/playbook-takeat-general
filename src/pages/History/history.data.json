@@ -1,113 +1,83 @@
 
 {
   "title": "Nossa História",
-  "description": "Conheça a trajetória que nos trouxe até aqui, os desafios que superamos e as conquistas que alcançamos ao longo dos anos.",
-  "intro": "Fundada com a visão de transformar a maneira como as empresas lidam com seus processos internos, nossa jornada começou em um pequeno escritório com apenas quatro colaboradores apaixonados por inovação. Hoje, somos reconhecidos como líderes de mercado, com presença global e um compromisso inabalável com a excelência e a satisfação do cliente.",
-  "founderQuote": {
-    "text": "Começamos com a crença de que tecnologia deveria servir às pessoas, não o contrário. Nossa missão sempre foi simplificar o complexo e transformar desafios em oportunidades de crescimento.",
-    "author": "Carlos Oliveira",
-    "role": "Fundador"
-  },
+  "description": "Conheça a trajetória da nossa empresa desde sua fundação até os dias atuais.",
+  "founders": [
+    {
+      "name": "Ana Silva",
+      "title": "Co-fundadora e CEO",
+      "bio": "Formada em Administração, Ana iniciou sua carreira em consultoria estratégica antes de identificar a oportunidade de mercado que deu origem à empresa em 2010.",
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face"
+    },
+    {
+      "name": "Pedro Mendes",
+      "title": "Co-fundador e CTO",
+      "bio": "Engenheiro de Software com mais de 15 anos de experiência, Pedro liderou o desenvolvimento da plataforma tecnológica que impulsionou nosso crescimento inicial.",
+      "image": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=200&h=200&fit=crop&crop=face"
+    }
+  ],
   "timeline": [
     {
-      "year": "2010",
-      "title": "Fundação da Empresa",
-      "description": "A empresa foi fundada por um grupo de quatro amigos que compartilhavam a visão de transformar a gestão empresarial através da tecnologia.",
-      "achievement": "Lançamento da primeira versão do software"
+      "year": 2010,
+      "title": "Fundação",
+      "description": "A empresa foi fundada em São Paulo por Ana Silva e Pedro Mendes, com um investimento inicial de R$ 200 mil e apenas 5 funcionários em um pequeno escritório.",
+      "icon": "Calendar"
     },
     {
-      "year": "2012",
-      "title": "Primeiro Escritório",
-      "description": "Mudamos para nosso primeiro escritório oficial e expandimos a equipe para 15 colaboradores com a chegada dos primeiros clientes empresariais.",
-      "achievement": "50 clientes ativos"
+      "year": 2012,
+      "title": "Primeiro Grande Cliente",
+      "description": "Fechamos contrato com nossa primeira grande conta corporativa, o que acelerou o crescimento e permitiu a expansão da equipe para 25 funcionários.",
+      "icon": "Flag"
     },
     {
-      "year": "2014",
-      "title": "Expansão Nacional",
-      "description": "Abrimos nosso segundo escritório em São Paulo e expandimos a operação para atender clientes em todo o território nacional.",
-      "achievement": "Reconhecimento como empresa inovadora do ano"
+      "year": 2015,
+      "title": "Prêmio de Inovação",
+      "description": "Recebemos o prêmio de empresa mais inovadora do setor, consolidando nossa posição como líderes em tecnologia e inovação no mercado brasileiro.",
+      "icon": "Award"
     },
     {
-      "year": "2016",
-      "title": "Lançamento da Plataforma Enterprise",
-      "description": "Lançamos nossa plataforma focada no segmento corporativo, com recursos avançados de integração e segurança.",
-      "achievement": "Crescimento de 200% na base de clientes"
+      "year": 2018,
+      "title": "Expansão Internacional",
+      "description": "Abrimos nosso primeiro escritório internacional em Lisboa, Portugal, marcando o início da nossa expansão global. Neste mesmo ano, nossa equipe ultrapassou 200 colaboradores.",
+      "icon": "Bookmark"
     },
     {
-      "year": "2018",
-      "title": "Internacionalização",
-      "description": "Expandimos nossas operações para América Latina, com escritórios na Argentina e México.",
-      "achievement": "Prêmio de melhor solução B2B"
-    },
-    {
-      "year": "2020",
+      "year": 2020,
       "title": "Transformação Digital",
-      "description": "Em resposta à pandemia, aceleramos nossa estratégia de transformação digital e lançamos novas soluções para trabalho remoto.",
-      "achievement": "Crescimento de 150% durante a pandemia"
+      "description": "Implementamos um modelo de trabalho 100% remoto em resposta à pandemia, acelerando nossa transformação digital interna e criando novas soluções para nossos clientes.",
+      "icon": "Calendar"
     },
     {
-      "year": "2022",
-      "title": "Expansão Global",
-      "description": "Abrimos escritórios na Europa e Estados Unidos, consolidando nossa presença internacional.",
-      "achievement": "Ultrapassa a marca de 1000 colaboradores globalmente"
-    },
-    {
-      "year": "2023",
-      "title": "Lançamento do EnterprisePro Suite",
-      "description": "Lançamos nossa solução mais completa e integrada, estabelecendo um novo padrão para o mercado.",
-      "achievement": "Reconhecimento como uma das empresas mais inovadoras pela Forbes"
+      "year": 2023,
+      "title": "Marco de Crescimento",
+      "description": "Alcançamos a marca de 1000 funcionários e expandimos nossa presença para 6 países, consolidando nossa posição como uma das líderes do mercado na América Latina.",
+      "icon": "Flag"
     }
   ],
   "milestones": [
     {
-      "icon": "Zap",
-      "title": "100.000 Usuários Ativos",
-      "description": "Em 2017, atingimos a marca de 100.000 usuários ativos em nossa plataforma, um marco significativo em nossa jornada de crescimento."
+      "title": "5 Milhões de Usuários",
+      "description": "Em 2021, nossa plataforma alcançou a marca de 5 milhões de usuários ativos mensais, um crescimento de 150% em relação ao ano anterior.",
+      "icon": "Award"
     },
     {
-      "icon": "Users",
-      "title": "1000 Colaboradores",
-      "description": "Em 2022, nossa equipe ultrapassou 1000 colaboradores em 10 países diferentes, mantendo nossa cultura de inovação e colaboração."
+      "title": "50 Milhões em Investimentos",
+      "description": "Em 2019, captamos uma rodada de investimento Série B de R$ 50 milhões liderada por um dos maiores fundos de venture capital da América Latina.",
+      "icon": "Award"
     },
     {
-      "icon": "Briefcase",
-      "title": "500 Grandes Empresas",
-      "description": "Atingimos a marca de 500 grandes empresas em nossa carteira de clientes, incluindo 30 das Fortune 500."
+      "title": "12 Países",
+      "description": "Atualmente, nossas soluções são utilizadas por empresas em 12 países diferentes, espalhados pela América Latina, Europa e América do Norte.",
+      "icon": "Award"
     },
     {
-      "icon": "Target",
-      "title": "10 Anos de Inovação",
-      "description": "Em 2020, celebramos uma década de inovação contínua, com mais de 20 patentes registradas e diversos prêmios do setor."
-    }
-  ],
-  "leaders": [
-    {
-      "name": "Carlos Oliveira",
-      "role": "Fundador e ex-CEO",
-      "period": "2010-2018",
-      "contribution": "Liderou a empresa desde a fundação até se tornar uma referência nacional, estabelecendo os valores e a visão que ainda nos guiam."
-    },
-    {
-      "name": "Mariana Santos",
-      "role": "CEO Atual",
-      "period": "2018-Presente",
-      "contribution": "Lidera a estratégia de internacionalização da empresa e transformação digital, dobrando o valor de mercado em seu mandato."
-    },
-    {
-      "name": "Ricardo Ferreira",
-      "role": "CTO Pioneiro",
-      "period": "2010-2020",
-      "contribution": "Arquiteto da infraestrutura tecnológica que se tornou a base de todos os nossos produtos, definindo padrões de excelência técnica."
-    },
-    {
-      "name": "Ana Beatriz Costa",
-      "role": "Diretora de Inovação",
-      "period": "2014-Presente",
-      "contribution": "Responsável por fomentar a cultura de inovação e liderar o desenvolvimento dos produtos que revolucionaram o mercado."
+      "title": "25 Prêmios",
+      "description": "Ao longo de nossa história, fomos reconhecidos com 25 prêmios de inovação, qualidade e excelência em diferentes categorias do mercado.",
+      "icon": "Award"
     }
   ],
   "highlight": {
-    "text": "Nossa história é escrita diariamente por cada pessoa que faz parte desta jornada - colaboradores, clientes e parceiros. O que nos trouxe até aqui foi a paixão pela inovação e o compromisso com a excelência, valores que continuarão guiando nosso futuro.",
-    "author": "Mariana Santos, CEO"
+    "text": "Nossa história é construída diariamente por cada um de nossos colaboradores. Somos uma empresa que valoriza o crescimento conjunto e acredita que nossos melhores capítulos ainda estão por vir.",
+    "author": "Ana Silva, CEO e Co-fundadora"
   }
 }

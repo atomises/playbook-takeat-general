@@ -1,0 +1,382 @@
+
+.leadership-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Seção de boas-vindas */
+.welcome-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  align-items: center;
+}
+
+.welcome-content {
+  flex: 2;
+}
+
+.welcome-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.welcome-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #495057;
+  margin: 0;
+}
+
+.welcome-stats {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4263eb;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #495057;
+}
+
+/* Tabs */
+.tabs-header {
+  display: flex;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.tab-button {
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.tab-button:hover {
+  color: #4263eb;
+}
+
+.tab-button.active {
+  color: #4263eb;
+  border-bottom-color: #4263eb;
+  font-weight: 600;
+}
+
+.tab-content {
+  padding-top: 1rem;
+}
+
+.tab-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #495057;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+}
+
+/* Recursos */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.resource-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.resource-card:hover,
+.resource-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resource-link {
+  display: inline-block;
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  background-color: #4263eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.resource-link:hover {
+  background-color: #3b5bdb;
+}
+
+.resource-item {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e9ecef;
+}
+
+.resource-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #212529;
+}
+
+.resource-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #495057;
+  margin-bottom: auto;
+  flex-grow: 1;
+}
+
+/* Eventos */
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.event-card {
+  display: flex;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4263eb;
+  color: white;
+  font-weight: 600;
+  padding: 0 1rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  min-width: 2.5rem;
+  font-size: 0.9rem;
+}
+
+.event-details {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.event-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #212529;
+}
+
+.event-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #495057;
+  margin-bottom: 1rem;
+}
+
+.event-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.event-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #e9ecef;
+  color: #495057;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.event-button:hover {
+  background-color: #dee2e6;
+}
+
+/* Melhores práticas */
+.practices-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.practice-item {
+  display: flex;
+  gap: 1rem;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #4263eb;
+  transition: transform 0.2s;
+}
+
+.practice-item:hover {
+  transform: translateY(-2px);
+}
+
+.practice-icon {
+  color: #4263eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(66, 99, 235, 0.1);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.practice-content {
+  flex: 1;
+}
+
+.practice-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #343a40;
+}
+
+.practice-content p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #495057;
+  margin: 0;
+}
+
+/* FAQ */
+.support-contact {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.support-contact p {
+  margin-bottom: 0.5rem;
+  color: #495057;
+}
+
+.contact-email {
+  color: #4263eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .welcome-section {
+    flex-direction: column;
+  }
+  
+  .welcome-stats {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .stat-card {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .resources-grid,
+  .events-list,
+  .practices-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .welcome-stats {
+    flex-direction: column;
+  }
+  
+  .tabs-header {
+    overflow-x: auto;
+  }
+  
+  .event-card {
+    flex-direction: column;
+  }
+  
+  .event-date {
+    writing-mode: horizontal-tb;
+    transform: none;
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%;
+  }
+}

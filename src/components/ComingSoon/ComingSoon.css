@@ -1,0 +1,51 @@
+
+.coming-soon {
+  text-align: center;
+  padding: 100px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.coming-soon-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #f1f5f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  color: #3b82f6;
+}
+
+.coming-soon-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: #1e293b;
+}
+
+.coming-soon-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 32px;
+}
+
+.coming-soon-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.coming-soon-action:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}

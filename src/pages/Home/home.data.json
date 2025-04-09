@@ -1,0 +1,115 @@
+
+{
+  "welcome": {
+    "title": "Bem-vindo ao Compass Guide",
+    "description": "Seu portal central para todas as informações, recursos e ferramentas que você precisa como parte da nossa equipe."
+  },
+  "featuredSections": [
+    {
+      "id": "benefits",
+      "title": "Benefícios",
+      "description": "Conheça todos os benefícios disponíveis para você como colaborador.",
+      "icon": "Gift",
+      "path": "/benefits"
+    },
+    {
+      "id": "culture",
+      "title": "Nossa Cultura",
+      "description": "Descubra os valores e princípios que nos guiam como empresa.",
+      "icon": "Heart",
+      "path": "/culture"
+    },
+    {
+      "id": "equipment",
+      "title": "Suporte de Equipamentos",
+      "description": "Saiba como solicitar novos equipamentos ou resolver problemas técnicos.",
+      "icon": "Monitor",
+      "path": "/equipment"
+    },
+    {
+      "id": "policies",
+      "title": "Políticas",
+      "description": "Acesse nossas políticas e regulamentos internos.",
+      "icon": "FileText",
+      "path": "/policies"
+    },
+    {
+      "id": "calendar",
+      "title": "Calendário e Eventos",
+      "description": "Fique por dentro de todos os eventos e datas importantes da empresa.",
+      "icon": "Calendar",
+      "path": "/calendar"
+    },
+    {
+      "id": "faq",
+      "title": "Perguntas Frequentes",
+      "description": "Encontre respostas para as dúvidas mais comuns dos colaboradores.",
+      "icon": "HelpCircle",
+      "path": "/faq"
+    }
+  ],
+  "announcements": [
+    {
+      "id": 1,
+      "title": "Nova política de trabalho remoto",
+      "date": "10/04/2025",
+      "author": "Departamento de RH",
+      "content": "Estamos atualizando nossa política de trabalho remoto para permitir até 3 dias por semana. Consulte o documento completo para mais detalhes."
+    },
+    {
+      "id": 2,
+      "title": "Treinamento obrigatório de segurança",
+      "date": "08/04/2025",
+      "author": "Departamento de TI",
+      "content": "Todos os colaboradores devem completar o treinamento de segurança da informação até o final do mês. O link foi enviado por e-mail."
+    },
+    {
+      "id": 3,
+      "title": "Novo programa de indicação de talentos",
+      "date": "05/04/2025",
+      "author": "Departamento de Recrutamento",
+      "content": "Estamos com diversas vagas abertas e você pode ganhar bônus por indicações que resultem em contratações. Veja os detalhes no portal de RH."
+    }
+  ],
+  "upcomingEvents": [
+    {
+      "id": 1,
+      "title": "Workshop de Design Thinking",
+      "day": "15",
+      "month": "Abr",
+      "time": "14:00 - 16:00",
+      "location": "Sala de Reuniões 3"
+    },
+    {
+      "id": 2,
+      "title": "Happy Hour da Empresa",
+      "day": "20",
+      "month": "Abr",
+      "time": "18:00 - 21:00",
+      "location": "Terraço"
+    },
+    {
+      "id": 3,
+      "title": "Apresentação de Resultados Q1",
+      "day": "22",
+      "month": "Abr",
+      "time": "10:00 - 11:30",
+      "location": "Auditório Principal"
+    },
+    {
+      "id": 4,
+      "title": "Treinamento de Liderança",
+      "day": "28",
+      "month": "Abr",
+      "time": "09:00 - 17:00",
+      "location": "Centro de Treinamento"
+    }
+  ],
+  "dailyTips": [
+    "Lembre-se de agendar sua reunião 1:1 com seu gestor através do calendário compartilhado.",
+    "Você pode solicitar equipamentos de escritório para home office através do portal de TI.",
+    "Atualize suas informações pessoais no portal de RH para garantir que você receba todas as comunicações importantes.",
+    "Experimente usar as salas de foco quando precisar de concentração total para suas tarefas.",
+    "Não se esqueça de registrar suas horas no sistema de ponto antes do final do dia."
+  ]
+}

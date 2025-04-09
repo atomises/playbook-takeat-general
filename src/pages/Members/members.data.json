@@ -1,115 +1,173 @@
 
 {
-  "title": "Membros",
-  "description": "Conheça os membros da nossa equipe, suas funções e como entrar em contato com eles para colaboração e suporte.",
-  "departments": [
+  "members": [
     {
-      "id": "leadership",
-      "name": "Liderança",
-      "members": [
-        {
-          "id": "member1",
-          "name": "Ana Silva",
-          "role": "CEO",
-          "email": "ana.silva@empresa.com",
-          "photo": "/placeholder.svg",
-          "about": "Lidera a empresa com mais de 15 anos de experiência no setor. Especialista em estratégia e inovação."
-        },
-        {
-          "id": "member2",
-          "name": "Carlos Mendes",
-          "role": "CTO",
-          "email": "carlos.mendes@empresa.com",
-          "photo": "/placeholder.svg",
-          "about": "Responsável pela visão tecnológica e implementação de novas tecnologias."
-        },
-        {
-          "id": "member3",
-          "name": "Fernanda Lima",
-          "role": "COO",
-          "email": "fernanda.lima@empresa.com",
-          "photo": "/placeholder.svg",
-          "about": "Gerencia as operações diárias e processos da empresa para máxima eficiência."
-        }
-      ]
+      "id": 1,
+      "name": "Ana Silva",
+      "role": "Desenvolvedora Full Stack",
+      "department": "Tecnologia",
+      "email": "ana.silva@empresa.com",
+      "phone": "(11) 9 8765-4321",
+      "location": "São Paulo",
+      "avatar": "https://randomuser.me/api/portraits/women/65.jpg",
+      "coverColor": "#3b82f6",
+      "skills": ["React", "Node.js", "TypeScript"],
+      "projects": 12,
+      "yearsAtCompany": 3
     },
     {
-      "id": "development",
-      "name": "Desenvolvimento",
-      "members": [
-        {
-          "id": "member4",
-          "name": "Lucas Oliveira",
-          "role": "Tech Lead",
-          "email": "lucas.oliveira@empresa.com",
-          "photo": "/placeholder.svg",
-          "about": "Especialista em arquitetura de software e desenvolvimento backend."
-        },
-        {
-          "id": "member5",
-          "name": "Mariana Santos",
-          "role": "Frontend Developer",
-          "email": "mariana.santos@empresa.com",
-          "photo": "/placeholder.svg",
-          "about": "Trabalha com desenvolvimento frontend e experiência do usuário."
-        },
-        {
-          "id": "member6",
-          "name": "Pedro Costa",
-          "role": "Fullstack Developer",
-          "email": "pedro.costa@empresa.com",
-          "photo": "/placeholder.svg",
-          "about": "Desenvolve soluções completas, do backend ao frontend."
-        }
-      ]
+      "id": 2,
+      "name": "Carlos Mendes",
+      "role": "Designer de Produto",
+      "department": "Design",
+      "email": "carlos.mendes@empresa.com",
+      "phone": "(11) 9 8765-4322",
+      "location": "São Paulo",
+      "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+      "coverColor": "#8b5cf6",
+      "skills": ["Figma", "UI/UX", "Pesquisa"],
+      "projects": 8,
+      "yearsAtCompany": 2
     },
     {
-      "id": "design",
-      "name": "Design",
-      "members": [
-        {
-          "id": "member7",
-          "name": "Beatriz Gomes",
-          "role": "UX/UI Designer",
-          "email": "beatriz.gomes@empresa.com",
-          "photo": "/placeholder.svg",
-          "about": "Cria interfaces intuitivas e experiências de usuário envolventes."
-        },
-        {
-          "id": "member8",
-          "name": "Rafael Dias",
-          "role": "Graphic Designer",
-          "email": "rafael.dias@empresa.com",
-          "photo": "/placeholder.svg",
-          "about": "Responsável pela identidade visual e materiais gráficos da empresa."
-        }
-      ]
+      "id": 3,
+      "name": "Juliana Costa",
+      "role": "Gerente de Contas",
+      "department": "Comercial",
+      "email": "juliana.costa@empresa.com",
+      "phone": "(11) 9 8765-4323",
+      "location": "Rio de Janeiro",
+      "avatar": "https://randomuser.me/api/portraits/women/33.jpg",
+      "coverColor": "#10b981",
+      "skills": ["Vendas", "Negociação", "CRM"],
+      "projects": 20,
+      "yearsAtCompany": 4
     },
     {
-      "id": "marketing",
-      "name": "Marketing",
-      "members": [
-        {
-          "id": "member9",
-          "name": "Júlia Castro",
-          "role": "Marketing Manager",
-          "email": "julia.castro@empresa.com",
-          "photo": "/placeholder.svg",
-          "about": "Planeja e implementa estratégias de marketing para promover a empresa."
-        },
-        {
-          "id": "member10",
-          "name": "Gustavo Ferreira",
-          "role": "Content Creator",
-          "email": "gustavo.ferreira@empresa.com",
-          "photo": "/placeholder.svg",
-          "about": "Desenvolve conteúdo para redes sociais, blog e materiais promocionais."
-        }
-      ]
+      "id": 4,
+      "name": "Rodrigo Almeida",
+      "role": "Analista de Marketing",
+      "department": "Marketing",
+      "email": "rodrigo.almeida@empresa.com",
+      "phone": "(11) 9 8765-4324",
+      "location": "São Paulo",
+      "avatar": "https://randomuser.me/api/portraits/men/75.jpg",
+      "coverColor": "#f59e0b",
+      "skills": ["SEO", "Copywriting", "Analytics"],
+      "projects": 15,
+      "yearsAtCompany": 2
+    },
+    {
+      "id": 5,
+      "name": "Fernanda Lima",
+      "role": "Gerente de Recursos Humanos",
+      "department": "Recursos Humanos",
+      "email": "fernanda.lima@empresa.com",
+      "phone": "(11) 9 8765-4325",
+      "location": "Belo Horizonte",
+      "avatar": "https://randomuser.me/api/portraits/women/22.jpg",
+      "coverColor": "#ec4899",
+      "skills": ["Recrutamento", "Treinamento", "Benefícios"],
+      "projects": 7,
+      "yearsAtCompany": 5
+    },
+    {
+      "id": 6,
+      "name": "Rafael Santos",
+      "role": "Desenvolvedor Backend",
+      "department": "Tecnologia",
+      "email": "rafael.santos@empresa.com",
+      "phone": "(11) 9 8765-4326",
+      "location": "Remoto",
+      "avatar": "https://randomuser.me/api/portraits/men/45.jpg",
+      "coverColor": "#3b82f6",
+      "skills": ["Java", "Python", "AWS"],
+      "projects": 9,
+      "yearsAtCompany": 2
+    },
+    {
+      "id": 7,
+      "name": "Camila Oliveira",
+      "role": "UX Designer",
+      "department": "Design",
+      "email": "camila.oliveira@empresa.com",
+      "phone": "(11) 9 8765-4327",
+      "location": "São Paulo",
+      "avatar": "https://randomuser.me/api/portraits/women/89.jpg",
+      "coverColor": "#8b5cf6",
+      "skills": ["User Research", "Wireframing", "Prototyping"],
+      "projects": 11,
+      "yearsAtCompany": 3
+    },
+    {
+      "id": 8,
+      "name": "Pedro Henrique",
+      "role": "Analista Financeiro",
+      "department": "Financeiro",
+      "email": "pedro.henrique@empresa.com",
+      "phone": "(11) 9 8765-4328",
+      "location": "Rio de Janeiro",
+      "avatar": "https://randomuser.me/api/portraits/men/58.jpg",
+      "coverColor": "#0891b2",
+      "skills": ["Análise Financeira", "Contabilidade", "Orçamento"],
+      "projects": 5,
+      "yearsAtCompany": 4
+    },
+    {
+      "id": 9,
+      "name": "Mariana Costa",
+      "role": "Desenvolvedora Mobile",
+      "department": "Tecnologia",
+      "email": "mariana.costa@empresa.com",
+      "phone": "(11) 9 8765-4329",
+      "location": "Belo Horizonte",
+      "avatar": "https://randomuser.me/api/portraits/women/42.jpg",
+      "coverColor": "#3b82f6",
+      "skills": ["React Native", "Flutter", "Swift"],
+      "projects": 7,
+      "yearsAtCompany": 2
+    },
+    {
+      "id": 10,
+      "name": "Lucas Ferreira",
+      "role": "Especialista em SEO",
+      "department": "Marketing",
+      "email": "lucas.ferreira@empresa.com",
+      "phone": "(11) 9 8765-4330",
+      "location": "São Paulo",
+      "avatar": "https://randomuser.me/api/portraits/men/14.jpg",
+      "coverColor": "#f59e0b",
+      "skills": ["SEO", "SEM", "Analytics"],
+      "projects": 14,
+      "yearsAtCompany": 3
+    },
+    {
+      "id": 11,
+      "name": "Beatriz Martins",
+      "role": "Analista de Recursos Humanos",
+      "department": "Recursos Humanos",
+      "email": "beatriz.martins@empresa.com",
+      "phone": "(11) 9 8765-4331",
+      "location": "Remoto",
+      "avatar": "https://randomuser.me/api/portraits/women/57.jpg",
+      "coverColor": "#ec4899",
+      "skills": ["Recrutamento", "Folha de Pagamento", "Legislação Trabalhista"],
+      "projects": 6,
+      "yearsAtCompany": 1
+    },
+    {
+      "id": 12,
+      "name": "Gustavo Rocha",
+      "role": "Gerente de Projetos",
+      "department": "Tecnologia",
+      "email": "gustavo.rocha@empresa.com",
+      "phone": "(11) 9 8765-4332",
+      "location": "São Paulo",
+      "avatar": "https://randomuser.me/api/portraits/men/22.jpg",
+      "coverColor": "#3b82f6",
+      "skills": ["Scrum", "Kanban", "Gestão de Equipes"],
+      "projects": 25,
+      "yearsAtCompany": 5
     }
-  ],
-  "highlight": {
-    "text": "O maior ativo de uma empresa não é seu produto ou sua tecnologia, mas as pessoas que a compõem.",
-    "author": "Ana Silva, CEO"
-  }
+  ]
 }

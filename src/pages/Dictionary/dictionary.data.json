@@ -1,127 +1,245 @@
 
 {
-  "title": "Dicionário da Empresa",
-  "description": "Aprenda os termos e expressões utilizados no dia a dia da nossa empresa para se comunicar eficientemente com todos os times.",
   "terms": [
     {
-      "term": "ADR",
-      "definition": "Architecture Decision Record - Documento que registra as decisões arquiteturais importantes tomadas durante o desenvolvimento de produtos.",
-      "example": "Antes de mudarmos o banco de dados, vamos criar um ADR para registrar a decisão e seus motivos.",
-      "related": ["Documentação", "Arquitetura"]
+      "title": "Agile",
+      "description": "Metodologia de desenvolvimento de projetos que prioriza a entrega contínua de valor ao cliente através de ciclos curtos de trabalho chamados sprints.",
+      "category": "Metodologia",
+      "seeAlso": ["Scrum", "Kanban", "Sprint"]
     },
     {
-      "term": "BAU",
-      "definition": "Business As Usual - Refere-se às operações normais e rotineiras do negócio.",
-      "example": "Esse ticket é BAU, pode ser tratado dentro do fluxo normal de trabalho.",
-      "related": ["Operações", "Rotina"]
+      "title": "API",
+      "description": "Application Programming Interface. Um conjunto de regras e protocolos que permite que diferentes softwares se comuniquem entre si.",
+      "category": "Tecnologia",
+      "seeAlso": ["REST", "Microserviços"]
     },
     {
-      "term": "BHAGs",
-      "definition": "Big Hairy Audacious Goals - Metas ousadas e ambiciosas de longo prazo que inspiram equipes e definem direção estratégica.",
-      "example": "Nosso BHAG é ser o líder de mercado em nossa categoria até 2027.",
-      "related": ["Estratégia", "Metas", "OKRs"]
+      "title": "Backend",
+      "description": "Parte do sistema que funciona nos servidores, responsável pelo processamento de dados, lógica de negócios e integração com bancos de dados.",
+      "category": "Tecnologia",
+      "seeAlso": ["Frontend", "Full Stack"]
     },
     {
-      "term": "CAC",
-      "definition": "Custo de Aquisição de Cliente - Métrica que indica quanto custa para adquirir um novo cliente, incluindo marketing e vendas.",
-      "example": "Nosso CAC diminuiu 15% no último trimestre devido às otimizações de marketing.",
-      "related": ["Métricas", "Marketing", "Vendas"]
+      "title": "Backlog",
+      "description": "Lista priorizada de itens de trabalho a serem desenvolvidos pela equipe de produto. Geralmente contém user stories, bugs e tarefas técnicas.",
+      "category": "Metodologia",
+      "seeAlso": ["Sprint", "User Story"]
     },
     {
-      "term": "Daily",
-      "definition": "Reunião diária rápida onde cada membro da equipe compartilha o que fez, o que vai fazer e quais obstáculos enfrenta.",
-      "example": "Na daily de hoje, vou mencionar que preciso de ajuda com a integração da API.",
-      "related": ["Scrum", "Agile", "Standup"]
+      "title": "B2B",
+      "description": "Business-to-Business. Modelo de negócio no qual uma empresa vende produtos ou serviços para outras empresas.",
+      "category": "Negócios",
+      "seeAlso": ["B2C", "SaaS"]
     },
     {
-      "term": "Discovery",
-      "definition": "Fase de pesquisa e exploração para entender melhor problemas, usuários e potenciais soluções antes de desenvolver um produto.",
-      "example": "Vamos dedicar duas semanas para discovery antes de definir o escopo do projeto.",
-      "related": ["UX Research", "Produto", "Design Thinking"]
+      "title": "B2C",
+      "description": "Business-to-Consumer. Modelo de negócio no qual uma empresa vende produtos ou serviços diretamente para consumidores finais.",
+      "category": "Negócios",
+      "seeAlso": ["B2B", "E-commerce"]
     },
     {
-      "term": "Epic",
-      "definition": "Uma grande iniciativa ou corpo de trabalho que pode ser dividido em várias histórias menores.",
-      "example": "A epic de redesign do checkout inclui 12 histórias de usuário diferentes.",
-      "related": ["Agile", "User Stories", "Backlog"]
+      "title": "CLT",
+      "description": "Consolidação das Leis do Trabalho. Conjunto de normas legislativas que regulamentam as relações individuais e coletivas de trabalho no Brasil.",
+      "category": "RH",
+      "seeAlso": ["PJ", "Férias"]
     },
     {
-      "term": "Feature Flag",
-      "definition": "Técnica que permite ativar ou desativar funcionalidades no código sem necessidade de novo deploy.",
-      "example": "Vamos lançar com feature flag para testar com apenas 10% dos usuários primeiro.",
-      "related": ["Desenvolvimento", "Lançamento", "A/B Testing"]
+      "title": "CTA",
+      "description": "Call to Action. Elemento de design ou conteúdo que incentiva o usuário a executar uma ação específica, como 'Compre Agora' ou 'Inscreva-se'.",
+      "category": "Marketing",
+      "seeAlso": ["Conversão", "Funil de Vendas"]
     },
     {
-      "term": "Go-to-Market",
-      "definition": "Estratégia para lançar um produto ou nova funcionalidade no mercado, incluindo planos de comunicação, vendas e distribuição.",
-      "example": "O time de marketing está finalizando a estratégia de go-to-market para o novo produto.",
-      "related": ["Lançamento", "Marketing", "Produtos"]
+      "title": "Daily",
+      "description": "Reunião diária curta (15 minutos) onde cada membro da equipe informa o que fez no dia anterior, o que planeja fazer hoje e quais impedimentos está enfrentando.",
+      "category": "Metodologia",
+      "seeAlso": ["Scrum", "Sprint", "Stand-up"]
     },
     {
-      "term": "HIPPO",
-      "definition": "Highest Paid Person's Opinion - Refere-se à tendência de dar mais peso à opinião da pessoa mais bem paga ou de cargo mais alto.",
-      "example": "Não podemos tomar decisões baseadas apenas no HIPPO, precisamos de dados.",
-      "related": ["Tomada de decisão", "Cultura"]
+      "title": "Dashboard",
+      "description": "Painel visual que apresenta informações e métricas importantes de forma condensada, permitindo o acompanhamento fácil do desempenho.",
+      "category": "Negócios",
+      "seeAlso": ["KPI", "Métricas"]
     },
     {
-      "term": "KPI",
-      "definition": "Key Performance Indicator - Métricas principais que indicam o sucesso em relação aos objetivos estabelecidos.",
-      "example": "Retenção de clientes é um dos nossos KPIs mais importantes neste trimestre.",
-      "related": ["Métricas", "Objetivos", "Performance"]
+      "title": "Endpoint",
+      "description": "Um ponto de acesso em uma API onde uma requisição pode ser feita para executar uma função ou recuperar dados.",
+      "category": "Tecnologia",
+      "seeAlso": ["API", "REST"]
     },
     {
-      "term": "LTV",
-      "definition": "Lifetime Value - Valor total que um cliente traz para o negócio durante todo o seu relacionamento com a empresa.",
-      "example": "Estamos focando em aumentar o LTV por meio de venda de serviços adicionais.",
-      "related": ["Métricas", "Revenue", "Clientes"]
+      "title": "Engagement",
+      "description": "Nível de interação e envolvimento que um usuário tem com um conteúdo, produto ou serviço.",
+      "category": "Marketing",
+      "seeAlso": ["Retenção", "Churn"]
     },
     {
-      "term": "MVP",
-      "definition": "Minimum Viable Product - Versão mínima de um produto com recursos suficientes para atender os primeiros usuários e obter feedback.",
-      "example": "O MVP será lançado no próximo mês, focando apenas nas funcionalidades essenciais.",
-      "related": ["Produto", "Desenvolvimento", "Lean"]
+      "title": "Frontend",
+      "description": "Parte do sistema com a qual os usuários interagem diretamente, responsável pela interface e experiência do usuário.",
+      "category": "Tecnologia",
+      "seeAlso": ["Backend", "Full Stack", "UI/UX"]
     },
     {
-      "term": "NPS",
-      "definition": "Net Promoter Score - Métrica que mede a lealdade e satisfação dos clientes baseada na probabilidade de recomendação.",
-      "example": "Nosso NPS aumentou de 45 para 60 após as melhorias na experiência do cliente.",
-      "related": ["Experiência do Cliente", "Métricas", "Satisfação"]
+      "title": "Full Stack",
+      "description": "Profissional ou solução que abrange tanto o desenvolvimento frontend quanto backend de uma aplicação.",
+      "category": "Tecnologia",
+      "seeAlso": ["Frontend", "Backend"]
     },
     {
-      "term": "OKR",
-      "definition": "Objectives and Key Results - Método para definir objetivos e medir progresso em direção a eles.",
-      "example": "No próximo trimestre, nosso OKR principal é melhorar a velocidade de carregamento do app em 30%.",
-      "related": ["Metas", "Estratégia", "Performance"]
+      "title": "FGTS",
+      "description": "Fundo de Garantia do Tempo de Serviço. Depósito mensal que o empregador faz em uma conta vinculada ao empregado.",
+      "category": "RH",
+      "seeAlso": ["CLT", "Benefícios"]
     },
     {
-      "term": "P0, P1, P2",
-      "definition": "Níveis de prioridade para tarefas e bugs, onde P0 é a prioridade máxima (crítica).",
-      "example": "Temos um bug P0 que está afetando o checkout, precisamos resolver imediatamente.",
-      "related": ["Bugs", "Priorização", "Desenvolvimento"]
+      "title": "Gamificação",
+      "description": "Uso de elementos e mecânicas de jogos em contextos não-jogos para aumentar o engajamento e a motivação dos usuários.",
+      "category": "Produto",
+      "seeAlso": ["Engagement", "Retenção"]
     },
     {
-      "term": "QA",
-      "definition": "Quality Assurance - Processo para garantir que produtos e serviços atendam aos padrões de qualidade definidos.",
-      "example": "A funcionalidade está pronta para revisão de QA antes de ir para produção.",
-      "related": ["Testes", "Qualidade", "Desenvolvimento"]
+      "title": "Handoff",
+      "description": "Processo de transferência de um projeto ou responsabilidade de uma pessoa ou equipe para outra.",
+      "category": "Processos",
+      "seeAlso": ["Onboarding", "Offboarding"]
     },
     {
-      "term": "Retro",
-      "definition": "Retrospectiva - Reunião onde a equipe reflete sobre o que funcionou bem, o que não funcionou e como melhorar no próximo ciclo.",
-      "example": "Na retro de hoje, vamos discutir como melhorar o processo de code review.",
-      "related": ["Agile", "Melhoria Contínua", "Scrum"]
+      "title": "Inbound Marketing",
+      "description": "Estratégia que visa atrair clientes através de conteúdo relevante, sem interromper sua navegação com propaganda direta.",
+      "category": "Marketing",
+      "seeAlso": ["Outbound Marketing", "SEO"]
     },
     {
-      "term": "Spike",
-      "definition": "Um período curto dedicado à pesquisa, investigação ou prototipagem para entender melhor um problema técnico.",
-      "example": "Vamos fazer um spike de dois dias para investigar a viabilidade dessa nova tecnologia.",
-      "related": ["Desenvolvimento", "Pesquisa", "Agile"]
+      "title": "INSS",
+      "description": "Instituto Nacional do Seguro Social. Contribuição obrigatória que garante ao contribuinte benefícios como aposentadoria e auxílio-doença.",
+      "category": "RH",
+      "seeAlso": ["CLT", "Folha de Pagamento"]
     },
     {
-      "term": "Tech Debt",
-      "definition": "Dívida Técnica - Trabalho que precisa ser feito no futuro devido a escolhas rápidas ou subótimas feitas no presente.",
-      "example": "Precisamos dedicar o próximo sprint para reduzir o tech debt acumulado nos últimos meses.",
-      "related": ["Desenvolvimento", "Refatoração", "Qualidade"]
+      "title": "KPI",
+      "description": "Key Performance Indicator. Métricas que ajudam a organização a medir o progresso em direção aos seus objetivos estratégicos.",
+      "category": "Negócios",
+      "seeAlso": ["OKR", "Métricas"]
+    },
+    {
+      "title": "Kanban",
+      "description": "Sistema visual de gestão de trabalho que busca limitar o trabalho em progresso para evitar sobrecarga da equipe.",
+      "category": "Metodologia",
+      "seeAlso": ["Agile", "Scrum"]
+    },
+    {
+      "title": "Lead",
+      "description": "Potencial cliente que demonstrou interesse nos produtos ou serviços oferecidos pela empresa.",
+      "category": "Vendas",
+      "seeAlso": ["Prospect", "Conversão"]
+    },
+    {
+      "title": "MVP",
+      "description": "Minimum Viable Product. Versão mais simples de um produto com funcionalidades suficientes para ser lançado e validado com usuários reais.",
+      "category": "Produto",
+      "seeAlso": ["Prototype", "User Testing"]
+    },
+    {
+      "title": "Microserviços",
+      "description": "Abordagem arquitetônica para desenvolvimento de software onde aplicações são divididas em serviços pequenos e independentes.",
+      "category": "Tecnologia",
+      "seeAlso": ["API", "DevOps"]
+    },
+    {
+      "title": "NPS",
+      "description": "Net Promoter Score. Métrica utilizada para medir a satisfação e lealdade dos clientes, baseada na pergunta 'Em uma escala de 0 a 10, qual a probabilidade de você recomendar nossa empresa?'",
+      "category": "Negócios",
+      "seeAlso": ["CSAT", "Customer Success"]
+    },
+    {
+      "title": "OKR",
+      "description": "Objectives and Key Results. Método de gestão que ajuda a definir objetivos e acompanhar resultados mensuráveis.",
+      "category": "Negócios",
+      "seeAlso": ["KPI", "Metas"]
+    },
+    {
+      "title": "Onboarding",
+      "description": "Processo de integração e adaptação de novos funcionários à empresa e sua cultura organizacional.",
+      "category": "RH",
+      "seeAlso": ["Offboarding", "Treinamento"]
+    },
+    {
+      "title": "PJ",
+      "description": "Pessoa Jurídica. Modelo de contratação onde o profissional presta serviços como empresa, não como funcionário CLT.",
+      "category": "RH",
+      "seeAlso": ["CLT", "Freelancer"]
+    },
+    {
+      "title": "Product Owner",
+      "description": "Membro da equipe responsável por maximizar o valor do produto, gerenciando o backlog e garantindo que a equipe entenda os itens a serem desenvolvidos.",
+      "category": "Metodologia",
+      "seeAlso": ["Scrum Master", "Agile"]
+    },
+    {
+      "title": "REST",
+      "description": "Representational State Transfer. Estilo de arquitetura para construção de APIs web que utiliza o protocolo HTTP para comunicação de dados.",
+      "category": "Tecnologia",
+      "seeAlso": ["API", "Endpoint"]
+    },
+    {
+      "title": "ROI",
+      "description": "Return on Investment. Relação entre o lucro obtido em um investimento e o valor investido, expressa em porcentagem.",
+      "category": "Financeiro",
+      "seeAlso": ["CAC", "LTV"]
+    },
+    {
+      "title": "SaaS",
+      "description": "Software as a Service. Modelo de negócio onde o software é licenciado por assinatura e hospedado centralmente.",
+      "category": "Negócios",
+      "seeAlso": ["B2B", "Recorrência"]
+    },
+    {
+      "title": "Scrum",
+      "description": "Framework ágil para gestão e planejamento de projetos, que divide o trabalho em ciclos chamados sprints.",
+      "category": "Metodologia",
+      "seeAlso": ["Agile", "Sprint", "Backlog"]
+    },
+    {
+      "title": "Sprint",
+      "description": "Período fixo (geralmente 2 semanas) no qual a equipe trabalha para completar um conjunto específico de itens do backlog.",
+      "category": "Metodologia",
+      "seeAlso": ["Scrum", "Backlog", "Daily"]
+    },
+    {
+      "title": "Stakeholder",
+      "description": "Qualquer pessoa ou organização que tem interesse ou é afetada pelo projeto ou produto.",
+      "category": "Negócios",
+      "seeAlso": ["Product Owner", "Cliente"]
+    },
+    {
+      "title": "UI/UX",
+      "description": "User Interface/User Experience. Disciplinas de design que se concentram na criação de interfaces visualmente atraentes e experiências de usuário eficientes.",
+      "category": "Design",
+      "seeAlso": ["Frontend", "Usabilidade"]
+    },
+    {
+      "title": "User Story",
+      "description": "Descrição simples de uma funcionalidade do ponto de vista do usuário, geralmente na forma 'Como [tipo de usuário], eu quero [ação] para [benefício]'.",
+      "category": "Metodologia",
+      "seeAlso": ["Backlog", "Épicos"]
+    },
+    {
+      "title": "VA",
+      "description": "Vale Alimentação. Benefício concedido ao funcionário para compra de alimentos em supermercados e estabelecimentos similares.",
+      "category": "RH",
+      "seeAlso": ["VR", "Benefícios"]
+    },
+    {
+      "title": "VR",
+      "description": "Vale Refeição. Benefício concedido ao funcionário para refeições em restaurantes e estabelecimentos similares.",
+      "category": "RH",
+      "seeAlso": ["VA", "Benefícios"]
+    },
+    {
+      "title": "Wireframe",
+      "description": "Representação visual básica e de baixa fidelidade de uma interface, focando na estrutura, layout e organização do conteúdo.",
+      "category": "Design",
+      "seeAlso": ["Prototype", "UI/UX"]
     }
   ]
 }

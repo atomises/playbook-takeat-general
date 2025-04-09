@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Github } from 'lucide-react';
 import './Footer.css';
 
@@ -11,18 +10,15 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ 
   className = '',
-  githubLink = 'https://github.com'
+  githubLink = 'https://github.com/company/onboarding-guide'
 }) => {
+  const currentYear = new Date().getFullYear();
+  
   return (
-    <motion.footer 
-      className={`footer ${className}`}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.2 }}
-    >
+    <footer className={`footer ${className}`}>
       <div className="footer-content">
         <div className="footer-copyright">
-          © {new Date().getFullYear()} MyCompany. Todos os direitos reservados.
+          © {currentYear} Compass Guide. Todos os direitos reservados.
         </div>
         
         <div className="footer-links">
@@ -34,12 +30,12 @@ const Footer: React.FC<FooterProps> = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Github size={18} />
+            <Github size={16} />
             <span>GitHub</span>
           </a>
         </div>
       </div>
-    </motion.footer>
+    </footer>
   );
 };
 

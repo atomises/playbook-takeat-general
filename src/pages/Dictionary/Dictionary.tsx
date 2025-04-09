@@ -1,150 +1,176 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Search } from 'lucide-react';
+import { BookOpen, Search, X } from 'lucide-react';
 import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
-import SearchBar from '../../components/SearchBar/SearchBar';
 import './Dictionary.css';
 import data from './dictionary.data.json';
-import searchData from '../../components/SearchBar/searchBar.data.json';
 
 const Dictionary: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
+  const [activeLetter, setActiveLetter] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [filteredTerms, setFilteredTerms] = useState(data.terms);
   
+  // Gerar o alfabeto
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   
-  const filteredTerms = data.terms.filter(term => {
-    const matchesSearch = searchTerm === '' || 
-      term.term.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      term.definition.toLowerCase().includes(searchTerm.toLowerCase());
+  // Filtrar termos com base na letra ativa e na busca
+  useEffect(() => {
+    let newFilteredTerms = data.terms;
     
-    const matchesLetter = !selectedLetter || term.term.toUpperCase().startsWith(selectedLetter);
+    if (activeLetter) {
+      newFilteredTerms = newFilteredTerms.filter(
+        term => term.title.toUpperCase().startsWith(activeLetter)
+      );
+    }
     
-    return matchesSearch && matchesLetter;
-  });
-  
-  const handleSearchChange = (value: string) => {
-    setSearchTerm(value);
-  };
-  
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      newFilteredTerms = newFilteredTerms.filter(
+        term => 
+          term.title.toLowerCase().includes(query) || 
+          term.description.toLowerCase().includes(query)
+      );
     }
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5
+    
+    setFilteredTerms(newFilteredTerms);
+  }, [activeLetter, searchQuery]);
+  
+  // Agrupar termos por letra inicial
+  const getTermsByLetter = () => {
+    if (!filteredTerms.length) return {};
+    
+    return filteredTerms.reduce((acc: Record<string, typeof data.terms>, term) => {
+      const firstLetter = term.title.charAt(0).toUpperCase();
+      if (!acc[firstLetter]) {
+        acc[firstLetter] = [];
       }
-    }
+      acc[firstLetter].push(term);
+      return acc;
+    }, {});
   };
-
+  
+  const groupedTerms = getTermsByLetter();
+  const sortedLetters = Object.keys(groupedTerms).sort();
+  
+  // Limpar busca e filtros
+  const handleReset = () => {
+    setActiveLetter(null);
+    setSearchQuery('');
+  };
+  
+  // Manipulador para links "ver também"
+  const handleSeeAlsoClick = (term: string) => {
+    setSearchQuery(term);
+    setActiveLetter(null);
+  };
+  
   return (
     <PageWrapper>
-      <div className="page-search-container">
-        <SearchBar 
-          placeholder="Buscar no dicionário..." 
-          items={searchData.searchItems}
-          onSearch={handleSearchChange}
-        />
-      </div>
-      
-      <SectionHeader
-        title={data.title}
-        description={data.description}
-        icon={<BookOpen size={28} />}
-      />
-      
       <div className="dictionary-page">
-        <div className="dictionary-alphabet">
-          {alphabet.map(letter => (
-            <button
-              key={letter}
-              className={`alphabet-letter ${selectedLetter === letter ? 'active' : ''}`}
-              onClick={() => setSelectedLetter(selectedLetter === letter ? null : letter)}
+        <SectionHeader
+          title="Dicionário da Empresa"
+          description="Glossário de termos e definições importantes utilizados em nossa empresa."
+          icon={<BookOpen size={28} />}
+        />
+        
+        <div className="dictionary-search-box">
+          <Search size={18} className="search-icon" />
+          <input 
+            type="text"
+            placeholder="Buscar termos..."
+            className="dictionary-search-input"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+          {searchQuery && (
+            <button 
+              className="search-clear"
+              onClick={() => setSearchQuery('')}
             >
-              {letter}
-            </button>
-          ))}
-          {selectedLetter && (
-            <button
-              className="alphabet-reset"
-              onClick={() => setSelectedLetter(null)}
-            >
-              Mostrar Todos
+              <X size={16} />
             </button>
           )}
         </div>
         
-        <div className="dictionary-search-box">
-          <div className="search-icon">
-            <Search size={18} />
-          </div>
-          <input
-            type="text"
-            placeholder="Filtrar termos..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="dictionary-search-input"
-          />
-          {searchTerm && (
+        <div className="dictionary-alphabet">
+          {alphabet.map(letter => (
             <button
-              className="search-clear"
-              onClick={() => setSearchTerm('')}
+              key={letter}
+              className={`alphabet-letter ${activeLetter === letter ? 'active' : ''}`}
+              onClick={() => setActiveLetter(activeLetter === letter ? null : letter)}
             >
-              Limpar
+              {letter}
+            </button>
+          ))}
+          
+          {(activeLetter || searchQuery) && (
+            <button className="alphabet-reset" onClick={handleReset}>
+              Limpar filtros
             </button>
           )}
         </div>
         
         {filteredTerms.length === 0 ? (
-          <div className="no-terms-found">
-            <p>Nenhum termo encontrado para a busca atual.</p>
-          </div>
-        ) : (
           <motion.div 
-            className="dictionary-terms"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
+            className="dictionary-no-results"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
           >
-            {filteredTerms.map((term, index) => (
-              <motion.div 
-                key={index} 
-                className="dictionary-term"
-                variants={itemVariants}
-              >
-                <h3 className="term-title">{term.term}</h3>
-                <p className="term-definition">{term.definition}</p>
-                {term.example && (
-                  <div className="term-example">
-                    <strong>Exemplo:</strong> {term.example}
-                  </div>
-                )}
-                {term.related && term.related.length > 0 && (
-                  <div className="term-related">
-                    <strong>Termos relacionados:</strong>
-                    <div className="related-terms">
-                      {term.related.map((relatedTerm, idx) => (
-                        <span key={idx} className="related-term">{relatedTerm}</span>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </motion.div>
-            ))}
+            <h3>Nenhum termo encontrado</h3>
+            <p>Não encontramos termos correspondentes à sua busca.</p>
+            <div className="dictionary-no-results-actions">
+              <button className="no-results-action" onClick={handleReset}>
+                Ver todos os termos
+              </button>
+            </div>
           </motion.div>
+        ) : (
+          sortedLetters.map(letter => (
+            <motion.div 
+              key={letter}
+              className="dictionary-group"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <h3 className="dictionary-letter">{letter}</h3>
+              <div className="dictionary-terms">
+                {groupedTerms[letter].map((term, index) => (
+                  <motion.div 
+                    key={index}
+                    className="dictionary-term"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.2, delay: index * 0.05 }}
+                  >
+                    <h3 className="term-title">{term.title}</h3>
+                    <p className="term-description">{term.description}</p>
+                    <span className="term-category">{term.category}</span>
+                    
+                    {term.seeAlso && term.seeAlso.length > 0 && (
+                      <div className="term-see-also">
+                        <p className="term-see-also-title">Ver também:</p>
+                        <div className="term-see-also-links">
+                          {term.seeAlso.map((relatedTerm, idx) => (
+                            <span 
+                              key={idx}
+                              className="term-see-also-link"
+                              onClick={() => handleSeeAlsoClick(relatedTerm)}
+                            >
+                              {relatedTerm}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          ))
         )}
       </div>
     </PageWrapper>

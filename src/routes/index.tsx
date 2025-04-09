@@ -8,6 +8,9 @@ import NotFound from '../pages/NotFound';
 import InternalRules from '../pages/InternalRules/InternalRules';
 import Benefits from '../pages/Benefits/Benefits';
 import PlaceholderPage from '../pages/PlaceholderPage/PlaceholderPage';
+import Members from '../pages/Members/Members';
+import Policies from '../pages/Policies/Policies';
+import Paths from '../pages/Paths/Paths';
 
 const AppRoutes: React.FC = () => {
   return (
@@ -43,7 +46,7 @@ const AppRoutes: React.FC = () => {
         path="/members" 
         element={
           <MainLayout>
-            <PlaceholderPage title="Membros" />
+            <Members />
           </MainLayout>
         } 
       />
@@ -51,7 +54,7 @@ const AppRoutes: React.FC = () => {
         path="/policies" 
         element={
           <MainLayout>
-            <PlaceholderPage title="Políticas e Regulamentos" />
+            <Policies />
           </MainLayout>
         } 
       />
@@ -61,7 +64,7 @@ const AppRoutes: React.FC = () => {
         path="/paths" 
         element={
           <MainLayout>
-            <PlaceholderPage title="Trilhas" />
+            <Paths />
           </MainLayout>
         } 
       />

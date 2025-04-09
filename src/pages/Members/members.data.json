@@ -1,0 +1,115 @@
+
+{
+  "title": "Membros",
+  "description": "Conheça os membros da nossa equipe, suas funções e como entrar em contato com eles para colaboração e suporte.",
+  "departments": [
+    {
+      "id": "leadership",
+      "name": "Liderança",
+      "members": [
+        {
+          "id": "member1",
+          "name": "Ana Silva",
+          "role": "CEO",
+          "email": "ana.silva@empresa.com",
+          "photo": "/placeholder.svg",
+          "about": "Lidera a empresa com mais de 15 anos de experiência no setor. Especialista em estratégia e inovação."
+        },
+        {
+          "id": "member2",
+          "name": "Carlos Mendes",
+          "role": "CTO",
+          "email": "carlos.mendes@empresa.com",
+          "photo": "/placeholder.svg",
+          "about": "Responsável pela visão tecnológica e implementação de novas tecnologias."
+        },
+        {
+          "id": "member3",
+          "name": "Fernanda Lima",
+          "role": "COO",
+          "email": "fernanda.lima@empresa.com",
+          "photo": "/placeholder.svg",
+          "about": "Gerencia as operações diárias e processos da empresa para máxima eficiência."
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "name": "Desenvolvimento",
+      "members": [
+        {
+          "id": "member4",
+          "name": "Lucas Oliveira",
+          "role": "Tech Lead",
+          "email": "lucas.oliveira@empresa.com",
+          "photo": "/placeholder.svg",
+          "about": "Especialista em arquitetura de software e desenvolvimento backend."
+        },
+        {
+          "id": "member5",
+          "name": "Mariana Santos",
+          "role": "Frontend Developer",
+          "email": "mariana.santos@empresa.com",
+          "photo": "/placeholder.svg",
+          "about": "Trabalha com desenvolvimento frontend e experiência do usuário."
+        },
+        {
+          "id": "member6",
+          "name": "Pedro Costa",
+          "role": "Fullstack Developer",
+          "email": "pedro.costa@empresa.com",
+          "photo": "/placeholder.svg",
+          "about": "Desenvolve soluções completas, do backend ao frontend."
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "name": "Design",
+      "members": [
+        {
+          "id": "member7",
+          "name": "Beatriz Gomes",
+          "role": "UX/UI Designer",
+          "email": "beatriz.gomes@empresa.com",
+          "photo": "/placeholder.svg",
+          "about": "Cria interfaces intuitivas e experiências de usuário envolventes."
+        },
+        {
+          "id": "member8",
+          "name": "Rafael Dias",
+          "role": "Graphic Designer",
+          "email": "rafael.dias@empresa.com",
+          "photo": "/placeholder.svg",
+          "about": "Responsável pela identidade visual e materiais gráficos da empresa."
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "members": [
+        {
+          "id": "member9",
+          "name": "Júlia Castro",
+          "role": "Marketing Manager",
+          "email": "julia.castro@empresa.com",
+          "photo": "/placeholder.svg",
+          "about": "Planeja e implementa estratégias de marketing para promover a empresa."
+        },
+        {
+          "id": "member10",
+          "name": "Gustavo Ferreira",
+          "role": "Content Creator",
+          "email": "gustavo.ferreira@empresa.com",
+          "photo": "/placeholder.svg",
+          "about": "Desenvolve conteúdo para redes sociais, blog e materiais promocionais."
+        }
+      ]
+    }
+  ],
+  "highlight": {
+    "text": "O maior ativo de uma empresa não é seu produto ou sua tecnologia, mas as pessoas que a compõem.",
+    "author": "Ana Silva, CEO"
+  }
+}

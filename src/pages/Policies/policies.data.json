@@ -1,0 +1,100 @@
+
+{
+  "title": "Políticas e Regulamentos",
+  "description": "Diretrizes, regras e procedimentos que orientam o funcionamento da empresa e as relações entre colaboradores.",
+  "categories": [
+    {
+      "id": "compliance",
+      "title": "Compliance",
+      "icon": "FileCheck",
+      "description": "Políticas relacionadas à conformidade legal e regulatória."
+    },
+    {
+      "id": "security",
+      "title": "Segurança da Informação",
+      "icon": "Shield",
+      "description": "Diretrizes para proteção de dados e segurança digital."
+    },
+    {
+      "id": "hr",
+      "title": "Recursos Humanos",
+      "icon": "Users",
+      "description": "Políticas voltadas para contratação, desenvolvimento e bem-estar dos colaboradores."
+    },
+    {
+      "id": "financial",
+      "title": "Finanças",
+      "icon": "DollarSign",
+      "description": "Normas para gestão financeira, reembolsos e despesas."
+    }
+  ],
+  "policies": [
+    {
+      "id": "1",
+      "title": "Política de Privacidade de Dados",
+      "category": "security",
+      "summary": "Define como coletamos, usamos e protegemos dados pessoais de colaboradores e clientes.",
+      "lastUpdate": "15/03/2023",
+      "content": "Nossa política de privacidade visa garantir a proteção de todos os dados pessoais sob nossa responsabilidade. Respeitamos a privacidade e implementamos medidas técnicas e organizacionais para prevenir o acesso não autorizado, a divulgação indevida, alteração ou destruição não autorizada dos dados."
+    },
+    {
+      "id": "2",
+      "title": "Código de Ética e Conduta",
+      "category": "compliance",
+      "summary": "Estabelece os princípios éticos e valores que devem guiar todas as ações na empresa.",
+      "lastUpdate": "10/01/2023",
+      "content": "Nosso Código de Ética baseia-se em valores como integridade, respeito, responsabilidade e excelência. Ele orienta nossas decisões e comportamentos diários, estabelecendo um padrão claro para como fazemos negócios e nos relacionamos internamente e externamente."
+    },
+    {
+      "id": "3",
+      "title": "Política de Desenvolvimento Profissional",
+      "category": "hr",
+      "summary": "Diretrizes para capacitação, treinamento e crescimento na carreira.",
+      "lastUpdate": "22/05/2023",
+      "content": "Incentivamos o desenvolvimento contínuo dos nossos colaboradores através de programas de capacitação, mentoria e avaliações regulares. Acreditamos que o crescimento individual contribui para o sucesso coletivo da empresa."
+    },
+    {
+      "id": "4",
+      "title": "Política de Reembolso de Despesas",
+      "category": "financial",
+      "summary": "Regras para solicitação e aprovação de reembolsos relacionados ao trabalho.",
+      "lastUpdate": "07/04/2023",
+      "content": "Os colaboradores podem solicitar reembolso de despesas relacionadas às atividades profissionais, como viagens, alimentação em compromissos externos e materiais necessários para o trabalho. Todas as solicitações devem ser acompanhadas de comprovantes fiscais e aprovadas pelo gestor responsável."
+    },
+    {
+      "id": "5",
+      "title": "Política de Trabalho Remoto",
+      "category": "hr",
+      "summary": "Orientações para o trabalho realizado fora do escritório.",
+      "lastUpdate": "30/06/2023",
+      "content": "O trabalho remoto é uma modalidade disponível para funções compatíveis, sujeito à aprovação dos gestores. Exige-se o cumprimento da jornada regular, disponibilidade para reuniões online e compromisso com as entregas. A empresa oferece suporte para criação de um ambiente de trabalho adequado em casa."
+    },
+    {
+      "id": "6",
+      "title": "Política de Segurança Digital",
+      "category": "security",
+      "summary": "Medidas preventivas contra ameaças digitais e proteção de informações sensíveis.",
+      "lastUpdate": "18/02/2023",
+      "content": "Todos os colaboradores devem seguir práticas seguras no ambiente digital, como utilização de senhas fortes, autenticação de dois fatores, evitar redes WiFi públicas para trabalho e reportar imediatamente qualquer suspeita de violação de segurança."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Como acesso a versão completa de uma política?",
+      "answer": "As versões completas de todas as políticas estão disponíveis na intranet da empresa, na seção Documentos > Políticas. Se precisar de ajuda, contate o departamento de Compliance."
+    },
+    {
+      "question": "Com que frequência as políticas são atualizadas?",
+      "answer": "Revisamos nossas políticas anualmente ou sempre que mudanças significativas no cenário regulatório ou nas nossas operações exigirem ajustes."
+    },
+    {
+      "question": "O que fazer se identificar uma violação de alguma política?",
+      "answer": "Utilize nosso canal de denúncias anônimas ou reporte ao seu gestor imediato ou ao departamento de Compliance."
+    }
+  ],
+  "contact": {
+    "department": "Compliance",
+    "email": "compliance@empresa.com",
+    "phone": "(11) 5555-1234"
+  }
+}

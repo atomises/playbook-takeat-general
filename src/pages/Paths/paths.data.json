@@ -1,0 +1,200 @@
+
+{
+  "title": "Trilhas de Carreira",
+  "description": "Descubra os caminhos de desenvolvimento profissional disponíveis em nossa empresa e planeje seu crescimento conosco.",
+  "overview": "Nossas trilhas de carreira são projetadas para oferecer crescimento contínuo, alinhando suas aspirações profissionais com as necessidades da empresa. Cada trilha inclui competências específicas, treinamentos recomendados e marcos de carreira.",
+  
+  "tracks": [
+    {
+      "id": "tech",
+      "title": "Tecnologia",
+      "icon": "Code",
+      "description": "Para profissionais que desejam crescer em desenvolvimento de software, engenharia e arquitetura técnica.",
+      "roles": [
+        {
+          "level": 1,
+          "title": "Desenvolvedor Jr.",
+          "requirements": [
+            "Conhecimento básico de programação",
+            "Compreensão de estruturas de dados",
+            "Familiaridade com sistemas de controle de versão"
+          ],
+          "skills": ["HTML/CSS", "JavaScript básico", "Git", "Banco de dados relacional"],
+          "timeframe": "1-2 anos"
+        },
+        {
+          "level": 2,
+          "title": "Desenvolvedor Pleno",
+          "requirements": [
+            "Experiência com vários projetos concluídos",
+            "Domínio de pelo menos uma linguagem de programação",
+            "Experiência com metodologias ágeis"
+          ],
+          "skills": ["React/Angular/Vue", "Node.js", "APIs RESTful", "Testes automatizados"],
+          "timeframe": "2-3 anos"
+        },
+        {
+          "level": 3,
+          "title": "Desenvolvedor Sênior",
+          "requirements": [
+            "Capacidade de liderar projetos técnicos",
+            "Experiência em arquitetura de software",
+            "Mentoria de desenvolvedores juniores"
+          ],
+          "skills": ["Arquitetura de sistemas", "DevOps", "Otimização de performance", "Design patterns"],
+          "timeframe": "3-5 anos"
+        },
+        {
+          "level": 4,
+          "title": "Tech Lead",
+          "requirements": [
+            "Liderança técnica em projetos complexos",
+            "Tomada de decisões arquiteturais",
+            "Capacidade de comunicação com stakeholders"
+          ],
+          "skills": ["Liderança técnica", "Arquitetura de soluções", "Gestão técnica", "Planejamento estratégico"],
+          "timeframe": "5+ anos"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design",
+      "icon": "Palette",
+      "description": "Para profissionais de design de produto, UI/UX e design visual.",
+      "roles": [
+        {
+          "level": 1,
+          "title": "Designer Jr.",
+          "requirements": [
+            "Conhecimento de princípios básicos de design",
+            "Familiaridade com ferramentas de design",
+            "Noções de UI/UX"
+          ],
+          "skills": ["Figma/Adobe XD", "Princípios básicos de UI", "Design responsivo", "Tipografia"],
+          "timeframe": "1-2 anos"
+        },
+        {
+          "level": 2,
+          "title": "Designer Pleno",
+          "requirements": [
+            "Experiência com projetos de design completos",
+            "Conhecimento de research com usuários",
+            "Habilidade para trabalhar independentemente"
+          ],
+          "skills": ["Design systems", "Prototipagem", "User research", "Acessibilidade"],
+          "timeframe": "2-3 anos"
+        },
+        {
+          "level": 3,
+          "title": "Designer Sênior",
+          "requirements": [
+            "Portfolio robusto de projetos",
+            "Capacidade de liderar iniciativas de design",
+            "Mentoria de designers juniores"
+          ],
+          "skills": ["Design strategy", "Facilitação de workshops", "Design thinking", "Gestão de design systems"],
+          "timeframe": "3-5 anos"
+        },
+        {
+          "level": 4,
+          "title": "Design Lead",
+          "requirements": [
+            "Visão estratégica de design",
+            "Liderança de equipes de design",
+            "Alinhamento de design com objetivos de negócio"
+          ],
+          "skills": ["Liderança em design", "Estratégia de produto", "Gestão de equipe", "Mensuração de impacto"],
+          "timeframe": "5+ anos"
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "title": "Produto",
+      "icon": "Package",
+      "description": "Para profissionais focados em gestão de produto, estratégia e experiência do usuário.",
+      "roles": [
+        {
+          "level": 1,
+          "title": "Product Analyst",
+          "requirements": [
+            "Compreensão básica de desenvolvimento de produto",
+            "Habilidades analíticas",
+            "Boa comunicação"
+          ],
+          "skills": ["Análise de dados", "Documentação de requisitos", "User stories", "Agile/Scrum"],
+          "timeframe": "1-2 anos"
+        },
+        {
+          "level": 2,
+          "title": "Product Owner",
+          "requirements": [
+            "Experiência em priorização de backlog",
+            "Trabalho com equipes multidisciplinares",
+            "Foco em entrega de valor"
+          ],
+          "skills": ["Product discovery", "Gestão de backlog", "Métricas de produto", "Stakeholder management"],
+          "timeframe": "2-3 anos"
+        },
+        {
+          "level": 3,
+          "title": "Product Manager",
+          "requirements": [
+            "Visão estratégica de produto",
+            "Experiência com ciclo completo de produto",
+            "Capacidade de definir roadmaps"
+          ],
+          "skills": ["Estratégia de produto", "Roadmapping", "OKRs", "Análise de mercado", "Lançamento de produto"],
+          "timeframe": "3-5 anos"
+        },
+        {
+          "level": 4,
+          "title": "Head of Product",
+          "requirements": [
+            "Liderança de múltiplas linhas de produto",
+            "Visão estratégica de longo prazo",
+            "Alinhamento com objetivos de negócio"
+          ],
+          "skills": ["Liderança de produto", "Visão estratégica", "Gestão de equipe", "Desenvolvimento de negócio"],
+          "timeframe": "5+ anos"
+        }
+      ]
+    }
+  ],
+  
+  "successStories": [
+    {
+      "name": "João Pereira",
+      "from": "Desenvolvedor Jr.",
+      "to": "Tech Lead",
+      "time": "4 anos",
+      "testimonial": "A estrutura clara das trilhas me ajudou a visualizar meu crescimento e trabalhar nas habilidades certas em cada estágio. O programa de mentoria foi fundamental para meu desenvolvimento."
+    },
+    {
+      "name": "Carolina Santos",
+      "from": "Designer Jr.",
+      "to": "Design Lead",
+      "time": "5 anos",
+      "testimonial": "Consegui crescer rapidamente graças à transparência das trilhas de carreira. Sabia exatamente o que precisava desenvolver para avançar e tive suporte em cada etapa."
+    }
+  ],
+  
+  "resources": [
+    {
+      "title": "Plataforma de Aprendizado",
+      "description": "Acesso a cursos online para desenvolver competências técnicas e comportamentais.",
+      "link": "#plataforma"
+    },
+    {
+      "title": "Programa de Mentoria",
+      "description": "Conexão com profissionais mais experientes para orientação de carreira.",
+      "link": "#mentoria"
+    },
+    {
+      "title": "Avaliações de Desenvolvimento",
+      "description": "Feedbacks estruturados semestrais para acompanhar seu progresso.",
+      "link": "#avaliacoes"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+
+.members-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.department-section {
+  margin-bottom: 48px;
+}
+
+.department-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e1e1e1;
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.member-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.member-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.member-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+  border: 3px solid #ffffff;
+}
+
+.member-header-info {
+  flex: 1;
+}
+
+.member-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #2a2a2a;
+}
+
+.member-role {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+  color: #0066cc;
+}
+
+.member-email {
+  font-size: 14px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.member-body {
+  padding: 20px;
+}
+
+.member-about {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+@media (max-width: 768px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+}

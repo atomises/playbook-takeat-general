@@ -2,10 +2,12 @@
 import React from 'react';
 import './InfoBlock.css';
 
+export type InfoBlockVariant = 'default' | 'highlighted' | 'warning' | 'success' | 'info';
+
 interface InfoBlockProps {
   title: string;
-  content: string | React.ReactNode;
-  variant?: 'default' | 'highlighted' | 'warning' | 'success';
+  content: string;
+  variant?: InfoBlockVariant;
   icon?: React.ReactNode;
 }
 
@@ -16,13 +18,11 @@ const InfoBlock: React.FC<InfoBlockProps> = ({
   icon
 }) => {
   return (
-    <div className={`info-block info-block-${variant}`}>
+    <div className={`info-block ${variant}`}>
       {icon && <div className="info-block-icon">{icon}</div>}
       <div className="info-block-content">
         <h3 className="info-block-title">{title}</h3>
-        <div className="info-block-text">
-          {typeof content === 'string' ? <p>{content}</p> : content}
-        </div>
+        <p className="info-block-text">{content}</p>
       </div>
     </div>
   );

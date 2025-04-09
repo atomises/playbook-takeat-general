@@ -2,109 +2,130 @@
 {
   "searchItems": [
     {
+      "id": "home",
       "title": "Página Inicial",
       "path": "/",
-      "keywords": ["home", "início", "principal"]
+      "keywords": ["home", "início", "dashboard", "principal"]
     },
     {
-      "title": "Nossa Cultura",
-      "path": "/culture",
-      "keywords": ["cultura", "valores", "princípios"]
-    },
-    {
-      "title": "Nossa História",
-      "path": "/history",
-      "keywords": ["história", "fundação", "jornada", "trajetória", "fundadores"]
-    },
-    {
-      "title": "Estratégia 2025",
-      "path": "/strategy",
-      "keywords": ["estratégia", "planejamento", "metas", "objetivos", "visão"]
-    },
-    {
-      "title": "Nossos Produtos",
-      "path": "/product",
-      "keywords": ["produtos", "serviços", "soluções", "ofertas"]
-    },
-    {
+      "id": "benefits",
       "title": "Benefícios",
       "path": "/benefits",
-      "keywords": ["benefícios", "vantagens", "plano de saúde", "gympass", "vale refeição"]
+      "keywords": ["benefícios", "vantagens", "planos", "assistência"]
     },
     {
-      "title": "Políticas e Regulamentos",
+      "id": "culture",
+      "title": "Nossa Cultura",
+      "path": "/culture",
+      "keywords": ["cultura", "valores", "missão", "visão"]
+    },
+    {
+      "id": "history",
+      "title": "Nossa História",
+      "path": "/history",
+      "keywords": ["história", "trajetória", "fundação", "marcos"]
+    },
+    {
+      "id": "strategy",
+      "title": "Estratégia",
+      "path": "/strategy",
+      "keywords": ["estratégia", "planos", "objetivos", "metas"]
+    },
+    {
+      "id": "product",
+      "title": "Produtos",
+      "path": "/product",
+      "keywords": ["produtos", "serviços", "soluções"]
+    },
+    {
+      "id": "policies",
+      "title": "Políticas",
       "path": "/policies",
-      "keywords": ["políticas", "regulamentos", "normas", "regras", "compliance"]
+      "keywords": ["políticas", "regras", "normas", "diretrizes"]
     },
     {
-      "title": "Membros",
+      "id": "members",
+      "title": "Membros da Equipe",
       "path": "/members",
-      "keywords": ["membros", "colaboradores", "equipe", "funcionários", "colegas"]
+      "keywords": ["membros", "equipe", "colaboradores", "funcionários"]
     },
     {
+      "id": "internal-rules",
       "title": "Regras Internas",
       "path": "/internal-rules",
-      "keywords": ["regras", "normas", "condutas", "comportamento"]
+      "keywords": ["regras", "interno", "conduta", "procedimentos"]
     },
     {
-      "title": "Dicionário da Empresa",
+      "id": "dictionary",
+      "title": "Dicionário",
       "path": "/dictionary",
-      "keywords": ["dicionário", "glossário", "termos", "definições", "vocabulário"]
+      "keywords": ["dicionário", "termos", "glossário", "definições"]
     },
     {
-      "title": "Quadro de Organização",
+      "id": "organization",
+      "title": "Organização",
       "path": "/organization",
-      "keywords": ["organograma", "estrutura", "departamentos", "equipes", "hierarquia"]
+      "keywords": ["organização", "estrutura", "departamentos", "hierarquia"]
     },
     {
-      "title": "Trilhas",
+      "id": "paths",
+      "title": "Trilhas de Carreira",
       "path": "/paths",
-      "keywords": ["trilhas", "desenvolvimento", "carreira", "crescimento", "aprendizado"]
+      "keywords": ["trilhas", "carreira", "crescimento", "desenvolvimento"]
     },
     {
+      "id": "voice",
       "title": "Tom de Voz",
       "path": "/voice",
-      "keywords": ["voz", "comunicação", "linguagem", "mensagem", "marca"]
+      "keywords": ["voz", "comunicação", "tom", "linguagem"]
     },
     {
-      "title": "Salas",
+      "id": "rooms",
+      "title": "Salas de Reunião",
       "path": "/rooms",
-      "keywords": ["salas", "reuniões", "espaços", "reservas", "meeting rooms"]
+      "keywords": ["salas", "reuniões", "espaços", "reservas"]
     },
     {
-      "title": "Escritório e Regras",
+      "id": "office",
+      "title": "Escritório",
       "path": "/office",
-      "keywords": ["escritório", "regras", "instalações", "espaço físico", "prédio"]
+      "keywords": ["escritório", "ambiente", "instalações", "local"]
     },
     {
-      "title": "Calendário e Eventos",
+      "id": "calendar",
+      "title": "Calendário",
       "path": "/calendar",
-      "keywords": ["calendário", "eventos", "agenda", "encontros", "datas importantes"]
+      "keywords": ["calendário", "eventos", "datas", "agenda"]
     },
     {
+      "id": "work-policies",
       "title": "Políticas de Trabalho",
       "path": "/work-policies",
-      "keywords": ["trabalho", "políticas", "home office", "flexibilidade", "horário"]
+      "keywords": ["políticas", "trabalho", "regime", "expediente"]
     },
     {
-      "title": "Suporte de Equipamentos",
+      "id": "equipment",
+      "title": "Equipamentos",
       "path": "/equipment",
-      "keywords": ["equipamentos", "hardware", "computadores", "suporte", "TI"]
+      "keywords": ["equipamentos", "dispositivos", "ferramentas", "tecnologia"]
     },
     {
-      "title": "Portal de Líderes",
+      "id": "leadership",
+      "title": "Liderança",
       "path": "/leadership",
-      "keywords": ["líderes", "liderança", "gestão", "managers", "gerentes"]
+      "keywords": ["liderança", "gestão", "líderes", "gerentes"]
     },
     {
+      "id": "partners",
       "title": "Parceiros",
       "path": "/partners",
-      "keywords": ["parceiros", "parcerias", "colaborações", "ecossistema", "aliados"]
+      "keywords": ["parceiros", "colaboradores", "aliados", "parcerias"]
     },
     {
+      "id": "useful-links",
       "title": "Links Úteis",
       "path": "/useful-links",
-      "keywords": ["links", "documentação", "recursos", "ferramentas", "utilities"]
+      "keywords": ["links", "úteis", "recursos", "referências"]
     }
   ]
 }

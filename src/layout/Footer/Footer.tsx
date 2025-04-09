@@ -5,11 +5,11 @@ import './Footer.css';
 
 interface FooterProps {
   className?: string;
+  githubLink?: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ className = '' }) => {
+const Footer: React.FC<FooterProps> = ({ className = '', githubLink = "https://github.com/companygithub" }) => {
   const currentYear = new Date().getFullYear();
-  const githubUrl = "https://github.com/companygithub";
   
   return (
     <footer className={`footer ${className}`}>
@@ -20,7 +20,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
         
         <div className="footer-links">
           <a 
-            href={githubUrl} 
+            href={githubLink} 
             target="_blank" 
             rel="noopener noreferrer"
             className="footer-link github-link"

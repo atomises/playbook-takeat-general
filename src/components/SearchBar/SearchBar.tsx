@@ -1,146 +1,90 @@
 
-import React, { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Search, X } from 'lucide-react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Search } from 'lucide-react';
+import { SearchResult } from '../../types/SearchResult';
 import './SearchBar.css';
-import { getIconByName } from '../../utils/iconUtils';
-
-interface SearchResult {
-  id: string;
-  title: string;
-  path: string;
-  icon?: string;
-  description?: string;
-}
 
 interface SearchBarProps {
   placeholder?: string;
   items: SearchResult[];
-  onSearch?: (query: string) => void;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ 
-  placeholder = 'Buscar...', 
-  items,
-  onSearch
-}) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [query, setQuery] = useState('');
-  const [results, setResults] = useState<SearchResult[]>([]);
-  const inputRef = useRef<HTMLInputElement>(null);
-  const searchContainerRef = useRef<HTMLDivElement>(null);
+const SearchBar: React.FC<SearchBarProps> = ({ placeholder = 'Pesquisar...', items }) => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [isSearchActive, setIsSearchActive] = useState(false);
+  const [filteredResults, setFilteredResults] = useState<SearchResult[]>([]);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    if (isExpanded && inputRef.current) {
-      inputRef.current.focus();
-    }
-  }, [isExpanded]);
-
-  useEffect(() => {
+  
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const query = e.target.value;
+    setSearchQuery(query);
+    
     if (query.trim() === '') {
-      setResults([]);
+      setFilteredResults([]);
       return;
     }
-
-    const lowerCaseQuery = query.toLowerCase();
-    const filteredResults = items.filter(item => 
-      item.title.toLowerCase().includes(lowerCaseQuery) ||
-      (item.description && item.description.toLowerCase().includes(lowerCaseQuery))
-    );
     
-    setResults(filteredResults);
+    // Filtrar resultados com base na consulta
+    const results = items.filter(item => {
+      const titleMatch = item.title.toLowerCase().includes(query.toLowerCase());
+      const keywordMatch = item.keywords.some(keyword => 
+        keyword.toLowerCase().includes(query.toLowerCase())
+      );
+      
+      return titleMatch || keywordMatch;
+    });
     
-    if (onSearch) {
-      onSearch(query);
-    }
-  }, [query, items, onSearch]);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        searchContainerRef.current && 
-        !searchContainerRef.current.contains(event.target as Node)
-      ) {
-        setIsExpanded(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
-
-  const handleItemClick = (path: string) => {
-    navigate(path);
-    setIsExpanded(false);
-    setQuery('');
+    setFilteredResults(results);
   };
-
+  
+  const handleResultClick = (path: string) => {
+    navigate(path);
+    setSearchQuery('');
+    setFilteredResults([]);
+    setIsSearchActive(false);
+  };
+  
+  const handleFocus = () => {
+    setIsSearchActive(true);
+  };
+  
+  const handleBlur = () => {
+    // Delay to allow click on results
+    setTimeout(() => {
+      setIsSearchActive(false);
+    }, 200);
+  };
+  
   return (
-    <div className="searchbar-container" ref={searchContainerRef}>
-      <div 
-        className={`searchbar ${isExpanded ? 'expanded' : ''}`}
-        onClick={() => !isExpanded && setIsExpanded(true)}
-      >
-        <div className="searchbar-input-container">
-          <Search size={18} className="search-icon" />
-          <input
-            ref={inputRef}
-            type="text"
-            placeholder={placeholder}
-            className="searchbar-input"
-            value={query}
-            onChange={e => setQuery(e.target.value)}
-          />
-          {isExpanded && query && (
-            <button 
-              className="clear-button"
-              onClick={() => setQuery('')}
-            >
-              <X size={16} />
-            </button>
-          )}
-        </div>
-        
-        <AnimatePresence>
-          {isExpanded && results.length > 0 && (
-            <motion.div 
-              className="search-results"
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="results-header">
-                <span>Resultados</span>
-                <span className="result-count">{results.length}</span>
-              </div>
-              <div className="results-list">
-                {results.map((result) => (
-                  <div 
-                    key={result.id}
-                    className="result-item"
-                    onClick={() => handleItemClick(result.path)}
-                  >
-                    <div className="result-icon">
-                      {result.icon ? getIconByName(result.icon) : <Search size={18} />}
-                    </div>
-                    <div className="result-content">
-                      <div className="result-title">{result.title}</div>
-                      {result.description && (
-                        <div className="result-description">{result.description}</div>
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+    <div className="search-bar-container">
+      <div className={`search-input-wrapper ${isSearchActive ? 'active' : ''}`}>
+        <Search size={18} className="search-icon" />
+        <input
+          type="text"
+          className="search-input"
+          placeholder={placeholder}
+          value={searchQuery}
+          onChange={handleSearchChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+        />
       </div>
+      
+      {isSearchActive && filteredResults.length > 0 && (
+        <div className="search-results">
+          {filteredResults.map((result) => (
+            <div 
+              key={result.id}
+              className="search-result-item"
+              onClick={() => handleResultClick(result.path)}
+            >
+              <div className="result-title">{result.title}</div>
+              <div className="result-path">{result.path}</div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

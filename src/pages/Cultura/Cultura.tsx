@@ -1,12 +1,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import * as LucideIcons from 'lucide-react';
 import './Cultura.css';
 import data from './cultura.data.json';
-
-// Properly type the Lucide icons
-type IconName = keyof typeof LucideIcons;
+import { getIconByName } from '../../utils/iconUtils';
 
 const Cultura: React.FC = () => {
   const containerVariants = {
@@ -26,24 +23,6 @@ const Cultura: React.FC = () => {
       y: 0,
       opacity: 1
     }
-  };
-
-  // Fixed getIcon function with proper typing
-  const getIcon = (iconName: string, size = 24) => {
-    // Check if the icon exists in LucideIcons
-    if (!Object.prototype.hasOwnProperty.call(LucideIcons, iconName)) {
-      return null;
-    }
-    
-    // Use dynamic access with type assertion
-    const IconComponent = LucideIcons[iconName as IconName];
-    // Check if the icon is a valid component function
-    if (typeof IconComponent !== 'function') {
-      return null;
-    }
-    
-    // Use JSX to render the icon instead of React.createElement
-    return <IconComponent size={size} />;
   };
 
   return (
@@ -82,7 +61,7 @@ const Cultura: React.FC = () => {
               variants={itemVariants}
             >
               <div className="valor-icon">
-                {getIcon(valor.icon)}
+                {getIconByName(valor.icon)}
               </div>
               <h3 className="valor-title">{valor.title}</h3>
               <p className="valor-description">{valor.description}</p>

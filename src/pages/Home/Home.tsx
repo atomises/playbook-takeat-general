@@ -1,36 +1,14 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Card from '../../components/Card/Card';
 import cardData from '../../components/Card/card.data.json';
-import * as LucideIcons from 'lucide-react';
 import './Home.css';
-
-// Properly type the Lucide icons
-type IconName = keyof typeof LucideIcons;
+import { getIconByName } from '../../utils/iconUtils';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
   
-  // Fixed getIcon function with proper typing
-  const getIcon = (iconName: string) => {
-    // Check if the icon exists in LucideIcons
-    if (!Object.prototype.hasOwnProperty.call(LucideIcons, iconName)) {
-      return null;
-    }
-    
-    // Use dynamic access with type assertion
-    const IconComponent = LucideIcons[iconName as IconName];
-    // Check if the icon is a valid component function
-    if (typeof IconComponent !== 'function') {
-      return null;
-    }
-    
-    // Use JSX to render the icon instead of React.createElement
-    return <IconComponent size={24} />;
-  };
-
   return (
     <div className="home-page">
       <motion.div 
@@ -81,7 +59,7 @@ const Home: React.FC = () => {
                 <Card
                   title={card.title}
                   description={card.description}
-                  icon={getIcon(card.icon)}
+                  icon={getIconByName(card.icon)}
                   onClick={() => {
                     if (card.id === 'culture') {
                       navigate('/culture');

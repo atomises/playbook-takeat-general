@@ -3,17 +3,14 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import * as LucideIcons from 'lucide-react';
 import './Sidebar.css';
 import sidebarData from './sidebar.data.json';
 import logo from '../../assets/logo.svg';
+import { getIconByName } from '../../utils/iconUtils';
 
 interface SidebarProps {
   className?: string;
 }
-
-// Properly type the Lucide icons
-type IconName = keyof typeof LucideIcons;
 
 const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
   const [collapsed, setCollapsed] = useState(false);
@@ -26,24 +23,6 @@ const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
   const sidebarVariants = {
     expanded: { width: '280px' },
     collapsed: { width: '72px' }
-  };
-
-  // Fixed getIcon function with proper typing
-  const getIcon = (iconName: string) => {
-    // Check if the icon exists in LucideIcons
-    if (!Object.prototype.hasOwnProperty.call(LucideIcons, iconName)) {
-      return null;
-    }
-    
-    // Use dynamic access with type assertion
-    const IconComponent = LucideIcons[iconName as IconName];
-    // Check if the icon is a valid component function
-    if (typeof IconComponent !== 'function') {
-      return null;
-    }
-    
-    // Use JSX to render the icon instead of React.createElement
-    return <IconComponent size={20} />;
   };
 
   return (
@@ -78,7 +57,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
                       className={`sidebar-link ${isActive ? 'active' : ''}`}
                       title={collapsed ? item.title : ''}
                     >
-                      <span className="sidebar-icon">{getIcon(item.icon)}</span>
+                      <span className="sidebar-icon">{getIconByName(item.icon, 20)}</span>
                       {!collapsed && <span className="sidebar-label">{item.title}</span>}
                     </Link>
                   </li>
